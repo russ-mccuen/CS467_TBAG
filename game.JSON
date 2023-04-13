@@ -1,0 +1,9 @@
+{
+  "Rooms" : [
+    {
+      "name":  "Home Base",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": "True"
+    }]
+}

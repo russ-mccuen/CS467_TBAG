@@ -1,11 +1,11 @@
 # Room Base Class
 class Room:
-    def __init__(self, name, short_desc, long_desc):
+    def __init__(self, name, short_desc, long_desc, is_locked):
         self.name = name
         self.shortDesc = short_desc
         self.longDesc = long_desc
         self.objects = []
-        self.is_locked = True
+        self.is_locked = is_locked
 
     def __str__(self):
         return f"This is the {self.name} room object"
