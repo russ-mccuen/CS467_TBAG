@@ -5,9 +5,12 @@ class Room:
         self.shortDesc = short_desc
         self.longDesc = long_desc
         self.objects = []
-        self.is_locked = is_locked
+        self.locked = is_locked
 
     def __str__(self):
+        return f"This is the {self.name} room object"
+
+    def __repr__(self):
         return f"This is the {self.name} room object"
 
     def get_name(self):
@@ -22,8 +25,8 @@ class Room:
     def get_room_objects(self):
         return self.objects
 
-    def get_is_locked(self):
-        return self.is_locked
+    def is_locked(self):
+        return self.locked
 
     def set_short_desc(self, description):
         self.shortDesc = description
