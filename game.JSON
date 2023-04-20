@@ -4,13 +4,91 @@
       "name":  "Home Base",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
-      "is locked": "False"
+      "is locked": false,
+      "feature one": "feature one description",
+      "feature two": "feature two description",
+      "is visible": false
     },
   {
       "name":  "Room One",
       "short desc":  "This is the short description of Room One",
       "long desc":  "This is the long description of Room One",
-      "is locked": "True"
+      "is locked": false,
+      "feature one": "feature one description",
+      "feature two": "feature two description",
+    "is visible": true
+    },
+     {
+      "name":  "Room Two",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+       "feature two": "feature two description",
+       "is visible": false
+    },
+     {
+      "name":  "Room Three",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+      "feature two": "feature two description",
+        "is visible": false
+    },
+     {
+      "name":  "Room Four",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+      "feature two": "feature two description",
+        "is visible": false
+    },
+     {
+      "name":  "Room Five",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+      "feature two": "feature two description",
+        "is visible": false
+    },
+     {
+      "name":  "Room six",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+      "feature two": "feature two description",
+        "is visible": false
+    },
+     {
+      "name":  "Room seven",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+      "feature two": "feature two description",
+        "is visible": false
+    },
+     {
+      "name":  "Room eight",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+      "feature two": "feature two description",
+        "is visible": false
+    },
+     {
+      "name":  "Room nine",
+      "short desc":  "This is the short description",
+      "long desc":  "This is the long description",
+      "is locked": false,
+       "feature one": "feature one description",
+      "feature two": "feature two description",
+        "is visible": false
     }
   ]
 }
