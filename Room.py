@@ -41,7 +41,7 @@ class Room:
         self.objects.remove(room_object)
 
     def lock_room(self):
-        self.is_locked = True
+        self.locked = True
 
     def unlock_room(self):
-        self.is_locked = False
+        self.locked = False
