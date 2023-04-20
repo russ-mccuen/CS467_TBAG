@@ -60,7 +60,7 @@ def start_game():
         print("Visible Rooms: ")
         for index, room in enumerate(rooms):
             if room.is_visible():
-                print(f"Room: {current_room.get_name()} located at index: {index}")
+                print(f"Room: {room.get_name()} located at index: {index}")
 
         user_input = input("What do you want to do?: ")
         if user_input.lower() == 'q':
