@@ -4,6 +4,13 @@
       "name":  "Home Base",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
+      "is locked": "False"
+    },
+  {
+      "name":  "Room One",
+      "short desc":  "This is the short description of Room One",
+      "long desc":  "This is the long description of Room One",
       "is locked": "True"
-    }]
+    }
+  ]
 }
