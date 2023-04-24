@@ -2,6 +2,7 @@ import json
 import os
 import time
 from Room import Room
+from navigation import DIRECTIONS, parse_direction
 
 
 def loading_screen():
