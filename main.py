@@ -61,7 +61,7 @@ def start_game():
         print("Visible Rooms: ")
         for index, room in enumerate(rooms):
             if room.is_visible():
-                print(f"Room: {room.get_name()} located at index: {index}")
+                print(f"Room: {room.get_name()} located at index: {index} direction location: {room.get_location()}")
 
         user_input = input("What do you want to do?: ")
         if user_input.lower() == 'q':
@@ -94,7 +94,8 @@ def load_rooms(game_data):
         feature_one = room["feature one"]
         feature_two = room["feature two"]
         is_visible = room["is visible"]
-        new_room = Room(room_name, short_desc, long_desc, is_locked, feature_one, feature_two, is_visible)
+        location = room["location"]
+        new_room = Room(room_name, short_desc, long_desc, is_locked, feature_one, feature_two, is_visible,location)
         rooms.append(new_room)
     return rooms
 

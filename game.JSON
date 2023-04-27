@@ -7,7 +7,8 @@
       "is locked": false,
       "feature one": "feature one description",
       "feature two": "feature two description",
-      "is visible": false
+      "is visible": false,
+      "location": "center"
     },
   {
       "name":  "Room One",
@@ -16,7 +17,8 @@
       "is locked": false,
       "feature one": "feature one description",
       "feature two": "feature two description",
-    "is visible": true
+    "is visible": true,
+    "location": "north east"
     },
      {
       "name":  "Room Two",
@@ -25,7 +27,8 @@
       "is locked": false,
        "feature one": "feature one description",
        "feature two": "feature two description",
-       "is visible": false
+       "is visible": false,
+       "location": "east"
     },
      {
       "name":  "Room Three",
@@ -34,7 +37,8 @@
       "is locked": false,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false
+        "is visible": false,
+       "location": "south east"
     },
      {
       "name":  "Room Four",
@@ -43,7 +47,8 @@
       "is locked": false,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false
+        "is visible": false,
+       "location": "south"
     },
      {
       "name":  "Room Five",
@@ -52,7 +57,8 @@
       "is locked": false,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false
+        "is visible": false,
+       "location": "south west"
     },
      {
       "name":  "Room six",
@@ -61,7 +67,8 @@
       "is locked": false,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false
+        "is visible": false,
+       "location": "west"
     },
      {
       "name":  "Room seven",
@@ -70,7 +77,8 @@
       "is locked": false,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false
+        "is visible": false,
+       "location": "north west"
     },
      {
       "name":  "Room eight",
@@ -79,7 +87,8 @@
       "is locked": false,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false
+        "is visible": false,
+       "location": "down"
     },
      {
       "name":  "Room nine",
@@ -88,7 +97,8 @@
       "is locked": false,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false
+        "is visible": false,
+       "location": "up"
     }
   ]
 }
