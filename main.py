@@ -3,6 +3,7 @@ import os
 import time
 from Room import Room
 from navigation import DIRECTIONS, parse_direction
+from verbs import verbs
 
 
 def loading_screen():
@@ -59,6 +60,12 @@ def start_game():
             break
 
     # TODO Room Navigation Parser
+
+    # this is just a template of how we could handle verbs
+    verb = input("What do you want to do? ")
+    for action, synonyms in verbs.items():
+        if verb in synonyms:
+            print(f"You want to {action}.")
 
 
 def load_game(json_file):
