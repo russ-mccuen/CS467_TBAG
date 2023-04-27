@@ -94,8 +94,7 @@ def load_rooms(game_data):
 
 
 def home_base(homebase, rooms):
-    description = homebase.get_short_desc() if homebase.visited else homebase.get_long_desc()
-    homebase.set_visited_true()
+    description = get_description(homebase)
     print(description)
     print(f"Feature One: {homebase.get_feature_one()}")
     print(f"Feature Two: {homebase.get_feature_two()}")
@@ -103,6 +102,12 @@ def home_base(homebase, rooms):
     for index, room in enumerate(rooms):
         if room.is_visible():
             print(f"{index} : Room: {room.get_name()}  direction location: {room.get_direction()}")
+
+
+def get_description(room):
+    description = room.get_short_desc() if room.visited else room.get_long_desc()
+    room.set_visited_true()
+    return description
 
 
 def clear_screen():

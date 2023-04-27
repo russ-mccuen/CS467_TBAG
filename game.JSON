@@ -27,10 +27,10 @@
       "name":  "Room Two",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
-      "is locked": false,
+      "is locked": true,
        "feature one": "feature one description",
        "feature two": "feature two description",
-       "is visible": false,
+       "is visible": true,
        "direction": "north east"
     },
      {
