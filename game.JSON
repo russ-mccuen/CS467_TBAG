@@ -1,6 +1,7 @@
 {
   "Rooms" : [
     {
+      "index": 0,
       "name":  "Home Base",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -8,9 +9,10 @@
       "feature one": "feature one description",
       "feature two": "feature two description",
       "is visible": false,
-      "location": "center"
+      "direction": "center"
     },
   {
+      "index": 1,
       "name":  "Room One",
       "short desc":  "This is the short description of Room One",
       "long desc":  "This is the long description of Room One",
@@ -18,9 +20,10 @@
       "feature one": "feature one description",
       "feature two": "feature two description",
     "is visible": true,
-    "location": "north east"
+    "direction": "north"
     },
      {
+       "index": 2,
       "name":  "Room Two",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -28,9 +31,10 @@
        "feature one": "feature one description",
        "feature two": "feature two description",
        "is visible": false,
-       "location": "east"
+       "direction": "north east"
     },
      {
+       "index": 3,
       "name":  "Room Three",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -38,9 +42,10 @@
        "feature one": "feature one description",
       "feature two": "feature two description",
         "is visible": false,
-       "location": "south east"
+       "direction": "east"
     },
      {
+       "index": 4,
       "name":  "Room Four",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -48,9 +53,10 @@
        "feature one": "feature one description",
       "feature two": "feature two description",
         "is visible": false,
-       "location": "south"
+       "direction": "south east"
     },
      {
+       "index": 5,
       "name":  "Room Five",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -58,9 +64,10 @@
        "feature one": "feature one description",
       "feature two": "feature two description",
         "is visible": false,
-       "location": "south west"
+       "direction": "south"
     },
      {
+       "index": 6,
       "name":  "Room six",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -68,9 +75,10 @@
        "feature one": "feature one description",
       "feature two": "feature two description",
         "is visible": false,
-       "location": "west"
+       "direction": " south west"
     },
      {
+       "index": 7,
       "name":  "Room seven",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -78,9 +86,10 @@
        "feature one": "feature one description",
       "feature two": "feature two description",
         "is visible": false,
-       "location": "north west"
+       "direction": "west"
     },
      {
+       "index": 8,
       "name":  "Room eight",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -88,9 +97,10 @@
        "feature one": "feature one description",
       "feature two": "feature two description",
         "is visible": false,
-       "location": "down"
+       "direction": "north west"
     },
      {
+       "index": 9,
       "name":  "Room nine",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
@@ -98,7 +108,14 @@
        "feature one": "feature one description",
       "feature two": "feature two description",
         "is visible": false,
-       "location": "up"
+       "direction": "down"
     }
-  ]
+  ],
+  "Game Objects": [
+    {
+    "object name": "object description",
+    "object direction": "direction"
+    }
+    ],
+  "Current Room": 0
 }

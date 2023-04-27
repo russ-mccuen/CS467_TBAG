@@ -48,20 +48,11 @@ def main():
 def start_game():
     game_data = load_game("game.Json")
     rooms = load_rooms(game_data)
-    current_room = rooms[0]
-    # This just shows that each room is an object in the rooms list.
-    # for index, room in enumerate(rooms):
-    #     print(index, room)
+    current_room = rooms[game_data["Current Room"]]
 
     while True:
-        print(f"Location: {current_room.get_name()}")
-        print(f"Short Description: {current_room.get_short_desc()}")
-        print(f"Feature One: {current_room.get_feature_one()}")
-        print(f"Feature Two: {current_room.get_feature_two()}")
-        print("Visible Rooms: ")
-        for index, room in enumerate(rooms):
-            if room.is_visible():
-                print(f"Room: {room.get_name()} located at index: {index} direction location: {room.get_location()}")
+        if current_room.get_index() == 0:
+            home_base(current_room, rooms)
 
         user_input = input("What do you want to do?: ")
         if user_input.lower() == 'q':
@@ -86,7 +77,8 @@ def load_game(json_file):
 
 def load_rooms(game_data):
     rooms = []
-    for room in game_data["Rooms"]:
+    for index, room in enumerate(game_data["Rooms"]):
+        room_index = index
         room_name = room["name"]
         short_desc = room["short desc"]
         long_desc = room["long desc"]
@@ -94,10 +86,23 @@ def load_rooms(game_data):
         feature_one = room["feature one"]
         feature_two = room["feature two"]
         is_visible = room["is visible"]
-        location = room["location"]
-        new_room = Room(room_name, short_desc, long_desc, is_locked, feature_one, feature_two, is_visible,location)
-        rooms.append(new_room)
+        direction = room["direction"]
+        new_room = Room(index, room_name, short_desc, long_desc, is_locked, feature_one,
+                        feature_two, is_visible, direction)
+        rooms.insert(index, new_room)
     return rooms
+
+
+def home_base(homebase, rooms):
+    description = homebase.get_short_desc() if homebase.visited else homebase.get_long_desc()
+    homebase.set_visited_true()
+    print(description)
+    print(f"Feature One: {homebase.get_feature_one()}")
+    print(f"Feature Two: {homebase.get_feature_two()}")
+    print("When you look at the walls around you, you see: ")
+    for index, room in enumerate(rooms):
+        if room.is_visible():
+            print(f"{index} : Room: {room.get_name()}  direction location: {room.get_direction()}")
 
 
 def clear_screen():
