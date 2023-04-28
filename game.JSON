@@ -3,7 +3,8 @@
     {
       "index": 0,
       "name":  "Main Room",
-      "short desc":  "Childhood bedroom",
+      "door desc": "",
+      "short desc":  "Short description of childhood bedroom",
       "long desc":  "Long description of childhood bedroom",
       "is locked": false,
       "feature one": "Desk in the middle of the room",
@@ -14,39 +15,43 @@
   {
       "index": 1,
       "name":  "Room One",
+    "door desc": "A red door",
       "short desc":  "This is the short description of Room One",
       "long desc":  "This is the long description of Room One",
       "is locked": false,
       "feature one": "feature one description",
       "feature two": "feature two description",
-    "is visible": false,
+    "is visible": true,
     "direction": "north"
     },
      {
        "index": 2,
       "name":  "Room Two",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
-      "is locked": true,
+       "door desc": "A black door",
+      "short desc":  "This is the short description of room 2",
+      "long desc":  "This is the long description of room 2",
+      "is locked": false,
        "feature one": "feature one description",
        "feature two": "feature two description",
-       "is visible": false,
+       "is visible": true,
        "direction": "north east"
     },
      {
        "index": 3,
       "name":  "Room Three",
+       "door desc": "An orange door",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
-      "is locked": false,
+      "is locked": true,
        "feature one": "feature one description",
       "feature two": "feature two description",
-        "is visible": false,
+        "is visible": true,
        "direction": "east"
     },
      {
        "index": 4,
       "name":  "Room Four",
+       "door desc": "",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
@@ -58,6 +63,7 @@
      {
        "index": 5,
       "name":  "Room Five",
+       "door desc": "",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
@@ -69,6 +75,7 @@
      {
        "index": 6,
       "name":  "Room six",
+       "door desc": "",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
@@ -80,6 +87,7 @@
      {
        "index": 7,
       "name":  "Room seven",
+       "door desc": "",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
@@ -91,6 +99,7 @@
      {
        "index": 8,
       "name":  "Room eight",
+       "door desc": "",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
@@ -102,6 +111,7 @@
      {
        "index": 9,
       "name":  "Room nine",
+       "door desc": "",
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,

@@ -1,6 +1,7 @@
 import os
 import time
 
+
 def menu():
     # Display game menu
     time.sleep(1.5)
@@ -31,3 +32,7 @@ def start_screen():
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def newline():
+    print('\n')
