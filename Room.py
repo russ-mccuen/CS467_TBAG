@@ -23,11 +23,8 @@ class Room:
     def get_name(self):
         return self.name
 
-    def get_short_desc(self):
-        return self.shortDesc
-
-    def get_long_desc(self):
-        return self.longDesc
+    def get_desc(self):
+        return self.shortDesc if self.visited else self.longDesc
 
     def get_room_objects(self):
         return self.objects

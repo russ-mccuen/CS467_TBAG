@@ -113,9 +113,33 @@
   ],
   "Game Objects": [
     {
-    "object name": "object description",
-    "object direction": "direction"
+    "object name": "Desk",
+      "description": "A desk in the middle of the room",
+    "location": 0,
+      "is movable": false
+    },
+
+    {
+    "object name": "TV",
+      "description": "A tv sitting on the desk",
+    "location": 0,
+      "is movable": false
+    },
+
+    {
+      "object name": "tablet",
+      "description": "A tablet on the desk",
+      "location": 0,
+      "is movable": true
+    },
+
+    {
+      "object name": "letter",
+      "description": "A letter on the desk",
+      "location": 0,
+      "is movable": true
     }
+
     ],
   "Current Room": 0
 }

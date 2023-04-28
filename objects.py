@@ -1,10 +1,18 @@
 class GameObject:
-    def __init__(self, description, location, unlocks_room):
+    def __init__(self, name, description, location,  is_movable):
+        self.name = name
         self.description = description
         self.location = location
-        self.unlocks_room = unlocks_room
+        self.is_movable = is_movable
+        self.items = []
 
-    def get_object_description(self):
+    def get_name(self):
+        return self.name
+
+    def get_location(self):
+        return self.location
+
+    def get_obj_description(self):
         return self.description
 
     def get_object_location(self):
@@ -12,4 +20,13 @@ class GameObject:
 
     def set_object_location(self, location):
         self.location = location
+
+    def is_movable(self):
+        return self.is_movable()
+
+    def set_item(self, item):
+        self.items.append(item)
+
+    def get_items(self):
+        return self.items
 

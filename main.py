@@ -1,9 +1,7 @@
-import json
 import os
 import time
-from Room import Room
-from navigation import DIRECTIONS, parse_direction
-from verbs import verbs
+from game_setup import load_game, load_rooms, load_objects
+from main_room import main_room
 
 
 def loading_screen():
@@ -49,72 +47,14 @@ def main():
 def start_game():
     game_data = load_game("game.Json")
     rooms = load_rooms(game_data)
+    objects = load_objects(game_data)
     current_room = rooms[game_data["Current Room"]]
 
     while True:
         if current_room.get_index() == 0:
-            home_base(current_room, rooms)
+            main_room(current_room, rooms)
+        break
 
-        user_input = input("What do you want to do?: ")
-        if user_input.lower() == 'q':
-            break
-
-    # TODO Room Navigation Parser
-
-    # this is just a template of how we could handle verbs
-    verb = input("What do you want to do? ")
-    for action, synonyms in verbs.items():
-        if verb in synonyms:
-            print(f"You want to {action}.")
-
-
-def load_game(json_file):
-    try:
-        file = open(json_file, "r")
-        data = json.load(file)
-        file.close()
-        return data
-
-    except FileNotFoundError:
-        raise FileNotFoundError
-
-    except PermissionError:
-        raise PermissionError
-
-
-def load_rooms(game_data):
-    rooms = []
-    for index, room in enumerate(game_data["Rooms"]):
-        room_index = index
-        room_name = room["name"]
-        short_desc = room["short desc"]
-        long_desc = room["long desc"]
-        is_locked = room["is locked"]
-        feature_one = room["feature one"]
-        feature_two = room["feature two"]
-        is_visible = room["is visible"]
-        direction = room["direction"]
-        new_room = Room(index, room_name, short_desc, long_desc, is_locked, feature_one,
-                        feature_two, is_visible, direction)
-        rooms.insert(index, new_room)
-    return rooms
-
-
-def home_base(homebase, rooms):
-    description = get_description(homebase)
-    print(description)
-    print(f"Feature One: {homebase.get_feature_one()}")
-    print(f"Feature Two: {homebase.get_feature_two()}")
-    print("When you look at the walls around you, you see: ")
-    for index, room in enumerate(rooms):
-        if room.is_visible():
-            print(f"{index} : Room: {room.get_name()}  direction location: {room.get_direction()}")
-
-
-def get_description(room):
-    description = room.get_short_desc() if room.visited else room.get_long_desc()
-    room.set_visited_true()
-    return description
 
 
 def clear_screen():
