@@ -43,4 +43,5 @@ def load_objects(game_data):
         location = game_obj["location"]
         movable = game_obj["is movable"]
         new_obj = GameObject(obj_name, description, location, movable)
+        objects.append(new_obj)
     return objects

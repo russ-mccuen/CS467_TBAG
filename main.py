@@ -1,7 +1,7 @@
-import os
 import time
 from game_setup import load_game, load_rooms, load_objects
 from main_room import main_room
+from terminal import clear_screen, menu, start_screen
 
 
 def loading_screen():
@@ -13,35 +13,11 @@ def loading_screen():
     print("Game loaded!")
 
 
-def menu():
-    # Display game menu
-    time.sleep(1.5)
-    clear_screen()
-    print("Welcome to Adam and Russ' Awesome Text-Based Adventure Game!")
-    print("1. Start game")
-    print("2. Options")
-    print("3. Quit")
-
-
 def main():
     loading_screen()
     menu()
-    while True:
-        choice = input("Enter your choice (1-3): ")
-        if choice == "1":
-            print("Starting game...")
-            clear_screen()
-            start_game()
-            break
-        elif choice == "2":
-            print("Options menu...")
-            # TODO: Add options code here
-            break
-        elif choice == "3":
-            print("Exiting game...")
-            break
-        else:
-            print("Invalid input. Please enter a number between 1 and 3.")
+    if start_screen():
+        start_game()
 
 
 def start_game():
@@ -49,16 +25,17 @@ def start_game():
     rooms = load_rooms(game_data)
     objects = load_objects(game_data)
     current_room = rooms[game_data["Current Room"]]
+    inventory = []
 
     while True:
         if current_room.get_index() == 0:
-            main_room(current_room, rooms)
+            current_room = main_room(current_room, rooms, objects, inventory)
+
+        if current_room.get_index() == 1:
+            print("Next Room")
+
+        print("game exiting")
         break
-
-
-
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 if __name__ == "__main__":

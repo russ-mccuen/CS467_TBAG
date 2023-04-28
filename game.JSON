@@ -2,11 +2,11 @@
   "Rooms" : [
     {
       "index": 0,
-      "name":  "Home Base",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
+      "name":  "Main Room",
+      "short desc":  "Childhood bedroom",
+      "long desc":  "Long description of childhood bedroom",
       "is locked": false,
-      "feature one": "feature one description",
+      "feature one": "Desk in the middle of the room",
       "feature two": "feature two description",
       "is visible": false,
       "direction": "center"
@@ -19,7 +19,7 @@
       "is locked": false,
       "feature one": "feature one description",
       "feature two": "feature two description",
-    "is visible": true,
+    "is visible": false,
     "direction": "north"
     },
      {
@@ -30,7 +30,7 @@
       "is locked": true,
        "feature one": "feature one description",
        "feature two": "feature two description",
-       "is visible": true,
+       "is visible": false,
        "direction": "north east"
     },
      {

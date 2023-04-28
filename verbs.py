@@ -16,7 +16,6 @@ VERBS = {
 
 
 def parse_verb(verb):
-    verb = input("What do you want to do? ")
     for action, synonyms in VERBS.items():
         if verb in synonyms:
             print(f"You want to {action}.")

@@ -6,6 +6,9 @@ class GameObject:
         self.is_movable = is_movable
         self.items = []
 
+    def __repr__(self):
+        return f"This is the {self.name} room object"
+
     def get_name(self):
         return self.name
 
