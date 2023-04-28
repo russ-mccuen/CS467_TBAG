@@ -4,9 +4,9 @@ import time
 
 
 def main_room(homebase, rooms, objects, inventory):
+    available_nav = []
     clear_screen()
     newline()
-    available_nav = []
     print('', homebase.get_desc())
     describe_walls(rooms, available_nav)
     describe_features(objects)
@@ -50,7 +50,7 @@ def describe_walls(rooms, available_nav):
             print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
 
     if not visible_rooms:
-        print("Nothing ... on the walls")
+        print("As you look around at the walls you see no exits and no doors ... nothing")
 
 
 def navigate(desired_location, available_nav, rooms):

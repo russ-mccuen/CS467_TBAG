@@ -6,10 +6,19 @@ def menu():
     # Display game menu
     time.sleep(1.5)
     clear_screen()
-    print("Welcome to Adam and Russ' Awesome Text-Based Adventure Game!")
-    print("1. Start game")
-    print("2. Options")
-    print("3. Quit")
+    print(" Welcome to Adam and Russ' Awesome Text-Based Adventure Game!")
+    print(" 1. Start game")
+    print(" 2. Options")
+    print(" 3. Quit")
+
+
+def loading_screen():
+    # Display loading screen animation
+    print(" Loading game...")
+    for i in range(1, 11):
+        time.sleep(0.5)
+        print(" Loading" + "." * i)
+    print(" Game loaded!")
 
 
 def start_screen():

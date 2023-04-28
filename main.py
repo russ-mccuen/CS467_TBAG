@@ -3,25 +3,15 @@ from game_setup import load_game, load_rooms, load_objects
 from main_room import main_room
 from room_one import room_one
 from room_two import room_two
-from terminal import clear_screen, menu, start_screen
-
-
-def loading_screen():
-    # Display loading screen animation
-    print("Loading game...")
-    for i in range(1, 11):
-        time.sleep(0.5)
-        print("Loading" + "." * i)
-    print("Game loaded!")
+from terminal import clear_screen, menu, start_screen, loading_screen
 
 
 def main():
-    # Commenting out the loading screen for now. Will re implement when we have load options.
-    # loading_screen()
-    # menu()
-    # if start_screen():
-    #     start_game()
-    start_game()
+    clear_screen()
+    loading_screen()
+    menu()
+    if start_screen():
+        start_game()
 
 
 def start_game():
