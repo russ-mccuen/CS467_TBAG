@@ -1,4 +1,4 @@
-from language_parser import parse_input
+from language_parser import parse_input, describe_walls, describe_features, try_action
 from terminal import clear_screen, newline
 import time
 
@@ -6,6 +6,7 @@ import time
 def main_room(homebase, rooms, objects, inventory):
     available_nav = []
     available_objs = [item for item in objects if item.get_location() == 0]
+    object_names = [item.get_name().lower() for item in available_objs]
     clear_screen()
     newline()
     print('', homebase.get_desc())
@@ -34,29 +35,11 @@ def main_room(homebase, rooms, objects, inventory):
                     describe_exit()
                     return next_room
 
-            if action_type == "action":
-                try_action(option, objects, inventory)
-
-            # TODO if action_type = "action"
+            else:
+                try_action(available_nav, rooms, homebase, action_type, option, objects, object_names, inventory)
 
         else:
             print("Not a recognized command")
-
-
-def describe_walls(rooms, available_nav):
-    newline()
-    visible_rooms = 0
-    print(" When you look at the walls around you, you see: ")
-    newline()
-
-    for index, room in enumerate(rooms):
-        if room.is_visible():
-            visible_rooms += 1
-            available_nav.append(index)
-            print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
-
-    if not visible_rooms:
-        print(" As you look around at the walls you see no exits and no doors ... nothing")
 
 
 def navigate(desired_location, available_nav, rooms):
@@ -77,21 +60,7 @@ def approach_door(room):
         return room
 
 
-def describe_features(objects):
-    newline()
-    print(" Interactive Objects: ")
-    for index, feature in enumerate(objects):
-        print(f" Interaction Option ({index}) {feature.get_name()}")
-
-
 def describe_exit():
     clear_screen()
     print("As you leave the main room . . . description.")
     time.sleep(3)
-
-
-def try_action(item, objects, inventory):
-    print(item)
-    print(" here")
-    print(objects)
-

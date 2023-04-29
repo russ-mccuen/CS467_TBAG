@@ -1,3 +1,4 @@
+from terminal import newline
 # define possible directions to move
 DIRECTIONS = {
     "north": ["n", "north"],
@@ -42,7 +43,7 @@ def parse_input(user_input):
                 return navigate(verb_type, user_input[1])
 
             if verb_type == "action":
-                return verb_type, user_input[1]
+                return verb, user_input[1]
 
         return None
 
@@ -60,12 +61,12 @@ def parse_verb(verb):
         if verb in action or verb in synonyms:
 
             if verb == "go" or verb in VERBS["go"]:
-                return "go", "navigate"
+                return verb, "navigate"
 
-            if verb == 'examine' or verb in VERBS["examine"]:
-                return "examine", action
+            if verb == "look" or verb in VERBS["look"]:
+                return "look", "action"
 
-            return verb, "action"
+            return None
 
 
 def parse_direction(user_direction):
@@ -73,3 +74,47 @@ def parse_direction(user_direction):
         if user_direction in aliases:
             return direction
     return None
+
+
+def describe_walls(rooms, available_nav):
+    newline()
+    visible_rooms = 0
+    print(" When you look at the walls around you, you see: ")
+    newline()
+
+    for index, room in enumerate(rooms):
+        if room.is_visible():
+            visible_rooms += 1
+            available_nav.append(index)
+            print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
+
+    if not visible_rooms:
+        print(" As you look around at the walls you see no exits and no doors ... nothing")
+
+
+def describe_features(objects):
+    newline()
+    print(" Interactive Objects: ")
+    for index, feature in enumerate(objects):
+        print(f" Interaction Option:  {feature.get_name()}")
+
+
+def try_action(available_nav, rooms, room, action, item, objects, object_names, inventory):
+    match action:
+        case "look":
+            try_look(available_nav, rooms, room, item, objects, object_names, inventory)
+
+
+def try_look(available_nav, rooms, room, item, objects, object_names, inventory):
+    if item == "room":
+        print(room.get_desc())
+        describe_walls(rooms, available_nav)
+        describe_features(objects)
+
+    elif item not in object_names and item not in inventory:
+        print(" That object is not in this room or your inventory")
+
+    else:
+        for obj in objects:
+            if item == obj.get_name().lower():
+                print(obj.get_obj_description())
