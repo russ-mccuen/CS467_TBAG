@@ -41,6 +41,9 @@ def parse_input(user_input):
             if verb_type == "navigate":
                 return navigate(verb_type, user_input[1])
 
+            if verb_type == "action":
+                return verb_type, user_input[1]
+
         return None
 
 
@@ -55,8 +58,13 @@ def navigate(verb_type, desired_direction):
 def parse_verb(verb):
     for action, synonyms in VERBS.items():
         if verb in action or verb in synonyms:
+
             if verb == "go" or verb in VERBS["go"]:
-                return verb, "navigate"
+                return "go", "navigate"
+
+            if verb == 'examine' or verb in VERBS["examine"]:
+                return "examine", action
+
             return verb, "action"
 
 

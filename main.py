@@ -1,4 +1,3 @@
-import time
 from game_setup import load_game, load_rooms, load_objects
 from main_room import main_room
 from room_one import room_one
@@ -7,11 +6,12 @@ from terminal import clear_screen, menu, start_screen, loading_screen
 
 
 def main():
-    clear_screen()
-    loading_screen()
-    menu()
-    if start_screen():
-        start_game()
+    start_game()
+    # clear_screen()
+    # loading_screen()
+    # menu()
+    # if start_screen():
+    #     start_game()
 
 
 def start_game():

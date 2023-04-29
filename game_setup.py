@@ -1,5 +1,5 @@
 from Room import Room
-from objects import GameObject
+from objects import GameObject, Tablet
 import json
 
 
@@ -43,6 +43,9 @@ def load_objects(game_data):
         description = game_obj["description"]
         location = game_obj["location"]
         movable = game_obj["is movable"]
-        new_obj = GameObject(obj_name, description, location, movable)
+        if obj_name == "Tablet":
+            new_obj = Tablet(obj_name, description, location, movable)
+        else:
+            new_obj = GameObject(obj_name, description, location, movable)
         objects.append(new_obj)
     return objects

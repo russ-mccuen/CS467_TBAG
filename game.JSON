@@ -137,14 +137,14 @@
     },
 
     {
-      "object name": "tablet",
+      "object name": "Tablet",
       "description": "A tablet on the desk",
       "location": 0,
       "is movable": true
     },
 
     {
-      "object name": "letter",
+      "object name": "Letter",
       "description": "A letter on the desk",
       "location": 0,
       "is movable": true

@@ -5,17 +5,20 @@ import time
 
 def main_room(homebase, rooms, objects, inventory):
     available_nav = []
+    available_objs = [item for item in objects if item.get_location() == 0]
     clear_screen()
     newline()
     print('', homebase.get_desc())
     describe_walls(rooms, available_nav)
-    describe_features(objects)
+    describe_features(available_objs)
     homebase.set_visited_true()
     # describe_features(objects)
 
     while True:
         newline()
         user_input = input(" What would you like to do? ").lower().strip().split()
+        if len(user_input) == 0:
+            continue
 
         if user_input[0] == 'q':
             break
@@ -30,6 +33,9 @@ def main_room(homebase, rooms, objects, inventory):
                 if next_room is not None:
                     describe_exit()
                     return next_room
+
+            if action_type == "action":
+                try_action(option, objects, inventory)
 
             # TODO if action_type = "action"
 
@@ -50,7 +56,7 @@ def describe_walls(rooms, available_nav):
             print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
 
     if not visible_rooms:
-        print("As you look around at the walls you see no exits and no doors ... nothing")
+        print(" As you look around at the walls you see no exits and no doors ... nothing")
 
 
 def navigate(desired_location, available_nav, rooms):
@@ -75,8 +81,7 @@ def describe_features(objects):
     newline()
     print(" Interactive Objects: ")
     for index, feature in enumerate(objects):
-        if feature.get_location() == 0:
-            print(f" Interaction Option ({index}) {feature.get_name()}")
+        print(f" Interaction Option ({index}) {feature.get_name()}")
 
 
 def describe_exit():
@@ -85,4 +90,8 @@ def describe_exit():
     time.sleep(3)
 
 
+def try_action(item, objects, inventory):
+    print(item)
+    print(" here")
+    print(objects)
 

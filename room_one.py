@@ -13,6 +13,9 @@ def room_one(room, rooms, objects, inventory):
     while True:
         user_input = input(" What would you like to do? ").lower().strip().split()
 
+        if len(user_input) == 0:
+            continue
+
         if user_input[0] == 'q':
             break
 
