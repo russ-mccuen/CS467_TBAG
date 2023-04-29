@@ -1,8 +1,11 @@
-from language_parser import parse_input
+from language_parser import parse_input, try_action
 from terminal import clear_screen, newline
 
 
 def room_one(room, rooms, objects, inventory):
+    available_nav = []
+    available_objs = [item for item in objects if item.get_location() == 1]
+    object_names = [item.get_name().lower() for item in available_objs]
     clear_screen()
     newline()
     print('', room.get_desc())
@@ -28,6 +31,9 @@ def room_one(room, rooms, objects, inventory):
                 next_room = navigate(option, rooms)
                 if next_room is not None:
                     return next_room
+
+            else:
+                try_action(available_nav, rooms, room, action_type, option, objects, object_names, inventory)
 
 
 def navigate(desired_location, rooms):

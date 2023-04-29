@@ -95,11 +95,11 @@ def describe_walls(rooms, available_nav):
         print(" ... no exits and no doors ... you seem to be trapped.")
 
 
-def describe_features(objects):
+def describe_features(objects, room_num):
     newline()
     print(" Interactive Objects: ")
     for index, feature in enumerate(objects):
-        if feature.get_location() >= 0:
+        if feature.get_location() == room_num:
             print(f" Interaction Option:  {feature.get_name()}")
 
 
@@ -133,10 +133,10 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
     if item == "room":
         print(room.get_desc())
         describe_walls(rooms, available_nav)
-        describe_features(objects)
+        describe_features(objects, room.get_index())
 
     elif item == "inventory":
-        print("TODO need to implement inventory mechanic")
+        print(inventory)
 
     elif item not in object_names and item not in inventory:
         print(" That object is not in this room or your inventory")

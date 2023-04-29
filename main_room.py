@@ -11,7 +11,7 @@ def main_room(homebase, rooms, objects, inventory):
     newline()
     print('', homebase.get_desc())
     describe_walls(rooms, available_nav)
-    describe_features(available_objs)
+    describe_features(available_objs, homebase.get_index())
     homebase.set_visited_true()
     # describe_features(objects)
 
