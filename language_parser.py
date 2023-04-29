@@ -1,4 +1,4 @@
-from terminal import newline
+from terminal import newline, clear_screen
 # define possible directions to move
 DIRECTIONS = {
     "north": ["n", "north"],
@@ -69,6 +69,9 @@ def parse_verb(verb):
             if verb == "take" or verb in VERBS["take"]:
                 return "take", "action"
 
+            if verb == "use" or verb in VERBS["use"]:
+                return "use", "action"
+
             return None
 
 
@@ -110,6 +113,9 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
     if action == "take":
         try_take(item, objects, object_names, inventory)
 
+    if action == "use":
+        try_use(item, objects, object_names, inventory, rooms)
+
 
 def try_take(item, objects, object_names, inventory):
     if item not in object_names:
@@ -144,3 +150,39 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
         for obj in objects:
             if item == obj.get_name().lower():
                 print(obj.get_obj_description())
+
+
+def try_use(item, objects, object_names, inventory, rooms):
+    for obj in objects:
+        if item == obj.get_name().lower():
+            if item == "tablet":
+                use_tablet(obj, rooms)
+                break
+
+            if item == "tv":
+                print(" Implement tv use")
+                break
+
+            print(f"Can't use {item}")
+
+
+def use_tablet(obj, rooms):
+    clear_screen()
+    print(" You pick up the tablet.")
+    if obj.is_locked():
+        print(" You notice that the tablet is locked and is requesting a passcode.")
+    while True:
+        if obj.is_locked():
+            pin = input(" Please Enter Password or 'q' to cancel: ").lower()
+            if pin == 'q':
+                break
+            obj.unlock(pin)
+            if obj.is_locked() is False:
+                print(" UNLOCK SCREEN DETAILS")
+                print(obj.get_folder())
+                rooms[1].set_visible()
+                break
+        else:
+            print(obj.get_folder())
+            break
+

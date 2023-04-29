@@ -6,12 +6,11 @@ from terminal import clear_screen, menu, start_screen, loading_screen
 
 
 def main():
-    start_game()
-    # clear_screen()
-    # loading_screen()
-    # menu()
-    # if start_screen():
-    #     start_game()
+    clear_screen()
+    loading_screen()
+    menu()
+    if start_screen():
+        start_game()
 
 
 def start_game():

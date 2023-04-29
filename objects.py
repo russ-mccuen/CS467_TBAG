@@ -29,8 +29,8 @@ class GameObject:
 
 class Tablet(GameObject):
     def __init__(self, name, description, location, is_movable):
-        self.folder = {}
-        self.passcode = 0
+        self.folder = {"Room One:", "Look around the room. Something has changed."}
+        self.passcode = '0'
         self.locked = True
         super(Tablet, self).__init__(name, description, location, is_movable)
 
@@ -50,6 +50,9 @@ class Tablet(GameObject):
 
         else:
             print(f"Passcode: {pin} | Access Denied")
+
+    def is_locked(self):
+        return self.locked
 
 
 class TV(GameObject):

@@ -21,7 +21,7 @@
       "is locked": false,
       "feature one": "feature one description",
       "feature two": "feature two description",
-    "is visible": true,
+    "is visible": false,
     "direction": "north"
     },
      {
