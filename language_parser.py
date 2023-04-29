@@ -66,6 +66,9 @@ def parse_verb(verb):
             if verb == "look" or verb in VERBS["look"]:
                 return "look", "action"
 
+            if verb == "take" or verb in VERBS["take"]:
+                return "take", "action"
+
             return None
 
 
@@ -89,14 +92,15 @@ def describe_walls(rooms, available_nav):
             print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
 
     if not visible_rooms:
-        print(" As you look around at the walls you see no exits and no doors ... nothing")
+        print(" ... no exits and no doors ... you seem to be trapped.")
 
 
 def describe_features(objects):
     newline()
     print(" Interactive Objects: ")
     for index, feature in enumerate(objects):
-        print(f" Interaction Option:  {feature.get_name()}")
+        if feature.get_location() >= 0:
+            print(f" Interaction Option:  {feature.get_name()}")
 
 
 def try_action(available_nav, rooms, room, action, item, objects, object_names, inventory):
@@ -104,12 +108,35 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
         case "look":
             try_look(available_nav, rooms, room, item, objects, object_names, inventory)
 
+        case "take":
+            try_take(item, objects, object_names, inventory)
+
+
+def try_take(item, objects, object_names, inventory):
+    if item not in object_names:
+        print(f" You cannot take {item}")
+
+    for obj in objects:
+        obj_in_room = obj.get_name().lower()
+        movable = obj.is_movable()
+        if item == obj_in_room and movable:
+            inventory.append(obj)
+            obj.set_object_location(-1)
+            print(f" {item} is now in your inventory.")
+            break
+
+        if item == obj_in_room and not movable:
+            print(f" You cannot move the {item}.")
+
 
 def try_look(available_nav, rooms, room, item, objects, object_names, inventory):
     if item == "room":
         print(room.get_desc())
         describe_walls(rooms, available_nav)
         describe_features(objects)
+
+    elif item == "inventory":
+        print("TODO need to implement inventory mechanic")
 
     elif item not in object_names and item not in inventory:
         print(" That object is not in this room or your inventory")

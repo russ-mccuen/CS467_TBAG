@@ -3,7 +3,7 @@ class GameObject:
         self.name = name
         self.description = description
         self.location = location
-        self.is_movable = is_movable
+        self.movable = is_movable
 
     def __repr__(self):
         return f"This is the {self.name} room object"
@@ -24,7 +24,7 @@ class GameObject:
         self.location = location
 
     def is_movable(self):
-        return self.is_movable()
+        return self.movable
 
 
 class Tablet(GameObject):
