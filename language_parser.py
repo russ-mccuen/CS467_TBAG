@@ -104,12 +104,11 @@ def describe_features(objects, room_num):
 
 
 def try_action(available_nav, rooms, room, action, item, objects, object_names, inventory):
-    match action:
-        case "look":
-            try_look(available_nav, rooms, room, item, objects, object_names, inventory)
+    if action == "look":
+        try_look(available_nav, rooms, room, item, objects, object_names, inventory)
 
-        case "take":
-            try_take(item, objects, object_names, inventory)
+    if action == "take":
+        try_take(item, objects, object_names, inventory)
 
 
 def try_take(item, objects, object_names, inventory):
