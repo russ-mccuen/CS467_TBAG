@@ -24,7 +24,7 @@ def main_room(homebase, rooms, objects, inventory):
         if user_input[0] == 'q':
             break
 
-        parsed_input = parse_input(user_input)
+        parsed_input = parse_input(user_input, inventory)
 
         if parsed_input is not None:
             action_type, option = parsed_input
@@ -37,9 +37,6 @@ def main_room(homebase, rooms, objects, inventory):
 
             else:
                 try_action(available_nav, rooms, homebase, action_type, option, objects, object_names, inventory)
-
-        else:
-            print("Not a recognized command")
 
 
 def navigate(desired_location, available_nav, rooms):
