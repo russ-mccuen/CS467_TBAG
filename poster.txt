@@ -1,0 +1,21 @@
+The poster on the wall will be the second feature. At first it will only
+contain a background image. Then as you go to each room something new will
+appear on the poster. The poster will tell the story the character is going
+through in the game. For example, the first time you examine the poster can be
+something like:
+
+You look at the poster on the wall and notice it is kind of . . . boring. There
+ is some grass, a night sky, and a few stars. That's it.
+
+Then, after completing the first room, we can add something to the short
+description of the room:
+
+"and a poster, which looks different than before."
+
+Then, when you examine the poster.
+
+"You swear there are more stars than before. I now there is a building in the
+distance that appears to be a house."
+
+The poster will change throughout the game, and the visual changes described
+within it will help tell the story.
