@@ -124,7 +124,7 @@
   "Game Objects": [
     {
     "object name": "Desk",
-      "description": "A desk in the middle of the room",
+      "description": "On the desk you see the following items:\n\nAn older television. It is a TV/VCR combo. An old television that plays\nvideotapes. You know, it's how people watched movies in the '80s. They look\nlike big cassette tapes . . . you know, those things that . . . never mind.\n\nA tablet. At least there are some modern items on the desk.\n\nA transparent item that looks like a tablet but you are not quite sure what it\nis. It definitely looks more modern than the tablet.\n\nA note.",
     "location": 0,
       "is movable": false
     },
