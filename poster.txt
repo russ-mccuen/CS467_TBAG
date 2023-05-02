@@ -14,7 +14,7 @@ description of the room:
 
 Then, when you examine the poster.
 
-"You swear there are more stars than before. I now there is a building in the
+"You swear there are more stars than before. And now there is a building in the
 distance that appears to be a house."
 
 The poster will change throughout the game, and the visual changes described
