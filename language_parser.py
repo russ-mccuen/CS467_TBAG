@@ -157,6 +157,7 @@ def try_take(item, objects, object_names, inventory):
 
         if item == obj_in_room and not movable:
             print(f" You cannot move the {item}.")
+            break
 
 
 def try_drop(item, inventory, room):
