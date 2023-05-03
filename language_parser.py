@@ -83,6 +83,9 @@ def parse_verb(verb):
             if verb == "use" or verb in VERBS["use"]:
                 return "use", "action"
 
+            if verb == "drop" or verb in VERBS["drop"]:
+                return "drop", "action"
+
             return None
 
 
@@ -128,6 +131,9 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
     if action == "use":
         try_use(item, objects, object_names, inventory, rooms)
 
+    if action == "drop":
+        try_drop(item, inventory, room)
+
 
 def try_take(item, objects, object_names, inventory):
     if item not in object_names:
@@ -144,6 +150,17 @@ def try_take(item, objects, object_names, inventory):
 
         if item == obj_in_room and not movable:
             print(f" You cannot move the {item}.")
+
+
+def try_drop(item, inventory, room):
+    for inv_item in inventory:
+        if inv_item.get_name().lower() == item:
+            inv_item.set_object_location(room.get_index())
+            inventory.remove(inv_item)
+            print(f" You removed {item} from your inventory and is now in this room.")
+            return
+
+    print(f" You dont have {item} to drop.")
 
 
 def try_look(available_nav, rooms, room, item, objects, object_names, inventory):
