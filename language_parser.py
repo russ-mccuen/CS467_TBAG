@@ -31,9 +31,14 @@ def parse_input(user_input, inventory):
         if user_input[0] == 'inventory':
             print_inventory(inventory)
             return
-        if user_input[0] == 'help':
+        elif user_input[0] == 'help':
             print_help()
             return
+
+        elif user_input[0] == 'clear':
+            clear_screen()
+            return
+
 
     if length != 2:
         print(" Only two word commands are accepted.")
@@ -197,11 +202,19 @@ def try_use(item, objects, object_names, inventory, rooms):
         if item == obj.get_name().lower():
             if item == "tablet":
                 use_tablet(obj, rooms, objects)
-                break
+                return
 
-            if item == "tv":
+            elif item == "tv":
                 use_tv(obj)
-                break
+                return
+
+            elif item == "commodore":
+                use_commodore(obj)
+                return
+
+            elif item == "remote":
+                use_remote(obj)
+                return
 
             print(f"Can't use {item}")
 
@@ -252,6 +265,14 @@ def use_tv(tv):
         tv.turn_on()
     else:
         tv.turn_off()
+
+
+def use_commodore(pc):
+    print(" TODO: Implement Commodore Functionality.")
+
+
+def use_remote(remote):
+    print(" TODO: Implement Remote Functionality.")
 
 
 def print_inventory(inventory):
