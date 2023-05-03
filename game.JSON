@@ -124,7 +124,7 @@
   "Game Objects": [
     {
     "object name": "Desk",
-      "description": " On the desk you see the following items:\n\n",
+      "description": " Desk in main room",
     "location": 0,
       "is movable": false
     },
@@ -155,7 +155,27 @@
       "description": " \n A background image . . . ",
       "location": 0,
       "is movable": false
+    },
+    {
+      "object name": "Remote",
+      "description": " \n A remote control . . . ",
+      "location": 1,
+      "is movable": true
+    },
+
+     {
+      "object name": "Commodore",
+      "description": " \n A Commodore 64 . . . ",
+      "location": 1,
+      "is movable": false
+    },
+     {
+      "object name": "Desk",
+      "description": " \n A Desk in Room One.",
+      "location": 1,
+      "is movable": false
     }
+
 
     ],
   "Current Room": 0

@@ -153,8 +153,10 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
         describe_features(objects, room.get_index())
 
     elif item == "desk":
+        print(" On the desk you see: ")
         for obj in objects:
-            if obj.get_location() == room.get_index() and obj.get_name() != "Poster":
+            name = obj.get_name()
+            if obj.get_location() == room.get_index() and name != "Poster" and name != "Desk":
                 print(obj.get_obj_description())
 
     elif item == "inventory":

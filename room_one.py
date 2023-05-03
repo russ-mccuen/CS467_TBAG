@@ -1,4 +1,4 @@
-from language_parser import parse_input, try_action
+from language_parser import parse_input, try_action, describe_features
 from terminal import clear_screen, newline
 
 
@@ -10,8 +10,8 @@ def room_one(room, rooms, objects, inventory):
     newline()
     print('', room.get_desc())
     describe_walls()
+    describe_features(available_objs, room.get_index())
     room.set_visited_true()
-    # describe_features(objects)
 
     while True:
         user_input = input(" What would you like to do? ").lower().strip().split()

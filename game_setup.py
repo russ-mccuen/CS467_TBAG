@@ -52,6 +52,12 @@ def load_objects(game_data):
         elif obj_name == "TV":
             new_obj = TV(obj_name, description, location, movable)
 
+        elif obj_name == "Commodore":
+            new_obj = Commodore(obj_name, description, location, movable)
+
+        elif obj_name == "Remote":
+            new_obj = Remote(obj_name, description, location, movable)
+
         else:
             new_obj = GameObject(obj_name, description, location, movable)
         objects.append(new_obj)
