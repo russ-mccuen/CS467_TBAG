@@ -134,7 +134,7 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
         try_take(item, objects, object_names, inventory)
 
     if action == "use":
-        try_use(item, objects, object_names, inventory, rooms)
+        try_use(item, objects, object_names, inventory, rooms, room)
 
     if action == "drop":
         try_drop(item, inventory, room)
@@ -197,11 +197,11 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
                 print(obj.get_obj_description())
 
 
-def try_use(item, objects, object_names, inventory, rooms):
+def try_use(item, objects, object_names, inventory, rooms, room):
     for obj in objects:
-        if item == obj.get_name().lower():
+        if item == obj.get_name().lower() and (obj.get_location() == room.get_index() or obj.get_location() == -1):
             if item == "tablet":
-                use_tablet(obj, rooms, objects)
+                use_tablet(obj, rooms, objects, inventory)
                 return
 
             elif item == "tv":
@@ -216,10 +216,10 @@ def try_use(item, objects, object_names, inventory, rooms):
                 use_remote(obj)
                 return
 
-            print(f"Can't use {item}")
+    print(f" Can't use {item}.")
 
 
-def use_tablet(tablet, rooms, objects):
+def use_tablet(tablet, rooms, objects, inventory):
     if not tablet.is_locked():
         clear_screen()
     print(" \n You pick up the tablet.\n")
