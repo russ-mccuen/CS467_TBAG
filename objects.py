@@ -42,7 +42,7 @@ class TV(GameObject):
         super(TV, self).__init__(name, description, location, is_movable)
 
     def __repr__(self):
-        return "This is the TV object"
+        return " This is the TV object"
 
     def is_on(self):
         return self.on
@@ -69,10 +69,17 @@ class TV(GameObject):
 class Commodore(GameObject):
     def __init__(self, name, description, location, is_movable):
         super().__init__(name, description, location, is_movable)
-        self.is_on = False
+        self.on = False
+        self.solution = '0'
 
-    def turn_pc_on(self):
-        self.is_on = True
+    def __repr__(self):
+        return " This is the Commodore Object"
+
+    def turn_on(self):
+        self.on = True
+
+    def get_solution(self):
+        return self.solution
 
 
 # 8 Objects that the player can put in their inventory:

@@ -13,8 +13,8 @@ def room_one(room, rooms, objects, inventory):
     describe_features(available_objs, room.get_index())
 
     # This is for locking the main room. Try it out.
-    # if not room.already_visited():
-    #     rooms[0].lock_room()
+    if not room.already_visited():
+        rooms[0].lock_room()
 
     room.set_visited_true()
 

@@ -1,3 +1,5 @@
+import time
+
 from terminal import newline, clear_screen
 # define possible directions to move
 DIRECTIONS = {
@@ -209,7 +211,7 @@ def try_use(item, objects, object_names, inventory, rooms, room):
                 return
 
             elif item == "commodore":
-                use_commodore(obj)
+                use_commodore(obj, rooms[0])
                 return
 
             elif item == "remote":
@@ -267,8 +269,16 @@ def use_tv(tv):
         tv.turn_off()
 
 
-def use_commodore(pc):
-    print(" TODO: Implement Commodore Functionality.")
+def use_commodore(pc, mainroom):
+    clear_screen()
+    print("Commodore 64")
+    while True:
+        user_input = input("Some Game that unlocks the door (type 0 to win): ")
+        if user_input.lower() == 'q':
+            return
+        if user_input == pc.get_solution():
+            mainroom.unlock_room()
+            return
 
 
 def use_remote(remote):
@@ -288,7 +298,9 @@ def approach_door(room):
         return None
 
     else:
+        clear_screen()
         print(" You approach the door turn the handle and step into the room.")
+        time.sleep(3)
         return room
 
 
