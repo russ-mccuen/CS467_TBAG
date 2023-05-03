@@ -1,4 +1,4 @@
-from language_parser import parse_input, describe_walls, describe_features, try_action
+from language_parser import *
 from terminal import clear_screen, newline
 import time
 
@@ -45,16 +45,6 @@ def navigate(desired_location, available_nav, rooms):
         if door_index in available_nav:
             room = rooms[door_index]
             return approach_door(room)
-
-
-def approach_door(room):
-    if room.is_locked():
-        print(" You approach the door but as you turn the handle you realize it is locked.")
-        return None
-
-    else:
-        print(" You approach the door turn the handle and step into the room.")
-        return room
 
 
 def describe_exit():

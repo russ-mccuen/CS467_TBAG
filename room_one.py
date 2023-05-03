@@ -1,4 +1,4 @@
-from language_parser import parse_input, try_action, describe_features
+from language_parser import *
 from terminal import clear_screen, newline
 
 
@@ -11,6 +11,11 @@ def room_one(room, rooms, objects, inventory):
     print('', room.get_desc())
     describe_walls()
     describe_features(available_objs, room.get_index())
+
+    # This is for locking the main room. Try it out.
+    # if not room.already_visited():
+    #     rooms[0].lock_room()
+
     room.set_visited_true()
 
     while True:
@@ -40,7 +45,8 @@ def navigate(desired_location, rooms):
     if desired_location.isnumeric():
         door_index = int(desired_location)
         if door_index is 1:
-            return rooms[0]
+            room = rooms[0]
+            return approach_door(room)
         else:
             print("That option does not exist.")
 
