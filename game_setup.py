@@ -1,5 +1,5 @@
 from Room import Room
-from objects import GameObject, Tablet, Letter, TV
+from objects import *
 import json
 
 

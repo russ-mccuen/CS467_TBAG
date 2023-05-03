@@ -8,6 +8,12 @@ class GameObject:
     def __repr__(self):
         return f"This is the {self.name} room object"
 
+    def set_description(self, description):
+        self.description = description
+
+    def get_description(self):
+        return self.description
+
     def get_name(self):
         return self.name
 

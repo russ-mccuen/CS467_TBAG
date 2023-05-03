@@ -96,7 +96,6 @@ def parse_direction(user_direction):
 def describe_walls(rooms, available_nav):
     newline()
     visible_rooms = 0
-    print(" When you look at the walls around you, you see: ")
     newline()
 
     for index, room in enumerate(rooms):
@@ -106,7 +105,9 @@ def describe_walls(rooms, available_nav):
             print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
 
     if not visible_rooms:
-        print(" ... no exits and no doors ... you seem to be trapped.")
+        print(" Except . . . there is no door to the room. Actually, you can not see any way of either entering or "
+              "exiting the room.\n There are not even any windows. You know you have a window in your room.\n "
+              "At least you think you do.")
 
 
 def describe_features(objects, room_num):
@@ -153,14 +154,18 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
 
     elif item == "desk":
         for obj in objects:
-            if obj.get_location() == room.get_index():
+            if obj.get_location() == room.get_index() and obj.get_name() != "Poster":
                 print(obj.get_obj_description())
 
     elif item == "inventory":
         print_inventory(inventory)
 
-    elif item not in object_names and item not in inventory:
-        print(" That object is not in this room or your inventory")
+    elif item not in object_names:
+        for inv_item in inventory:
+            if item == inv_item.get_name().lower():
+                print(inv_item.get_obj_description())
+                return
+        print(f" {item} not in your inventory nor this room.")
 
     else:
         for obj in objects:
@@ -172,7 +177,7 @@ def try_use(item, objects, object_names, inventory, rooms):
     for obj in objects:
         if item == obj.get_name().lower():
             if item == "tablet":
-                use_tablet(obj, rooms)
+                use_tablet(obj, rooms, objects)
                 break
 
             if item == "tv":
@@ -182,7 +187,7 @@ def try_use(item, objects, object_names, inventory, rooms):
             print(f"Can't use {item}")
 
 
-def use_tablet(tablet, rooms):
+def use_tablet(tablet, rooms, objects):
     if not tablet.is_locked():
         clear_screen()
     print(" \n You pick up the tablet.\n")
@@ -198,10 +203,29 @@ def use_tablet(tablet, rooms):
                 print(" UNLOCK SCREEN DETAILS")
                 print(tablet.get_folder())
                 rooms[1].set_visible()
+                update_poster(tablet, objects)
+                update_room_desc(rooms)
                 break
         else:
             print(tablet.get_folder())
             break
+
+
+def update_poster(item, objects):
+    for obj in objects:
+        if obj.get_name() == 'Poster':
+            poster = obj
+
+            if item.get_name() == "Tablet":
+                description = poster.get_description() + "A new detail"
+                poster.set_description(description)
+                break
+
+
+def update_room_desc(rooms):
+    description = rooms[0].get_long_desc() + "\n\n Wait . . . something is different about the poster. And there " \
+                                             "appears to be a new door. \n"
+    rooms[0].set_long_desc(description)
 
 
 def use_tv(tv):

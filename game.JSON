@@ -4,8 +4,8 @@
       "index": 0,
       "name":  "Main Room",
       "door desc": "",
-      "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n\n There are posters on the wall.\n\n There is a desk against the wall with a few items on it.\n\n There is no door and no windows.",
-      "long desc":  " You see a room that looks like the room you usually sleep in. Against the wall\n there is a desk. There are posters on the wall, but they are posters you had on\n your wall as a child. At least a few of them are. You think.\n\n You can see there are a few items on the desk.\n\n There is no door to the room. Actually, you can not see any way of either\n entering or exiting the room. There are not even any windows. You know you have\n a window in your room. At least you think you do.\n\n There is nothing notable in the rest of the room.",
+      "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n There are posters on the wall.\n There is a desk against the wall with a few items on it.",
+      "long desc":  " You see a room that looks like the room you usually sleep in. Against the wall\n there is a desk. There are posters on the wall, but they are posters you had on\n your wall as a child. At least a few of them are. You think.\n\n You can see there are a few items on the desk.\n There is nothing notable in the rest of the room.",
       "is locked": false,
       "feature one": "Desk in the middle of the room",
       "feature two": "feature two description",
@@ -131,23 +131,30 @@
 
     {
     "object name": "TV",
-      "description": " An older television. It is a TV/VCR combo. An old television that plays\n videotapes. You know, it's how people watched movies in the '80s. They look\n like big cassette tapes . . . you know, those things that . . . never mind.\n\n",
+      "description": " \n An older television. It is a TV/VCR combo. An old television that plays\n videotapes. You know, it's how people watched movies in the '80s. They look\n like big cassette tapes . . . you know, those things that . . . never mind.\n\n",
     "location": 0,
       "is movable": false
     },
 
     {
       "object name": "Tablet",
-      "description": " A transparent item that looks like a tablet but you are not quite sure what it\n is. It definitely looks more modern than the tv.\n\n",
+      "description": " \n A transparent item that looks like a tablet but you are not quite sure what it\n is. It definitely looks more modern than the tv.\n\n",
       "location": 0,
       "is movable": true
     },
 
     {
       "object name": "Letter",
-      "description": " A letter written in your handwriting . . . ",
+      "description": " \n A letter written in your handwriting . . . ",
       "location": 0,
       "is movable": true
+    },
+
+    {
+      "object name": "Poster",
+      "description": " \n A background image . . . ",
+      "location": 0,
+      "is movable": false
     }
 
     ],
