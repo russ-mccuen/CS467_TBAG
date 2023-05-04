@@ -1,0 +1,14 @@
+The mall directory is a large, freestanding, colorful display, with a metal
+frame and a large glass front. Behind the glass are several panels of colorful
+maps and directories, each with a different section of the mall.
+
+The maps are laid out in a grid, with each store marked with its name and
+location. They are color-coded, with each section of the mall represented by a
+different color. The directory is well-organized and easy to read, with clear
+labels and a simple, straightforward layout.
+
+You see bold lettering that reads, "You are here" and a red dot that places you
+in the middle of the food court. You notice that the stores all have
+numbers and letters that denote their places in the mall. Food court
+eateries all start with "FC", and you notice that the pizza place occupies
+location FC 15. For some reason you think this is important.
