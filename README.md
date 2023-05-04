@@ -55,8 +55,10 @@ Once you are inside this room, we have only currently implemented the mechanics,
    1. This puts the remote in your inventory. You can look in your inventory at any time by typing 'inventory'
 4. 'use commodore'
    1. Type `0` to win the game. The game is in progress. 
-5. `look room`
-6. `go 1`
+5. `q`
+   1. This will exit the commodore interface.
+6. `look room`
+7. `go 1`
    1. Exists back to the main room we started, if you forgot the remote, the game will tell you. 
 ---
 ## Walk Through: Back in Main Room
@@ -72,13 +74,18 @@ With your remote in hand you can unlock the next level by doing the following:
       2. `-`
       3. `q`
 2. `+`
-   1. Increasing the channel will show a new code on the tv. Note this code. 
+   1. Increasing the channel will show a new code on the tv `UHF-74`. Note this code. 
+   2. You can try increasing the channel, but those will not be available until other puzzles are solved.
 3. `q`
    1. This leaves the use remote interface.
-4. `look room`
+4. `use tablet`
+   1. type `UHF-74` which was the code from the channel you unlocked with the remote.
+5. `q`
+   1. Exits tablet interface. 
+6. `look room`
    1. Notice that there is now a new navigation option. 
    2. `examine poster` will also show a change in the poster. 
-5. `go 2`
+7. `go 2`
 ---
 ##Walk Through: Room Two
 This is the end of the tutorial. During anytime, you can experiment with the commands. For example try to `take tv` or drop something in your inventory with the command `drop` + the name of the item in your inventory. 
