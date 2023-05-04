@@ -216,7 +216,7 @@ def try_use(item, objects, object_names, inventory, rooms, room):
                 return
 
             elif item == "remote":
-                use_remote(obj)
+                use_remote(obj, objects)
                 return
 
     print(f" Can't use {item}.")
@@ -266,6 +266,7 @@ def update_room_desc(rooms):
 def use_tv(tv):
     if not tv.is_on():
         tv.turn_on()
+
     else:
         tv.turn_off()
 
@@ -282,8 +283,34 @@ def use_commodore(pc, mainroom):
             return
 
 
-def use_remote(remote):
-    print(" TODO: Implement Remote Functionality.")
+def use_remote(remote, objects):
+    channel = 0
+    for tv in objects:
+        if tv.get_name().lower() == "tv":
+            if not tv.is_on():
+                print(" You notice the tv is off. You press the power button on the remote.")
+                tv.turn_on()
+            else:
+                print(" You notice the tv is already on.")
+                tv.display_channel()
+
+            while True:
+                user_channel = input(" \n USING REMOTE: Type + or - to change channel or q to quit: ").lower()
+                if user_channel == "q":
+                    break
+
+                if user_channel == "+":
+                    channel += 1
+                    change_channel(channel, tv)
+
+                if user_channel == "-":
+                    channel -= 1
+                    change_channel(channel, tv)
+
+
+def change_channel(channel, tv):
+    print(" You hear a click as you change the channel.", channel)
+    tv.turn_channel(channel)
 
 
 def print_inventory(inventory):

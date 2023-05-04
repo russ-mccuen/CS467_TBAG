@@ -36,7 +36,7 @@ def load_rooms(game_data):
     return rooms
 
 
-def load_objects(game_data):
+def load_objects(game_data, inventory):
     objects = []
     for game_obj in game_data["Game Objects"]:
         obj_name = game_obj["object name"]
@@ -61,4 +61,6 @@ def load_objects(game_data):
         else:
             new_obj = GameObject(obj_name, description, location, movable)
         objects.append(new_obj)
+        if location == -1:
+            inventory.append(new_obj)
     return objects

@@ -36,7 +36,8 @@ class GameObject:
 class TV(GameObject):
     def __init__(self, name, description, location, is_movable):
         self.on = False
-        self.channels = ["\n You see static with UHF-73 in green at the top right of the screen.\n"]
+        self.channels = ["\n You see static with UHF-73 in green at the top right of the screen.\n",
+                         "\n You see [TODO: Provide Description] the code UHF-74 at the top right of screen."]
         self.vcr = []
         self.current_channel = 0
         super(TV, self).__init__(name, description, location, is_movable)
@@ -49,7 +50,7 @@ class TV(GameObject):
 
     def turn_on(self):
         print(" \n You turn on the tv and hear a pop as the screen comes to life.")
-        print(self.channels[self.current_channel])
+        self.display_channel()
         self.on = True
 
     def turn_off(self):
@@ -58,9 +59,16 @@ class TV(GameObject):
 
     def turn_channel(self, index):
         try:
-            self.current_channel = self.channels[index]
+            channel = self.channels[index]
+            self.current_channel = index
+            self.display_channel()
+            return True
         except IndexError:
-            print(" \n That channel is not available with your current subscription plan.\n")
+            print(f" \n Channel {index} is not available with your current subscription plan.\n")
+            return False
+
+    def display_channel(self):
+        print(self.channels[self.current_channel])
 
     def add_channel(self, channel):
         self.channels.append(channel)

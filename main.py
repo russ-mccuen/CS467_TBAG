@@ -15,11 +15,11 @@ def main():
 
 
 def start_game():
+    inventory = []
     game_data = load_game("game.Json")
     rooms = load_rooms(game_data)
-    objects = load_objects(game_data)
+    objects = load_objects(game_data, inventory)
     current_room = rooms[game_data["Current Room"]]
-    inventory = []
 
     while current_room is not None:
         if current_room.get_index() == 0:
