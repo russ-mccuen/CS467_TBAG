@@ -15,7 +15,7 @@ DIRECTIONS = {
 VERBS = {
     "go": ["move", "walk", "run", "travel"],
     "take": ["get", "grab", "pick up"],
-    "drop": ["put down", "release"],
+    "drop": ["put-down", "release"],
     "look": ["examine", "inspect"],
     "hit": ["attack", "strike", "punch"],
     "pull": ["drag", "tug"],
@@ -40,7 +40,6 @@ def parse_input(user_input, inventory):
         elif user_input[0] == 'clear':
             clear_screen()
             return
-
 
     if length != 2:
         print(" Only two word commands are accepted.")
@@ -122,10 +121,10 @@ def describe_walls(rooms, available_nav):
 
 def describe_features(objects, room_num):
     newline()
-    print(" Interactive Objects: ")
-    for index, feature in enumerate(objects):
-        if feature.get_location() == room_num:
-            print(f" Interaction Option:  {feature.get_name()}")
+    print(" Room Features: ")
+    for index, obj in enumerate(objects):
+        if obj.get_location() == room_num and not obj.is_movable():
+            print(f" \n Feature:  {obj.get_name()}")
 
 
 def try_action(available_nav, rooms, room, action, item, objects, object_names, inventory):
@@ -172,18 +171,17 @@ def try_drop(item, inventory, room):
 
 
 def try_look(available_nav, rooms, room, item, objects, object_names, inventory):
-    clear_screen()
     if item == "room":
         print(room.get_long_desc())
         describe_walls(rooms, available_nav)
         describe_features(objects, room.get_index())
 
     elif item == "desk":
-        print(" On the desk you see: ")
+        print(" \n On the desk you see: \n")
         for obj in objects:
             name = obj.get_name()
             if obj.get_location() == room.get_index() and name != "Poster" and name != "Desk":
-                print(obj.get_obj_description())
+                print('', obj.get_name())
 
     elif item == "inventory":
         print_inventory(inventory)
@@ -217,7 +215,7 @@ def try_use(item, objects, object_names, inventory, rooms, room):
                 return
 
             elif item == "remote":
-                use_remote(obj, objects)
+                use_remote(obj, objects, room)
                 return
 
     print(f" Can't use {item}.")
@@ -236,7 +234,7 @@ def use_tablet(tablet, rooms, objects, inventory):
         if tablet.is_locked():
             pin = input(" Please Enter Password or 'q' to cancel: ")
             if pin.lower() == 'q':
-                print(" \n You put the tablet away.")
+                print(" \n  You put the tablet away.")
                 time.sleep(2)
                 break
             tablet.unlock(pin)
@@ -309,16 +307,27 @@ def use_commodore(pc, mainroom):
     clear_screen()
     print("Commodore 64")
     while True:
-        user_input = input("Some Game that unlocks the door (type 0 to win): ")
+        user_input = input("Some Game that unlocks the door (type 0 to win) or q to quit: ")
         if user_input.lower() == 'q':
             return
         if user_input == pc.get_solution():
             mainroom.unlock_room()
-            print(" You won! After all these years! Type q to quit game. \n")
-            print(" You hear a loud click behind you.")
+            if not pc.get_game_won():
+                print(" \n You won! After all these years! Type q to quit game. \n")
+                print(" \n You hear a loud click behind you.\n")
+                pc.set_game_won()
+                pc.set_total_won()
+            else:
+                print(" You already beat this game.")
+                pc.set_total_won()
+                pc.get_games_won()
 
 
-def use_remote(remote, objects):
+def use_remote(remote, objects, room):
+    room_index = room.get_index()
+    if room_index != 0:
+        print(" You mash the buttons on the remote but it does not seem to do anything.")
+        return
     channel = 0
     for tv in objects:
         if tv.get_name().lower() == "tv":

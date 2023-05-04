@@ -82,6 +82,8 @@ class Commodore(GameObject):
         super().__init__(name, description, location, is_movable)
         self.on = False
         self.solution = '0'
+        self.game_won = False
+        self.total_won = 0
 
     def __repr__(self):
         return " This is the Commodore Object"
@@ -91,6 +93,18 @@ class Commodore(GameObject):
 
     def get_solution(self):
         return self.solution
+
+    def get_game_won(self):
+        return self.game_won
+
+    def set_game_won(self):
+        self.game_won = True
+
+    def set_total_won(self):
+        self.total_won += 1
+
+    def get_games_won(self):
+        print(f" You won {self.total_won} times.")
 
 
 # 8 Objects that the player can put in their inventory:
