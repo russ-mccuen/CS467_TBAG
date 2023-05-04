@@ -26,7 +26,8 @@ The available verbs and their synonyms currently include the following:
 4. look or [examine, inspect]
 5. use or [activate, operate]
 
-##Walk Through Main Room Example
+---
+##Walk Through: Main Room
 Once you run the game you will be given the description of the room with feature descriptions, and you will be given a prompt:
 </br>
 `What would you like to do? `
@@ -41,8 +42,8 @@ Try using some commands listed above such as `examine poster`. But to get throug
    1. If you looked at the poster before this step `examine poster` will reveal a change, but it is currently not required to exit the room.
 4. `go 1`
    1. This will take you out of the main room and into the room that was unlocked by the tablet. 
-
-##Walk Through Room One Example
+---
+##Walk Through: Room One
 Once you are inside this room, we have only currently implemented the mechanics, so do the following:
 1. `go 1`
    1. You will notice the room is locked. 
@@ -57,8 +58,8 @@ Once you are inside this room, we have only currently implemented the mechanics,
 5. `look room`
 6. `go 1`
    1. Exists back to the main room we started, if you forgot the remote, the game will tell you. 
-
-## Walk through Back in Main Room Example
+---
+## Walk Through: Back in Main Room
 Now that you are back in the main room, you should have your remote. Type `inventory` to make sure. If it is not in your inventory do the following:
 1. `go 1`
 2. `grab remote`
@@ -78,7 +79,8 @@ With your remote in hand you can unlock the next level by doing the following:
    1. Notice that there is now a new navigation option. 
    2. `examine poster` will also show a change in the poster. 
 5. `go 2`
-
+---
+##Walk Through: Room Two
 This is the end of the tutorial. During anytime, you can experiment with the commands. For example try to `take tv` or drop something in your inventory with the command `drop` + the name of the item in your inventory. 
 
 
