@@ -1,0 +1,73 @@
+This is the template for all the rooms. It just includes brief descriptions to
+allow it to be looked over, and if we agree we can move on to more in-depth
+descriptions.
+
+Main room:
+- timeline -> present
+- setting -> bedroom
+- features -> desk and poster
+- object(s) -> tablet
+- poster item -> N/A, original room
+
+Room one:
+- timeline -> 1980s
+- setting -> bedroom (childhood)
+- features -> computer and television
+- object(s) -> remote
+- poster item -> DeLorean
+
+Room two:
+- timeline -> 1970s
+- setting -> disco
+- features -> dance floor and disco ball
+- object(s) -> blacklight
+- poster item -> disco ball
+
+Room three:
+- timeline -> 1960s
+- setting -> Woodstock
+- features -> stage and group of people dancing
+- object(s) -> Woodstock flyer
+- poster item -> peace sign
+
+Room four:
+- timeline -> 1990s
+- setting -> shopping mall food court
+- features -> mall directory and pizza place
+- object(s) -> pager
+- poster item -> compact disc
+
+Room five:
+- timeline -> 2000s
+- setting -> living room
+- features -> television and refrigerator
+- object(s) -> flip phone
+- poster item -> World Trade Centers
+
+Room six:
+- timeline -> 2076
+- setting -> Washington DC
+- features -> Washington Monument and reflecting pool
+- object(s) -> United States of China YuanDollar coin
+- poster item -> US/Chinese combo flag
+
+Room seven:
+- timeline -> 1950
+- setting -> diner
+- features -> jukebox and menu
+- object(s) -> baseball card
+- poster item -> vintage car
+
+Room eight:
+- timeline -> 2500
+- setting -> Base on Mars
+- features -> Earth (as viewed from another planet) and Mars landscape
+- object(s) -> None
+- poster item -> red planet in sky
+
+Final room:
+- timeline -> future, unknown
+- setting -> levitating bubble
+- features -> orb floating in front of you and door changing colors and shapes
+- object(s) -> None
+- poster item -> depends on final choice made
