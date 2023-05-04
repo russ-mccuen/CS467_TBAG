@@ -16,7 +16,7 @@ def room_two(room, rooms, objects, inventory):
         if user_input[0] == 'q':
             break
 
-        parsed_input = parse_input(user_input)
+        parsed_input = parse_input(user_input, inventory)
 
         if parsed_input is not None:
             action_type, option = parsed_input

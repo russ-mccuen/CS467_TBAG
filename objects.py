@@ -1,3 +1,6 @@
+import time
+
+
 class GameObject:
     def __init__(self, name, description, location,  is_movable):
         self.name = name
@@ -100,7 +103,7 @@ class Letter(GameObject):
 # Object 2
 class Tablet(GameObject):
     def __init__(self, name, description, location, is_movable):
-        self.folder = {"Room One:", "Look around the room. Something has changed."}
+        self.folder = ["Info 1: Look around the room. Something has changed."]
         self.passcode = 'UHF-73'
         self.locked = True
         super(Tablet, self).__init__(name, description, location, is_movable)
@@ -118,6 +121,7 @@ class Tablet(GameObject):
         if pin == self.passcode:
             self.locked = False
             print(" Access Granted")
+            time.sleep(2)
 
         else:
             print(f" Passcode: {pin} | Access Denied")
@@ -125,8 +129,8 @@ class Tablet(GameObject):
     def is_locked(self):
         return self.locked
 
-    def drop_tablet(self):
-        pass
+    def add_to_folder(self, data):
+        self.folder.append(data)
 
 
 # Object 3

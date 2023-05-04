@@ -35,6 +35,7 @@ def room_one(room, rooms, objects, inventory):
             if action_type == "navigate":
                 next_room = navigate(option, rooms)
                 if next_room is not None:
+                    describe_exit(inventory)
                     return next_room
 
             else:
@@ -56,3 +57,13 @@ def describe_walls():
     print(" You are also aware of the door that will lead you back to the main room: ")
     print(f" Navigation Option (1) :  The door heading back to the main room that is located south.")
     newline()
+
+
+def describe_exit(inventory):
+    inv_names = [obj.get_name().lower() for obj in inventory]
+    clear_screen()
+    if "remote" not in inv_names:
+        print("As you leave the room you have the feeling that you may have forgotten something.")
+    else:
+        print("As you leave the main room . . . description.")
+    time.sleep(3)

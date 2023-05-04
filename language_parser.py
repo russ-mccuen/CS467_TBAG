@@ -172,6 +172,7 @@ def try_drop(item, inventory, room):
 
 
 def try_look(available_nav, rooms, room, item, objects, object_names, inventory):
+    clear_screen()
     if item == "room":
         print(room.get_long_desc())
         describe_walls(rooms, available_nav)
@@ -223,36 +224,69 @@ def try_use(item, objects, object_names, inventory, rooms, room):
 
 
 def use_tablet(tablet, rooms, objects, inventory):
-    if not tablet.is_locked():
-        clear_screen()
+    clear_screen()
     print(" \n You pick up the tablet.\n")
     if tablet.is_locked():
         print(" You notice that the tablet is locked and is requesting a passcode.\n")
+    time.sleep(3)
+    clear_screen()
+    print(" \n USING TABLET \n")
+    available_info = tablet.get_folder()
     while True:
         if tablet.is_locked():
             pin = input(" Please Enter Password or 'q' to cancel: ")
             if pin.lower() == 'q':
+                print(" \n You put the tablet away.")
+                time.sleep(2)
                 break
             tablet.unlock(pin)
             if tablet.is_locked() is False:
-                print(" UNLOCK SCREEN DETAILS")
-                print(tablet.get_folder())
+                poster_detail = " detail from first puzzle."
+                update_poster(tablet, objects, poster_detail)
+
+                clear_screen()
+                print(" You hear something shift in the room. You unlocked the tablet. On it you see information.")
+                time.sleep(3)
                 rooms[1].set_visible()
-                update_poster(tablet, objects)
                 update_room_desc(rooms)
-                break
-        else:
-            print(tablet.get_folder())
+            else:
+                continue
+
+        clear_screen()
+        print(" USING TABLET\n")
+        print_tab_info(tablet)
+
+        user_input = input(" \n Enter a new pin to access more or q to quit. ")
+        if user_input == 'q':
+            print("You put the tablet away.")
+            time.sleep(2)
             break
+        if user_input == "UHF-74":
+            description = "Info 2: Room 2 unlocked"
+            if description not in available_info:
+                poster_detail = " detail from puzzle 2"
+                update_poster(tablet, objects, poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[2].set_visible()
+                clear_screen()
+                print(" \n You unlocked more information.")
+                time.sleep(2)
+                continue
 
 
-def update_poster(item, objects):
+def print_tab_info(tablet):
+    for info in tablet.get_folder():
+        print("", info)
+
+
+def update_poster(item, objects, detail):
     for obj in objects:
         if obj.get_name() == 'Poster':
             poster = obj
 
             if item.get_name() == "Tablet":
-                description = poster.get_description() + "A new detail"
+                description = poster.get_description() + detail
                 poster.set_description(description)
                 break
 
@@ -280,7 +314,8 @@ def use_commodore(pc, mainroom):
             return
         if user_input == pc.get_solution():
             mainroom.unlock_room()
-            return
+            print(" You won! After all these years! Type q to quit game. \n")
+            print(" You hear a loud click behind you.")
 
 
 def use_remote(remote, objects):
