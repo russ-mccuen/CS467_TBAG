@@ -48,12 +48,12 @@ Once you are inside this room, we have only currently implemented the mechanics,
 1. `go 1`
    1. You will notice the room is locked. 
    
-2. 'examine desk'
+2. `examine desk`
    1. You will notice a remote control object. You will need this.
    
-3. 'take remote'
-   1. This puts the remote in your inventory. You can look in your inventory at any time by typing 'inventory'
-4. 'use commodore'
+3. `take remote`
+   1. This puts the remote in your inventory. You can look in your inventory at any time by typing `inventory`
+4. `use commodore`
    1. Type `0` to win the game. The game is in progress. 
 5. `q`
    1. This will exit the commodore interface.
