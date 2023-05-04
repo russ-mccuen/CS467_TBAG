@@ -14,7 +14,7 @@ DIRECTIONS = {
 # define possible verbs
 VERBS = {
     "go": ["move", "walk", "run", "travel"],
-    "take": ["get", "grab", "pick up"],
+    "take": ["get", "grab", "pick-up"],
     "drop": ["put-down", "release"],
     "look": ["examine", "inspect"],
     "hit": ["attack", "strike", "punch"],
