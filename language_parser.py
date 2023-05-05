@@ -105,7 +105,6 @@ def parse_direction(user_direction):
 def describe_walls(rooms, available_nav):
     newline()
     visible_rooms = 0
-    newline()
 
     for index, room in enumerate(rooms):
         if room.is_visible():
@@ -135,7 +134,7 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
         try_take(item, objects, object_names, inventory)
 
     if action == "use":
-        try_use(item, objects, object_names, inventory, rooms, room)
+        try_use(item, objects, rooms, room)
 
     if action == "drop":
         try_drop(item, inventory, room)
@@ -199,11 +198,11 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
                 print(obj.get_obj_description())
 
 
-def try_use(item, objects, object_names, inventory, rooms, room):
+def try_use(item, objects, rooms, room):
     for obj in objects:
         if item == obj.get_name().lower() and (obj.get_location() == room.get_index() or obj.get_location() == -1):
             if item == "tablet":
-                use_tablet(obj, rooms, objects, inventory)
+                use_tablet(obj, rooms, objects)
                 return
 
             elif item == "tv":
@@ -215,13 +214,19 @@ def try_use(item, objects, object_names, inventory, rooms, room):
                 return
 
             elif item == "remote":
-                use_remote(obj, objects, room)
+                use_remote(objects, room)
                 return
 
     print(f" Can't use {item}.")
 
 
-def use_tablet(tablet, rooms, objects, inventory):
+def get_poster(objects):
+    for obj in objects:
+        if obj.get_name() == 'Poster':
+            return obj
+
+
+def use_tablet(tablet, rooms, objects):
     clear_screen()
     print(" \n You pick up the tablet.\n")
     if tablet.is_locked():
@@ -230,6 +235,8 @@ def use_tablet(tablet, rooms, objects, inventory):
     clear_screen()
     print(" \n USING TABLET \n")
     available_info = tablet.get_folder()
+    poster = get_poster(objects)
+
     while True:
         if tablet.is_locked():
             pin = input(" Please Enter Password or 'q' to cancel: ")
@@ -239,8 +246,8 @@ def use_tablet(tablet, rooms, objects, inventory):
                 break
             tablet.unlock(pin)
             if tablet.is_locked() is False:
-                poster_detail = " detail from first puzzle."
-                update_poster(tablet, objects, poster_detail)
+                poster_detail = " A poster with a thin black frame."
+                poster.set_description(poster_detail)
 
                 clear_screen()
                 print(" You hear something shift in the room. You unlocked the tablet. On it you see information.")
@@ -259,11 +266,13 @@ def use_tablet(tablet, rooms, objects, inventory):
             print("You put the tablet away.")
             time.sleep(2)
             break
+
         if user_input == "UHF-74":
             description = "Info 2: Room 2 unlocked"
             if description not in available_info:
-                poster_detail = " detail from puzzle 2"
-                update_poster(tablet, objects, poster_detail)
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " A shiny Delorean."
+                poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
                 rooms[2].set_visible()
@@ -276,17 +285,6 @@ def use_tablet(tablet, rooms, objects, inventory):
 def print_tab_info(tablet):
     for info in tablet.get_folder():
         print("", info)
-
-
-def update_poster(item, objects, detail):
-    for obj in objects:
-        if obj.get_name() == 'Poster':
-            poster = obj
-
-            if item.get_name() == "Tablet":
-                description = poster.get_description() + detail
-                poster.set_description(description)
-                break
 
 
 def update_room_desc(rooms):
@@ -323,7 +321,7 @@ def use_commodore(pc, mainroom):
                 pc.get_games_won()
 
 
-def use_remote(remote, objects, room):
+def use_remote(objects, room):
     room_index = room.get_index()
     if room_index != 0:
         print(" You mash the buttons on the remote but it does not seem to do anything.")

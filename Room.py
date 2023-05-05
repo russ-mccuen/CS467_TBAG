@@ -1,6 +1,6 @@
 # Room Base Class
 class Room:
-    def __init__(self, index, name, doorDesc, short_desc, long_desc, is_locked, feature_1, feature_2, is_visible, direction):
+    def __init__(self, index, name, doorDesc, short_desc, long_desc, is_locked, is_visible, direction):
         self.index = index
         self.name = name
         self.doorDesc= doorDesc
@@ -9,8 +9,6 @@ class Room:
         self.objects = []
         self.features = []
         self.locked = is_locked
-        self.feature_1 = feature_1
-        self.feature_2 = feature_2
         self.visible = is_visible
         self.direction = direction
         self.visited = False
@@ -32,12 +30,6 @@ class Room:
 
     def get_room_objects(self):
         return self.objects
-
-    def get_feature_one(self):
-        return self.feature_1
-
-    def get_feature_two(self):
-        return self.feature_2
 
     def is_locked(self):
         return self.locked

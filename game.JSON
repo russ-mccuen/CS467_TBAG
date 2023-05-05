@@ -7,68 +7,56 @@
       "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n There are posters on the wall.\n There is a desk against the wall with a few items on it.",
       "long desc":  " You see a room that looks like the room you usually sleep in. Against the wall\n there is a desk. There are posters on the wall, but they are posters you had on\n your wall as a child. At least a few of them are. You think.\n\n You can see there are a few items on the desk.\n There is nothing notable in the rest of the room.",
       "is locked": false,
-      "feature one": "Desk in the middle of the room",
-      "feature two": "feature two description",
       "is visible": false,
       "direction": "center"
     },
   {
       "index": 1,
-      "name":  "Room One",
-    "door desc": "A red door",
-      "short desc":  "This is the short description of Room One",
+      "name":  "1980 Room",
+    "door desc": "A freshly painted bright yellow door.",
+      "short desc":  "Short description of Childhood Room.",
       "long desc":  "This is the long description of Room One",
       "is locked": false,
-      "feature one": "feature one description",
-      "feature two": "feature two description",
     "is visible": false,
     "direction": "north"
     },
      {
        "index": 2,
-      "name":  "Room Two",
-       "door desc": "A black door",
-      "short desc":  "This is the short description of room 2",
-      "long desc":  "This is the long description of room 2",
+      "name":  "1970 Room",
+       "door desc": "A glittery door with sequence patters.",
+      "short desc":  "Short description of 1970 Room",
+      "long desc":  "This is the long description of 1970 Room",
       "is locked": false,
-       "feature one": "feature one description",
-       "feature two": "feature two description",
-       "is visible": false,
+       "is visible": true,
        "direction": "north east"
     },
      {
        "index": 3,
-      "name":  "Room Three",
-       "door desc": "An orange door",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
+      "name":  "1960 Room",
+       "door desc": "A multicolored door with a peace sign on it.",
+      "short desc":  "Short description of 1960 Room.",
+      "long desc":  "This is the long description of 1960 Room.",
       "is locked": true,
-       "feature one": "feature one description",
-      "feature two": "feature two description",
         "is visible": false,
        "direction": "east"
     },
      {
        "index": 4,
-      "name":  "Room Four",
-       "door desc": "",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
+      "name":  "1990 Room",
+       "door desc": "A bright blue door with a [SOMETHING 90's] thing on it.",
+      "short desc":  "Short description of 1990 Room.",
+      "long desc":  "This is the long description of 1990 Room.",
       "is locked": false,
-       "feature one": "feature one description",
-      "feature two": "feature two description",
         "is visible": false,
        "direction": "south east"
     },
      {
        "index": 5,
       "name":  "Room Five",
-       "door desc": "",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
+       "door desc": "2000 Room",
+      "short desc":  "Short description of 2000 Room.",
+      "long desc":  "This is the long description of 2000 Room.",
       "is locked": false,
-       "feature one": "feature one description",
-      "feature two": "feature two description",
         "is visible": false,
        "direction": "south"
     },
@@ -79,8 +67,6 @@
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
-       "feature one": "feature one description",
-      "feature two": "feature two description",
         "is visible": false,
        "direction": " south west"
     },
@@ -91,8 +77,6 @@
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
-       "feature one": "feature one description",
-      "feature two": "feature two description",
         "is visible": false,
        "direction": "west"
     },
@@ -103,8 +87,6 @@
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
-       "feature one": "feature one description",
-      "feature two": "feature two description",
         "is visible": false,
        "direction": "north west"
     },
@@ -115,8 +97,6 @@
       "short desc":  "This is the short description",
       "long desc":  "This is the long description",
       "is locked": false,
-       "feature one": "feature one description",
-      "feature two": "feature two description",
         "is visible": false,
        "direction": "down"
     }
@@ -152,7 +132,7 @@
 
     {
       "object name": "Poster",
-      "description": " \n A background image . . . ",
+      "description": " \n A blank poster that has nothing on it . . . ",
       "location": 0,
       "is movable": false
     },
@@ -174,9 +154,25 @@
       "description": " \n A Desk in Room One.",
       "location": 1,
       "is movable": false
+    },
+    {
+      "object name": "Disco-Ball",
+      "description": " \n A Disco Ball in 1970 Room.",
+      "location": 2,
+      "is movable": false
+    },
+    {
+      "object name": "Dance-Floor",
+      "description": " \n A Dance Floor in Room.",
+      "location": 2,
+      "is movable": false
+    },
+     {
+      "object name": "Blacklight",
+      "description": " \n A Blacklight in Disco Room.",
+      "location": 2,
+      "is movable": false
     }
-
-
-    ],
+  ],
   "Current Room": 0
 }
