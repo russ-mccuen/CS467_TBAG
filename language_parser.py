@@ -34,6 +34,7 @@ def parse_input(user_input, inventory):
         if user_input[0] == 'inventory':
             print_inventory(inventory)
             return
+
         elif user_input[0] == 'help':
             print_help()
             return

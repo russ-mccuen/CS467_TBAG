@@ -1,5 +1,5 @@
 from language_parser import *
-from terminal import clear_screen, newline
+from room_setup import *
 
 
 def room_one(room, rooms, objects, inventory):
@@ -7,7 +7,6 @@ def room_one(room, rooms, objects, inventory):
     print_room_details(rooms, available_nav, available_objs, room)
     print_interactive_objs(objects, room.get_index())
 
-    # This is for locking the main room. Try it out.
     if not room.already_visited():
         rooms[0].lock_room()
 
@@ -17,6 +16,11 @@ def room_one(room, rooms, objects, inventory):
         user_input = input(" What would you like to do? ").lower().strip().split()
 
         if len(user_input) == 0:
+            continue
+
+        if user_input[0] == "unlock":
+            print(" REMOVE THIS FEATURE")
+            rooms[0].unlock_room()
             continue
 
         if user_input[0] == 'q':

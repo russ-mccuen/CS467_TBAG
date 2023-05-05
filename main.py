@@ -1,8 +1,6 @@
 from game_setup import load_game, load_rooms, load_objects
 from main_room import main_room
 from room_one import room_one
-from room_two import room_two
-from terminal import clear_screen, menu, start_screen, loading_screen
 
 
 def main():
@@ -25,11 +23,8 @@ def start_game():
         if current_room.get_index() == 0:
             current_room = main_room(current_room, rooms, objects, inventory)
 
-        if current_room is not None and current_room.get_index() == 1:
+        if current_room is not None:
             current_room = room_one(current_room, rooms, objects, inventory)
-
-        if current_room is not None and current_room.get_index() == 2:
-            current_room = room_two(current_room, rooms, objects, inventory)
 
     print(" Exiting Game")
 

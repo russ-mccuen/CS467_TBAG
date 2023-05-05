@@ -62,4 +62,8 @@ def describe_exiting_room(room, inventory):
             print("As you leave the room you have the feeling that you may have forgotten something.")
         else:
             print("As you leave room one . . . description.")
+
+    if room_index == 2:
+        print(" Leaving the disco room description.")
+
     time.sleep(3)
