@@ -1,19 +1,14 @@
 from language_parser import *
+from room_setup import *
 from terminal import clear_screen, newline
 import time
 
 
-def main_room(homebase, rooms, objects, inventory):
-    available_nav = []
-    available_objs = [item for item in objects if item.get_location() == 0]
-    object_names = [item.get_name().lower() for item in available_objs]
-    clear_screen()
-    newline()
-    print('', homebase.get_desc())
-    describe_walls(rooms, available_nav)
-    describe_features(available_objs, homebase.get_index())
-    homebase.set_visited_true()
-    # describe_features(objects)
+def main_room(room, rooms, objects, inventory):
+    available_nav, available_objs, object_names = room_setup_objs(room, objects)
+    print_room_details(rooms, available_nav, available_objs, room)
+    print_interactive_objs(objects, room.get_index())
+    room.set_visited_true()
 
     while True:
         newline()
@@ -30,19 +25,20 @@ def main_room(homebase, rooms, objects, inventory):
             action_type, option = parsed_input
 
             if action_type == "navigate":
-                next_room = navigate(option, available_nav, rooms)
+                next_room = navigate(option, rooms)
                 if next_room is not None:
                     describe_exit()
                     return next_room
 
             else:
-                try_action(available_nav, rooms, homebase, action_type, option, objects, object_names, inventory)
+                try_action(available_nav, rooms, room, action_type, option, objects, object_names, inventory)
 
 
-def navigate(desired_location, available_nav, rooms):
+def navigate(desired_location, rooms):
+    available_rooms = [room.get_index() for room in rooms if room.is_visible()]
     if desired_location.isnumeric():
         door_index = int(desired_location)
-        if door_index in available_nav:
+        if door_index in available_rooms:
             room = rooms[door_index]
             return approach_door(room)
 

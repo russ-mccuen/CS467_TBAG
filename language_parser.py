@@ -1,6 +1,7 @@
 import time
 
 from terminal import newline, clear_screen
+from room_setup import *
 # define possible directions to move
 DIRECTIONS = {
     "north": ["n", "north"],
@@ -102,28 +103,12 @@ def parse_direction(user_direction):
     return None
 
 
-def describe_walls(rooms, available_nav):
+def print_interactive_objs(objects, room_num):
     newline()
-    visible_rooms = 0
-
-    for index, room in enumerate(rooms):
-        if room.is_visible():
-            visible_rooms += 1
-            available_nav.append(index)
-            print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
-
-    if not visible_rooms:
-        print(" Except . . . there is no door to the room. Actually, you can not see any way of either entering or "
-              "exiting the room.\n There are not even any windows. You know you have a window in your room.\n "
-              "At least you think you do.")
-
-
-def describe_features(objects, room_num):
-    newline()
-    print(" Room Features: ")
+    print(" Interactive Objects:")
     for index, obj in enumerate(objects):
         if obj.get_location() == room_num and not obj.is_movable():
-            print(f" \n Feature:  {obj.get_name()}")
+            print(f" Option: {obj.get_name()}")
 
 
 def try_action(available_nav, rooms, room, action, item, objects, object_names, inventory):
@@ -171,16 +156,24 @@ def try_drop(item, inventory, room):
 
 def try_look(available_nav, rooms, room, item, objects, object_names, inventory):
     if item == "room":
-        print(room.get_long_desc())
-        describe_walls(rooms, available_nav)
-        describe_features(objects, room.get_index())
+        available_nav, available_objs, object_names = room_setup_objs(room, objects)
+        print_room_details(rooms, available_nav, available_objs, room)
+        print_interactive_objs(objects, room.get_index())
 
     elif item == "desk":
+        desk_items = []
         print(" \n On the desk you see: \n")
         for obj in objects:
             name = obj.get_name()
             if obj.get_location() == room.get_index() and name != "Poster" and name != "Desk":
-                print('', obj.get_name())
+                print(obj.get_short_desc())
+                desk_items.append(obj.get_name())
+
+        if desk_items:
+            newline()
+            print(" Interactive Desk Items: ")
+            for item in desk_items:
+                print(f" Option: {item}")
 
     elif item == "inventory":
         print_inventory(inventory)
@@ -253,7 +246,6 @@ def use_tablet(tablet, rooms, objects):
                 print(" You hear something shift in the room. You unlocked the tablet. On it you see information.")
                 time.sleep(3)
                 rooms[1].set_visible()
-                update_room_desc(rooms)
             else:
                 continue
 

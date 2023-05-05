@@ -3,14 +3,9 @@ from terminal import clear_screen, newline
 
 
 def room_one(room, rooms, objects, inventory):
-    available_nav = []
-    available_objs = [item for item in objects if item.get_location() == 1]
-    object_names = [item.get_name().lower() for item in available_objs]
-    clear_screen()
-    newline()
-    print('', room.get_desc())
-    describe_walls()
-    describe_features(available_objs, room.get_index())
+    available_nav, available_objs, object_names = room_setup_objs(room, objects)
+    print_room_details(rooms, available_nav, available_objs, room)
+    print_interactive_objs(objects, room.get_index())
 
     # This is for locking the main room. Try it out.
     if not room.already_visited():
@@ -35,7 +30,7 @@ def room_one(room, rooms, objects, inventory):
             if action_type == "navigate":
                 next_room = navigate(option, rooms)
                 if next_room is not None:
-                    describe_exit(inventory)
+                    describe_exiting_room(room, inventory)
                     return next_room
 
             else:
@@ -52,18 +47,3 @@ def navigate(desired_location, rooms):
             print("That option does not exist.")
 
 
-def describe_walls():
-    newline()
-    print(" You are also aware of the door that will lead you back to the main room: ")
-    print(f" Navigation Option (1) :  The door heading back to the main room that is located south.")
-    newline()
-
-
-def describe_exit(inventory):
-    inv_names = [obj.get_name().lower() for obj in inventory]
-    clear_screen()
-    if "remote" not in inv_names:
-        print("As you leave the room you have the feeling that you may have forgotten something.")
-    else:
-        print("As you leave the main room . . . description.")
-    time.sleep(3)

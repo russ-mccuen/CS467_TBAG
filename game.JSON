@@ -4,8 +4,8 @@
       "index": 0,
       "name":  "Main Room",
       "door desc": "",
-      "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n There are posters on the wall.\n There is a desk against the wall with a few items on it.",
-      "long desc":  " You see a room that looks like the room you usually sleep in. Against the wall\n there is a desk. There are posters on the wall, but they are posters you had on\n your wall as a child. At least a few of them are. You think.\n\n You can see there are a few items on the desk.\n There is nothing notable in the rest of the room.",
+      "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n",
+      "long desc":  " You see a room that looks like the room you usually sleep in.",
       "is locked": false,
       "is visible": false,
       "direction": "center"
@@ -27,7 +27,7 @@
       "short desc":  "Short description of 1970 Room",
       "long desc":  "This is the long description of 1970 Room",
       "is locked": false,
-       "is visible": true,
+       "is visible": false,
        "direction": "north east"
     },
      {
@@ -101,30 +101,35 @@
        "direction": "down"
     }
   ],
+
   "Game Objects": [
     {
     "object name": "Desk",
-      "description": " Desk in main room",
+      "short desc": " Against the wall there is a desk where you can see a few items.",
+      "description": " This desk is not IKEA. It seems to be made of a rich mahogany.",
     "location": 0,
       "is movable": false
     },
 
     {
     "object name": "TV",
-      "description": " \n An older television. It is a TV/VCR combo. An old television that plays\n videotapes. You know, it's how people watched movies in the '80s. They look\n like big cassette tapes . . . you know, those things that . . . never mind.\n\n",
+       "short desc": " An older television. It is a TV/VCR combo. An old television that plays videotapes...",
+      "description": " \n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look\n like big cassette tapes . . . you know, those things that . . . never mind.",
     "location": 0,
       "is movable": false
     },
 
     {
       "object name": "Tablet",
-      "description": " \n A transparent item that looks like a tablet but you are not quite sure what it\n is. It definitely looks more modern than the tv.\n\n",
+       "short desc": " What appears to be a type of tablet.",
+      "description": " \n A transparent item that looks like a tablet but you are not quite sure what it\n is. It definitely looks more modern than the tv.",
       "location": 0,
       "is movable": true
     },
 
     {
       "object name": "Letter",
+       "short desc": " A piece of paper that looks like it has something written on it.",
       "description": " \n A letter written in your handwriting . . . ",
       "location": 0,
       "is movable": true
@@ -132,44 +137,51 @@
 
     {
       "object name": "Poster",
-      "description": " \n A blank poster that has nothing on it . . . ",
+       "short desc": " There is a poster on the wall, but it's the poster you had on\n your wall as a child. At least you think it is...",
+      "description": " \n The poster appears to be blank. . . ",
       "location": 0,
       "is movable": false
     },
     {
       "object name": "Remote",
-      "description": " \n A remote control . . . ",
+       "short desc": "A black standard remote. You remember this remote.",
+      "description": " \n The remote is very simple. You are tempted to use it . . . ",
       "location": 1,
       "is movable": true
     },
 
      {
       "object name": "Commodore",
-      "description": " \n A Commodore 64 . . . ",
+        "short desc": "A Commodore that you remember from your childhood. How cool!",
+      "description": " \n The Commodore is grey and has other interesting details . . . ",
       "location": 1,
       "is movable": false
     },
      {
       "object name": "Desk",
-      "description": " \n A Desk in Room One.",
+        "short desc": " A Desk with what appears to be a Commodore computer on it and perhaps something else.",
+      "description": " \n The desk is what you remember from [Details].",
       "location": 1,
       "is movable": false
     },
     {
       "object name": "Disco-Ball",
-      "description": " \n A Disco Ball in 1970 Room.",
+       "short desc": " There is a disco ball hanging above the dance floor that also captures your attention.",
+      "description": " \n [Details about the disco ball]",
       "location": 2,
       "is movable": false
     },
     {
       "object name": "Dance-Floor",
-      "description": " \n A Dance Floor in Room.",
+       "short desc": "  \n There is so much going on on the dance floor that it might be worth a second look..",
+      "description": "[Details about the dance floor.]",
       "location": 2,
       "is movable": false
     },
      {
       "object name": "Blacklight",
-      "description": " \n A Blacklight in Disco Room.",
+        "short desc": " \n [Details about the blacklight].",
+      "description": " \n More details about the blacklight.",
       "location": 2,
       "is movable": false
     }

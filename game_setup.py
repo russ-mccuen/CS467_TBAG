@@ -37,26 +37,28 @@ def load_objects(game_data, inventory):
     objects = []
     for game_obj in game_data["Game Objects"]:
         obj_name = game_obj["object name"]
+        short_desc = game_obj["short desc"]
         description = game_obj["description"]
         location = game_obj["location"]
         movable = game_obj["is movable"]
+
         if obj_name == "Tablet":
-            new_obj = Tablet(obj_name, description, location, movable)
+            new_obj = Tablet(obj_name, short_desc, description, location, movable)
 
         elif obj_name == "Letter":
-            new_obj = Letter(obj_name, description, location, movable)
+            new_obj = Letter(obj_name, short_desc, description, location, movable)
 
         elif obj_name == "TV":
-            new_obj = TV(obj_name, description, location, movable)
+            new_obj = TV(obj_name, short_desc, description, location, movable)
 
         elif obj_name == "Commodore":
-            new_obj = Commodore(obj_name, description, location, movable)
+            new_obj = Commodore(obj_name, short_desc, description, location, movable)
 
         elif obj_name == "Remote":
-            new_obj = Remote(obj_name, description, location, movable)
+            new_obj = Remote(obj_name, short_desc, description, location, movable)
 
         else:
-            new_obj = GameObject(obj_name, description, location, movable)
+            new_obj = GameObject(obj_name, short_desc, description, location, movable)
         objects.append(new_obj)
         if location == -1:
             inventory.append(new_obj)

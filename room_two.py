@@ -1,10 +1,11 @@
 from language_parser import *
-from terminal import clear_screen, newline
+from room_setup import *
 
 
 def room_two(room, rooms, objects, inventory):
-    available_nav, available_objs, object_names = room_setup(objects)
-    print_room_details(available_objs, room)
+    available_nav, available_objs, object_names = room_setup_objs(room, objects)
+    print_room_details(rooms, available_nav, available_objs, room)
+    print_interactive_objs(objects, room.get_index())
 
     while True:
         user_input = input(" What would you like to do? ").lower().strip().split()
@@ -35,23 +36,4 @@ def navigate(desired_location, rooms):
             print("That option does not exist.")
 
 
-def describe_walls():
-    newline()
-    print(" You are also aware of the door that will lead you back to the main room: ")
-    print(f" Navigation Option (1) :  The door heading back to the main room that is located south.")
-    newline()
 
-
-def room_setup(objects):
-    available_nav = []
-    available_objs = [item for item in objects if item.get_location() == 2]
-    object_names = [item.get_name().lower() for item in available_objs]
-    return available_nav, available_objs, object_names
-
-
-def print_room_details(available_objs, room):
-    clear_screen()
-    newline()
-    print('', room.get_desc())
-    describe_walls()
-    describe_features(available_objs, room.get_index())

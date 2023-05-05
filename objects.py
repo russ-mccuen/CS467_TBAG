@@ -2,8 +2,9 @@ import time
 
 
 class GameObject:
-    def __init__(self, name, description, location,  is_movable):
+    def __init__(self, name, short_desc, description, location,  is_movable):
         self.name = name
+        self.short_desc = short_desc
         self.description = description
         self.location = location
         self.movable = is_movable
@@ -13,6 +14,9 @@ class GameObject:
 
     def set_description(self, description):
         self.description = description
+
+    def get_short_desc(self):
+        return self.short_desc
 
     def get_description(self):
         return self.description
@@ -37,13 +41,13 @@ class GameObject:
 
 
 class TV(GameObject):
-    def __init__(self, name, description, location, is_movable):
+    def __init__(self, name, short_desc, description, location, is_movable):
         self.on = False
         self.channels = ["\n You see static with UHF-73 in green at the top right of the screen.\n",
                          "\n You see [TODO: Provide Description] the code UHF-74 at the top right of screen."]
         self.vcr = []
         self.current_channel = 0
-        super(TV, self).__init__(name, description, location, is_movable)
+        super(TV, self).__init__(name, short_desc, description, location, is_movable)
 
     def __repr__(self):
         return " This is the TV object"
@@ -78,8 +82,8 @@ class TV(GameObject):
 
 
 class Commodore(GameObject):
-    def __init__(self, name, description, location, is_movable):
-        super().__init__(name, description, location, is_movable)
+    def __init__(self, name, short_desc, description, location, is_movable):
+        super().__init__(name, short_desc, description, location, is_movable)
         self.on = False
         self.solution = '0'
         self.game_won = False
@@ -110,17 +114,17 @@ class Commodore(GameObject):
 # 8 Objects that the player can put in their inventory:
 # Object 1
 class Letter(GameObject):
-    def __init__(self, name, description, location, is_movable):
-        super(Letter, self).__init__(name, description, location, is_movable)
+    def __init__(self, name, short_desc, description, location, is_movable):
+        super(Letter, self).__init__(name, short_desc, description, location, is_movable)
 
 
 # Object 2
 class Tablet(GameObject):
-    def __init__(self, name, description, location, is_movable):
+    def __init__(self, name, short_desc, description, location, is_movable):
         self.folder = ["Info 1: Look around the room. Something has changed."]
         self.passcode = 'UHF-73'
         self.locked = True
-        super(Tablet, self).__init__(name, description, location, is_movable)
+        super(Tablet, self).__init__(name, short_desc, description, location, is_movable)
 
     def get_folder(self):
         return self.folder
@@ -149,8 +153,8 @@ class Tablet(GameObject):
 
 # Object 3
 class Remote(GameObject):
-    def __init__(self, name, description, location, is_movable):
-        super().__init__(name, description, location, is_movable)
+    def __init__(self, name, short_desc, description, location, is_movable):
+        super().__init__(name, short_desc, description, location, is_movable)
 
     def use_remote(self):
         pass
@@ -158,8 +162,8 @@ class Remote(GameObject):
 
 # Object 4
 class VHS(GameObject):
-    def __init__(self, name, description, location, is_movable):
-        super().__init__(name, description, location, is_movable)
+    def __init__(self, name, short_desc, description, location, is_movable):
+        super().__init__(name, short_desc, description, location, is_movable)
 
     def use_vhs(self):
         pass
