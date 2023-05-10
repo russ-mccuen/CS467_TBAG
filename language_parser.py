@@ -104,12 +104,7 @@ def parse_direction(user_direction):
     return None
 
 
-def print_interactive_objs(objects, room_num):
-    newline()
-    print(" Interactive Objects:")
-    for index, obj in enumerate(objects):
-        if obj.get_location() == room_num and not obj.is_movable():
-            print(f" Option: {obj.get_name()}")
+
 
 
 def try_action(available_nav, rooms, room, action, item, objects, object_names, inventory):

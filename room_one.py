@@ -3,11 +3,10 @@ from room_setup import *
 
 
 def room_one(room, rooms, objects, inventory):
+    room_index = room.get_index()
     available_nav, available_objs, object_names = room_setup_objs(room, objects)
     print_room_details(rooms, available_nav, available_objs, room)
-    print_interactive_objs(objects, room.get_index())
-
-    room_index = room.get_index()
+    print_interactive_objs(objects, room_index)
 
     if room_index != 0:
         if not room.already_visited():

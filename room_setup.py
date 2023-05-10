@@ -101,3 +101,11 @@ def approach_door(room):
         print(" You approach the door turn the handle and step into the room.")
         time.sleep(3)
         return room
+
+
+def print_interactive_objs(objects, room_num):
+    newline()
+    print(" Interactive Objects:")
+    for index, obj in enumerate(objects):
+        if obj.get_location() == room_num and not obj.is_movable():
+            print(f" Option: {obj.get_name()}")
