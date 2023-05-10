@@ -7,8 +7,11 @@ def room_one(room, rooms, objects, inventory):
     print_room_details(rooms, available_nav, available_objs, room)
     print_interactive_objs(objects, room.get_index())
 
-    if not room.already_visited():
-        rooms[0].lock_room()
+    room_index = room.get_index()
+
+    if room_index != 0:
+        if not room.already_visited():
+            rooms[0].lock_room()
 
     room.set_visited_true()
 
@@ -32,22 +35,16 @@ def room_one(room, rooms, objects, inventory):
             action_type, option = parsed_input
 
             if action_type == "navigate":
-                next_room = navigate(option, rooms)
+                if room_index == 0:
+                    next_room = navigate_from_main(option, rooms)
+                else:
+                    next_room = navigate(option, rooms)
+
                 if next_room is not None:
                     describe_exiting_room(room, inventory)
                     return next_room
 
             else:
                 try_action(available_nav, rooms, room, action_type, option, objects, object_names, inventory)
-
-
-def navigate(desired_location, rooms):
-    if desired_location.isnumeric():
-        door_index = int(desired_location)
-        if door_index is 1:
-            room = rooms[0]
-            return approach_door(room)
-        else:
-            print("That option does not exist.")
 
 

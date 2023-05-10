@@ -355,17 +355,5 @@ def print_inventory(inventory):
         print(item.get_name())
 
 
-def approach_door(room):
-    if room.is_locked():
-        print(" You approach the door but as you turn the handle you realize it is locked.")
-        return None
-
-    else:
-        clear_screen()
-        print(" You approach the door turn the handle and step into the room.")
-        time.sleep(3)
-        return room
-
-
 def print_help():
     print(" Implement Help Screen")

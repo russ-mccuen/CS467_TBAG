@@ -57,6 +57,9 @@ def describe_exiting_room(room, inventory):
     room_index = room.get_index()
     inv_names = [obj.get_name().lower() for obj in inventory]
     clear_screen()
+    if room_index == 0:
+        print("As you leave the main room . . . description.")
+
     if room_index == 1:
         if "remote" not in inv_names:
             print("As you leave the room you have the feeling that you may have forgotten something.")
@@ -67,3 +70,34 @@ def describe_exiting_room(room, inventory):
         print(" Leaving the disco room description.")
 
     time.sleep(3)
+
+
+def navigate_from_main(desired_location, rooms):
+    available_rooms = [room.get_index() for room in rooms if room.is_visible()]
+    if desired_location.isnumeric():
+        door_index = int(desired_location)
+        if door_index in available_rooms:
+            room = rooms[door_index]
+            return approach_door(room)
+
+
+def navigate(desired_location, rooms):
+    if desired_location.isnumeric():
+        door_index = int(desired_location)
+        if door_index is 1:
+            room = rooms[0]
+            return approach_door(room)
+        else:
+            print("That option does not exist.")
+
+
+def approach_door(room):
+    if room.is_locked():
+        print(" You approach the door but as you turn the handle you realize it is locked.")
+        return None
+
+    else:
+        clear_screen()
+        print(" You approach the door turn the handle and step into the room.")
+        time.sleep(3)
+        return room

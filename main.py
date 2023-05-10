@@ -1,5 +1,4 @@
 from game_setup import load_game, load_rooms, load_objects
-from main_room import main_room
 from room_one import room_one
 
 
@@ -20,11 +19,8 @@ def start_game():
     current_room = rooms[game_data["Current Room"]]
 
     while current_room is not None:
-        if current_room.get_index() == 0:
-            current_room = main_room(current_room, rooms, objects, inventory)
 
-        if current_room is not None:
-            current_room = room_one(current_room, rooms, objects, inventory)
+        current_room = room_one(current_room, rooms, objects, inventory)
 
     print(" Exiting Game")
 
