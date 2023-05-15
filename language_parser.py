@@ -291,7 +291,12 @@ def use_tv(tv):
 
 def use_commodore(pc, mainroom):
     clear_screen()
-    print("Commodore 64")
+    print("As you power on this magnificent machine, your eyes are greeted "
+          "by a \nstunning 8-bit display, capable of producing vivid colors "
+          "and sharp graphics. Its resolution, while modest by today's "
+          "\nstandards, is a sight to behold in its time. The C64 immerses\n"
+          "you in a world of mesmerizing visuals that bring games, "
+          "\napplications, and educational programs to life.")
     while True:
         user_input = input("Some Game that unlocks the door (type 0 to win) or q to quit: ")
         if user_input.lower() == 'q':
