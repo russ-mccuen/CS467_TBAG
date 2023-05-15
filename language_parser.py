@@ -220,7 +220,7 @@ def use_tablet(tablet, rooms, objects):
     print(" \n You pick up the tablet.\n")
     if tablet.is_locked():
         print(" You notice that the tablet is locked and is requesting a passcode.\n")
-    time.sleep(3)
+    time.sleep(1)
     clear_screen()
     print(" \n USING TABLET \n")
     available_info = tablet.get_folder()
@@ -231,7 +231,7 @@ def use_tablet(tablet, rooms, objects):
             pin = input(" Please Enter Password or 'q' to cancel: ")
             if pin.lower() == 'q':
                 print(" \n  You put the tablet away.")
-                time.sleep(2)
+                time.sleep(1)
                 break
             tablet.unlock(pin)
             if tablet.is_locked() is False:
@@ -240,7 +240,7 @@ def use_tablet(tablet, rooms, objects):
 
                 clear_screen()
                 print(" You hear something shift in the room. You unlocked the tablet. On it you see information.")
-                time.sleep(3)
+                time.sleep(1)
                 rooms[1].set_visible()
             else:
                 continue
@@ -252,7 +252,7 @@ def use_tablet(tablet, rooms, objects):
         user_input = input(" \n Enter a new pin to access more or q to quit. ")
         if user_input == 'q':
             print("You put the tablet away.")
-            time.sleep(2)
+            time.sleep(1)
             break
 
         if user_input == "UHF-74":
@@ -266,7 +266,7 @@ def use_tablet(tablet, rooms, objects):
                 rooms[2].set_visible()
                 clear_screen()
                 print(" \n You unlocked more information.")
-                time.sleep(2)
+                time.sleep(1)
                 continue
 
 

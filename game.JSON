@@ -153,7 +153,7 @@
      {
       "object name": "Commodore",
         "short desc": "A Commodore that you remember from your childhood. How cool!",
-      "description": " \n The Commodore is grey and has other interesting details . . . ",
+      "description": " \n In the exciting world of technology, let me take you back to the 1980s,\n a time when personal computers were just starting to become popular. \nOne of the most iconic machines of that era was the Commodore 64, a true marvel that captured \nthe hearts and minds of computer enthusiasts everywhere.",
       "location": 1,
       "is movable": false
     },
