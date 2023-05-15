@@ -40,7 +40,8 @@ def describe_walls(rooms, available_nav):
             print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
 
     if not visible_rooms:
-        print(" Except . . . there is no door to the room. Actually, you can not see any way of either entering or "
+        print(" There is no door to the room. Actually, you can not see any "
+              "way of either entering or "
               "exiting the room.\n There are not even any windows. You know you have a window in your room.\n "
               "At least you think you do.")
 
@@ -58,7 +59,7 @@ def describe_exiting_room(room, inventory):
     inv_names = [obj.get_name().lower() for obj in inventory]
     clear_screen()
     if room_index == 0:
-        print("As you leave the main room . . . description.")
+        print("You blink and suddenly everything around you has changed.")
 
     if room_index == 1:
         if "remote" not in inv_names:

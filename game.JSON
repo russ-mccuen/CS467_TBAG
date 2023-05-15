@@ -14,8 +14,8 @@
       "index": 1,
       "name":  "1980 Room",
     "door desc": "A freshly painted bright yellow door.",
-      "short desc":  "Short description of Childhood Room.",
-      "long desc":  "This is the long description of Room One",
+      "short desc":  "You are in what appears to be your childhood bedroom.",
+      "long desc":  "You are still in a\nbedroom, but as you look around you notice the walls adorned with posters of\nmovies, including Star Wars, Back to the Future, and Indiana Jones. The posters\nare carefully placed to cover the blue paint on the walls, giving the room a\ncozy and immersive feel.\n\nOn the opposite wall, you see a desk, with a sleek Commodore 64\ncomputer sitting atop it. The computer has a bulky monitor and a clunky\nkeyboard, but it's obviously a prized possession on which you can spend hours\nplaying games like \"Maniac Mansion\" and \"The Bard's Tale.\" There's also a stack\nof floppy disks on the desk, each one containing a new adventure or game.\n\nThe bed is a twin-sized mattress, situated against the wall with a colorful\npatchwork quilt covering it. There are stuffed animals and pillows of all\nshapes and sizes piled up at the head of the bed. A lamp with a green shade is\nplaced on the nightstand next to the bed, providing the perfect amount of light\nfor reading.\n\nThe carpet is beige and soft, with a few small stains from spilled drinks and\nsnacks. A small bookshelf is placed next to the desk, filled with classic books\nlike \"The Hobbit\" and \"The Chronicles of Narnia.\" A few action figures and a\nRubik's Cube are also scattered on the shelves.\n\nThe curtains are thick and dark blue, keeping the sunlight out during the day.\nA few posters of music artists, like Michael Jackson and Prince, are placed in\nbetween the movie posters, adding some musical flair to the room.\n\nThis is a bedroom straight out of the 1980s. It is a cozy and nostalgic\nspace, perfect for immersing yourself in the adventures of your favorite movies\nand video games.",
       "is locked": false,
     "is visible": false,
     "direction": "north"
