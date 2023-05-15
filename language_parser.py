@@ -296,7 +296,7 @@ def use_commodore(pc, mainroom):
           "and sharp graphics. Its resolution, while modest by today's "
           "\nstandards, is a sight to behold in its time. The C64 immerses\n"
           "you in a world of mesmerizing visuals that bring games, "
-          "\napplications, and educational programs to life.")
+          "\napplications, and educational programs to life.\n")
     while True:
         user_input = input("Some Game that unlocks the door (type 0 to win) or q to quit: ")
         if user_input.lower() == 'q':
