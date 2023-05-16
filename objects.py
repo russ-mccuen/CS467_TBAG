@@ -139,7 +139,7 @@ class Tablet(GameObject):
         if pin == self.passcode:
             self.locked = False
             print(" Access Granted")
-            time.sleep(2)
+            time.sleep(1)
 
         else:
             print(f" Passcode: {pin} | Access Denied")
