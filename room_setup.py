@@ -70,7 +70,7 @@ def describe_exiting_room(room, inventory):
     if room_index == 2:
         print(" Leaving the disco room description.")
 
-    time.sleep(3)
+    time.sleep(1)
 
 
 def navigate_from_main(desired_location, rooms):
@@ -100,7 +100,7 @@ def approach_door(room):
     else:
         clear_screen()
         print(" You approach the door turn the handle and step into the room.")
-        time.sleep(3)
+        time.sleep(1)
         return room
 
 
