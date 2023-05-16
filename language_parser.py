@@ -104,9 +104,6 @@ def parse_direction(user_direction):
     return None
 
 
-
-
-
 def try_action(available_nav, rooms, room, action, item, objects, object_names, inventory):
     if action == "look":
         try_look(available_nav, rooms, room, item, objects, object_names, inventory)

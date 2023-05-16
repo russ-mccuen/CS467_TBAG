@@ -24,6 +24,8 @@ def room_one(room, rooms, objects, inventory):
             print(" REMOVE THIS FEATURE")
             rooms[1].unlock_room()
             rooms[1].set_visible()
+            rooms[2].unlock_room()
+            rooms[2].set_visible()
             continue
 
         if user_input[0] == 'q':

@@ -23,12 +23,13 @@ def load_rooms(game_data):
         room_index = index
         room_name = room["name"]
         door_desc = room["door desc"]
+        intro = room["intro"]
         short_desc = room["short desc"]
         long_desc = room["long desc"]
         is_locked = room["is locked"]
         is_visible = room["is visible"]
         direction = room["direction"]
-        new_room = Room(index, room_name, door_desc, short_desc, long_desc, is_locked, is_visible, direction)
+        new_room = Room(index, room_name, door_desc, intro, short_desc, long_desc, is_locked, is_visible, direction)
         rooms.insert(index, new_room)
     return rooms
 
