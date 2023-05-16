@@ -177,23 +177,23 @@
     {
       "object name": "Disco-Ball",
        "short desc": " There is a disco ball hanging above the dance floor that also captures your attention.",
-      "description": " \n [Details about the disco ball]",
+      "description": " \n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors \n that are reflecting the colorful lights all over the dance floor. \n It's the centerpiece of the whole room, and it's casting a mesmerizing glow \n that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, \n sending flashes of light in all directions. As it rotates, the mirrored \n tiles catch the light and send it bouncing around the room, creating \n a sparkling, magical effect. It's like a miniature universe up there, \n with thousands of little stars that are pulsing and twinkling \n with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a \n place where anything can happen, where anything is possible.\n",
       "location": 2,
       "is movable": false
     },
     {
       "object name": "Dance-Floor",
        "short desc": "  \n There is so much going on on the dance floor that it might be worth a second look..",
-      "description": "[Details about the dance floor.]",
+      "description": " \nThe dance floor is a large, open space that is the centerpiece of the club \n and the focal point for everyone in the room. It is illuminated with bright,\n flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music.\n The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
       "location": 2,
       "is movable": false
     },
      {
       "object name": "Blacklight",
         "short desc": " \n There is something that looks like a light bulb, but it is purple.",
-      "description": " \n More details about the blacklight.",
+      "description": " \n Somehow you remember that blacklights emit ultraviolet light (must have\n been the discovery channel), and when this light shines on certain types\n of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could\n see with the blacklight.\n",
       "location": 2,
-      "is movable": false
+      "is movable": true
     }
   ],
   "Current Room": 0
