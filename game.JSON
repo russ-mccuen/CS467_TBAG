@@ -140,7 +140,7 @@
     {
       "object name": "Letter",
        "short desc": " A piece of paper that looks like it has something written on it.",
-      "description": " \n A letter written in your handwriting . . . ",
+      "description": " \n I can't believe all you had to do was type 'place bar' and you would have won!\n Then you could have gone to the mailbox, to the barrow, and game over!\n\n You don't know what this means, but it seems important.\n\n",
       "location": 0,
       "is movable": true
     },
