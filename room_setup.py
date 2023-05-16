@@ -63,12 +63,15 @@ def describe_exiting_room(room, inventory):
 
     if room_index == 1:
         if "remote" not in inv_names:
-            print("As you leave the room you have the feeling that you may have forgotten something.")
+            print(" As you leave the room you have the feeling that you may "
+                  "have forgotten something.")
         else:
-            print("As you leave room one . . . description.")
+            print(" You would like to stay in your childhood bedroom, "
+                  "but you need to figure out what is going on.")
 
     if room_index == 2:
-        print(" Leaving the disco room description.")
+        print(" You'd love to stay and dance a little more, but you know "
+              "there is more to do.")
 
     time.sleep(1)
 

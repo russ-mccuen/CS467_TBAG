@@ -23,7 +23,8 @@ VERBS = {
     "push": ["shove", "press"],
     "eat": ["consume", "devour"],
     "use": ["activate", "operate"],
-    "talk": ["speak", "converse"]
+    "talk": ["speak", "converse"],
+    "dance": ["boogie", "get-down"]
 }
 
 
