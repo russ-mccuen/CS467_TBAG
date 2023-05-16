@@ -288,27 +288,53 @@ def use_tv(tv):
 
 def use_commodore(pc, mainroom):
     clear_screen()
-    print("As you power on this magnificent machine, your eyes are greeted "
-          "by a \nstunning 8-bit display, capable of producing vivid colors "
+    print(" As you power on this magnificent machine, your eyes are greeted "
+          "by a \n stunning 8-bit display, capable of producing vivid colors "
           "and sharp graphics. Its resolution, while modest by today's "
-          "\nstandards, is a sight to behold in its time. The C64 immerses\n"
-          "you in a world of mesmerizing visuals that bring games, "
-          "\napplications, and educational programs to life.\n  ")
+          "\n standards, is a sight to behold in its time. You notice\n"
+          " your favorite game, Zork, on the screen! You are at the end "
+          "\n of the game! You never managed to beat it. This is what you"
+          "\n see on the screen:\n\n")
     while True:
-        user_input = input("Some Game that unlocks the door (type 0 to win) or q to quit: ")
+        user_input = input("\n Living room. Your collection of treasures "
+                           "consists of:"
+                           "\n  A crystal skull"
+                           "\n  A sapphire-encrusted bracelt"
+                           "\n  A jewel-encrusted egg"
+                           "\n  A golden clockwork canary"
+                           "\n  A chalice"
+                           "\n  A beautiful brass bauble"
+                           "\n  A leather bag of coins"
+                           "\n  A trunk of jewels"
+                           "\n  A crystal trident"
+                           "\n  A beautiful jeweled scarab"
+                           "\n  A large emerald"
+                           "\n  A huge diamond"
+                           "\n  A jade figurine"
+                           "\n  A sceptre"
+                           "\n  A pot of gold"
+                           "\n  A gold coffin"
+                           "\n  A painting"
+                           "\n\n > ")
         if user_input.lower() == 'q':
             return
         if user_input == pc.get_solution():
             mainroom.unlock_room()
             if not pc.get_game_won():
-                print(" \n You won! After all these years! Type q to quit game. \n")
+                print(" \n You place the bar in the case, head to the "
+                      "mailbox, then head southwest to the barrow and . . "
+                      ". \n\n You won! After all these years!!!")
                 print(" \n You hear a loud click behind you.\n")
                 pc.set_game_won()
                 pc.set_total_won()
+                return
             else:
                 print(" You already beat this game.")
                 pc.set_total_won()
                 pc.get_games_won()
+        else:
+            print("\n That wasn't the right command. Maybe you should try "
+                  "again.\n")
 
 
 def use_remote(objects, room):

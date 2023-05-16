@@ -85,7 +85,7 @@ class Commodore(GameObject):
     def __init__(self, name, short_desc, description, location, is_movable):
         super().__init__(name, short_desc, description, location, is_movable)
         self.on = False
-        self.solution = '0'
+        self.solution = 'place bar'
         self.game_won = False
         self.total_won = 0
 
