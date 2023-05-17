@@ -118,7 +118,8 @@
       "short desc": " Against the wall there is a desk where you can see a few items.",
       "description": " This desk is not IKEA. It seems to be made of a rich mahogany.",
     "location": 0,
-      "is movable": false
+      "is movable": false,
+      "is visible": true
     },
 
     {
@@ -126,7 +127,8 @@
        "short desc": " An older television. It is a TV/VCR combo. An old television that plays videotapes...",
       "description": " \n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look\n like big cassette tapes . . . you know, those things that . . . never mind.",
     "location": 0,
-      "is movable": false
+      "is movable": false,
+      "is visible": true
     },
 
     {
@@ -134,7 +136,8 @@
        "short desc": " What appears to be a type of tablet.",
       "description": " \n A transparent item that looks like a tablet but you are not quite sure what it\n is. It definitely looks more modern than the tv.",
       "location": 0,
-      "is movable": true
+      "is movable": true,
+      "is visible": false
     },
 
     {
@@ -142,7 +145,8 @@
        "short desc": " A piece of paper that looks like it has something written on it.",
       "description": " \n I can't believe all you had to do was type 'place bar' and you would have won!\n Then you could have gone to the mailbox, to the barrow, and game over!\n\n You don't know what this means, but it seems important.\n\n",
       "location": 0,
-      "is movable": true
+      "is movable": true,
+      "is visible": false
     },
 
     {
@@ -150,14 +154,16 @@
        "short desc": " There is a poster on the wall, but it's the poster you had on\n your wall as a child. At least you think it is...",
       "description": " \n The poster appears to be blank. . . ",
       "location": 0,
-      "is movable": false
+      "is movable": false,
+      "is visible": true
     },
     {
       "object name": "Remote",
        "short desc": "A black standard remote. You remember this remote.",
       "description": " \n The remote is very simple. You are tempted to use it . . . ",
       "location": 1,
-      "is movable": true
+      "is movable": true,
+      "is visible": false
     },
 
      {
@@ -165,35 +171,40 @@
         "short desc": "A Commodore that you remember from your childhood. How cool!",
       "description": " \n In the exciting world of technology, let me take you back to the 1980s,\n a time when personal computers were just starting to become popular. \nOne of the most iconic machines of that era was the Commodore 64, a true marvel that captured \nthe hearts and minds of computer enthusiasts everywhere.\n",
       "location": 1,
-      "is movable": false
+      "is movable": false,
+       "is visible": true
     },
      {
       "object name": "Desk",
         "short desc": " A Desk with what appears to be a Commodore computer on it and perhaps something else.",
       "description": " \n The desk is what you remember from [Details].",
       "location": 1,
-      "is movable": false
+      "is movable": false,
+       "is visible": true
     },
     {
       "object name": "Disco-Ball",
        "short desc": " There is a disco ball hanging above the dance floor that also captures your attention.",
       "description": " \n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors \n that are reflecting the colorful lights all over the dance floor. \n It's the centerpiece of the whole room, and it's casting a mesmerizing glow \n that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, \n sending flashes of light in all directions. As it rotates, the mirrored \n tiles catch the light and send it bouncing around the room, creating \n a sparkling, magical effect. It's like a miniature universe up there, \n with thousands of little stars that are pulsing and twinkling \n with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a \n place where anything can happen, where anything is possible.\n",
       "location": 2,
-      "is movable": false
+      "is movable": false,
+      "is visible": true
     },
     {
       "object name": "Dance-Floor",
-       "short desc": "  \n There is so much going on on the dance floor that it might be worth a second look..",
-      "description": " \nThe dance floor is a large, open space that is the centerpiece of the club \n and the focal point for everyone in the room. It is illuminated with bright,\n flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music.\n The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
+       "short desc": "  \n There is so much going on on the dance floor that it might be worth a second look.",
+      "description": " \n The dance floor is a large, open space that is the centerpiece of the club \n and the focal point for everyone in the room. It is illuminated with bright,\n flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music.\n The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
       "location": 2,
-      "is movable": false
+      "is movable": false,
+      "is visible": true
     },
      {
       "object name": "Blacklight",
         "short desc": " \n There is something that looks like a light bulb, but it is purple.",
       "description": " \n Somehow you remember that blacklights emit ultraviolet light (must have\n been the discovery channel), and when this light shines on certain types\n of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could\n see with the blacklight.\n",
       "location": 2,
-      "is movable": true
+      "is movable": true,
+       "is visible": true
     }
   ],
   "Current Room": 0

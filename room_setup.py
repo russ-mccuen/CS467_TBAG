@@ -50,7 +50,7 @@ def describe_features(objects, room_num):
     print(" As you look around the room you notice: ")
     newline()
     for obj in objects:
-        if obj.get_location() == room_num and not obj.is_movable():
+        if obj.get_location() == room_num and obj.is_visible():
             print(obj.get_short_desc())
 
 
@@ -111,5 +111,5 @@ def print_interactive_objs(objects, room_num):
     newline()
     print(" Interactive Objects:")
     for index, obj in enumerate(objects):
-        if obj.get_location() == room_num and not obj.is_movable():
+        if obj.get_location() == room_num and obj.is_visible():
             print(f" Option: {obj.get_name()}")
