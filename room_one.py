@@ -38,9 +38,9 @@ def room_one(room, rooms, objects, inventory):
 
             if action_type == "navigate":
                 if room_index == 0:
-                    next_room = navigate_from_main(option, rooms)
+                    next_room = navigate_from_main(option, rooms, room_index)
                 else:
-                    next_room = navigate(option, rooms)
+                    next_room = navigate(option, rooms, room_index)
 
                 if next_room is not None:
                     describe_exiting_room(room, inventory)

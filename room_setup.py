@@ -59,7 +59,7 @@ def describe_exiting_room(room, inventory):
     inv_names = [obj.get_name().lower() for obj in inventory]
     clear_screen()
     if room_index == 0:
-        print("You blink and suddenly everything around you has changed.")
+        print(" You blink and suddenly everything around you has changed.")
 
     if room_index == 1:
         if "remote" not in inv_names:
@@ -76,28 +76,30 @@ def describe_exiting_room(room, inventory):
     time.sleep(1)
 
 
-def navigate_from_main(desired_location, rooms):
+def navigate_from_main(desired_location, rooms, from_room):
     available_rooms = [room.get_index() for room in rooms if room.is_visible()]
     if desired_location.isnumeric():
         door_index = int(desired_location)
         if door_index in available_rooms:
             room = rooms[door_index]
-            return approach_door(room)
+            return approach_door(room, from_room)
 
 
-def navigate(desired_location, rooms):
+def navigate(desired_location, rooms, from_room):
     if desired_location.isnumeric():
         door_index = int(desired_location)
         if door_index is 1:
             room = rooms[0]
-            return approach_door(room)
+            return approach_door(room, from_room)
         else:
             print("That option does not exist.")
 
 
-def approach_door(room):
+def approach_door(room, from_room):
     if room.is_locked():
         print(" You approach the door but as you turn the handle you realize it is locked.")
+        if from_room == 2:
+            do_dance(room)
         return None
 
     else:
@@ -105,6 +107,30 @@ def approach_door(room):
         print(" You approach the door turn the handle and step into the room.")
         time.sleep(1)
         return room
+
+
+def do_dance(room):
+    print(" Although you want to leave, you feel like you should dance "
+          "first!\n You can do the dance you watched before! Try it!\n\n"
+          " Moves:\n 1 - Left Arm\n 2 - Left Leg\n 3 - Right Arm\n 4 - Right "
+          "Leg\n 5 - Spin\n\n")
+    correct_dance = False
+    dance_sequence = [1, 3, 4, 2, 5]
+    user_dance = []
+    dance_length = len(dance_sequence)
+    while not correct_dance:
+        dance = input(" Enter the dance sequence one move at a time! ")
+        user_dance.append(int(dance))
+        if len(user_dance) == dance_length:
+            if user_dance == dance_sequence:
+                print(" Groovy! That dance is smooth!\n\n")
+                print(" You hear a sound. It sounds like a door "
+                      "unlocking.\n\n")
+                room.unlock_room()
+                return
+            else:
+                print(" Wait. That's not it. Let's try again!")
+                user_dance = []
 
 
 def print_interactive_objs(objects, room_num):
