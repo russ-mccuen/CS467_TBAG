@@ -271,6 +271,20 @@ def use_tablet(tablet, rooms, objects):
                 time.sleep(1)
                 continue
 
+        if user_input == "WKRP":
+            description = "Info 3: Room 3 unlocked"
+            if description not in available_info:
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " A disco ball."
+                poster.set_description(poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[3].set_visible()
+                clear_screen()
+                print(" \n You unlocked more information.")
+                time.sleep(1)
+                continue
+
 
 def use_blacklight():
     print(" You turn the blacklight on and shine it around the room. "
