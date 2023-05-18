@@ -205,6 +205,14 @@
       "location": 2,
       "is movable": true,
        "is visible": true
+    },
+    {
+      "object name": "Pager",
+        "short desc": " \n A pager. . . a small, rectangular, electronic object.",
+      "description": " \n Is that . . . a pager?\n\n A pager, also known as a beeper, is a small electronic device that was widely used before the advent of mobile phones to receive short text messages or numeric codes. It allowed people to be contacted when they were away from a landline telephone or not near a computer. Pagers were particularly popular in the 1980s and 1990s, serving as a means of communication for various professionals such as doctors, emergency personnel, and business executives.\n\n",
+      "location": 4,
+      "is movable": true,
+       "is visible": false
     }
   ],
   "Current Room": 0
