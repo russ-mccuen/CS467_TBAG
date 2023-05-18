@@ -70,7 +70,7 @@ def describe_exiting_room(room, inventory):
                   "but you need to figure out what is going on.")
 
     if room_index == 2:
-        print(" You'd love to stay and dance a little more, but you know "
+        print(" You'd love to stay and dance, but you know "
               "there is more to do.")
 
     time.sleep(1)
@@ -104,7 +104,8 @@ def approach_door(room, from_room):
 
     else:
         clear_screen()
-        print(" You approach the door turn the handle and step into the room.")
+        print(" You approach the door, turn the handle, and step into the "
+              "room.")
         time.sleep(1)
         return room
 
