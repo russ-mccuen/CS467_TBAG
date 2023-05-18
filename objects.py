@@ -191,3 +191,10 @@ class VHS(GameObject):
 
     def use_vhs(self):
         pass
+
+
+class Pager(GameObject):
+    def __init__(self, name, short_desc, description, location, is_movable,
+                 is_visible):
+        super().__init__(name, short_desc, description, location,
+                         is_movable, is_visible)
