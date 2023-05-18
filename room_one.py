@@ -26,6 +26,10 @@ def room_one(room, rooms, objects, inventory):
             rooms[1].set_visible()
             rooms[2].unlock_room()
             rooms[2].set_visible()
+            rooms[3].unlock_room()
+            rooms[3].set_visible()
+            rooms[4].unlock_room()
+            rooms[4].set_visible()
             continue
 
         if user_input[0] == 'q':
