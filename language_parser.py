@@ -110,7 +110,7 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
         try_look(available_nav, rooms, room, item, objects, object_names, inventory)
 
     if action == "take":
-        try_take(item, objects, object_names, inventory)
+        try_take(item, objects, object_names, inventory, room)
 
     if action == "use":
         try_use(item, objects, rooms, room)
@@ -119,22 +119,23 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
         try_drop(item, inventory, room)
 
 
-def try_take(item, objects, object_names, inventory):
+def try_take(item, objects, object_names, inventory, room):
     if item not in object_names:
         print(f" You cannot take {item}")
 
     for obj in objects:
-        obj_in_room = obj.get_name().lower()
-        movable = obj.is_movable()
-        if item == obj_in_room and movable:
-            inventory.append(obj)
-            obj.set_object_location(-1)
-            print(f" {item} is now in your inventory.")
-            break
+        if obj.get_location() == room.get_index():
+            obj_in_room = obj.get_name().lower()
+            movable = obj.is_movable()
+            if item == obj_in_room and movable and obj not in inventory:
+                inventory.append(obj)
+                obj.set_object_location(-1)
+                print(f" {item} is now in your inventory.")
+                break
 
-        if item == obj_in_room and not movable:
-            print(f" You cannot move the {item}.")
-            break
+            if item == obj_in_room and not movable:
+                print(f" You cannot move the {item}.")
+                break
 
 
 def try_drop(item, inventory, room):
