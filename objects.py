@@ -2,7 +2,7 @@ import time
 
 
 class GameObject:
-    def __init__(self, name, short_desc, description, location,  is_movable,
+    def __init__(self, name, short_desc, description, location, is_movable,
                  is_visible):
         self.name = name
         self.short_desc = short_desc
@@ -44,13 +44,31 @@ class GameObject:
     def is_visible(self):
         return self.visible
 
+    def serialize(self):
+        sdict = {}
+
+        sdict['visible'] = self.visible
+        sdict['location'] = self.location
+
+        return sdict
+
+    def deserialize(self, loaddata):
+        if self.name in loaddata['objects']:
+            obj = loaddata['objects'][self.name]
+            self.visible = obj['visible']
+            self.location = obj['location']
+            return True
+
+        return False
+
 
 class TV(GameObject):
     def __init__(self, name, short_desc, description, location, is_movable,
                  is_visible):
         self.on = False
-        self.channels = ["\n You see static with UHF-73 in green at the top right of the screen.\n",
-                         "\n You see [TODO: Provide Description] the code UHF-74 at the top right of screen."]
+        self.channels = [
+            "\n You see static with UHF-73 in green at the top right of the screen.\n",
+            "\n You see [TODO: Provide Description] the code UHF-74 at the top right of screen."]
         self.vcr = []
         self.current_channel = 0
         super(TV, self).__init__(name, short_desc, description, location,
@@ -63,12 +81,14 @@ class TV(GameObject):
         return self.on
 
     def turn_on(self):
-        print(" \n You turn on the tv and hear a pop as the screen comes to life.")
+        print(
+            " \n You turn on the tv and hear a pop as the screen comes to life.")
         self.display_channel()
         self.on = True
 
     def turn_off(self):
-        print(" \n You turn off the tv and almost see your reflection as the screen dims.\n")
+        print(
+            " \n You turn off the tv and almost see your reflection as the screen dims.\n")
         self.on = False
 
     def turn_channel(self, index):
@@ -78,7 +98,8 @@ class TV(GameObject):
             self.display_channel()
             return True
         except IndexError:
-            print(f" \n Channel {index} is not available with your current subscription plan.\n")
+            print(
+                f" \n Channel {index} is not available with your current subscription plan.\n")
             return False
 
     def display_channel(self):
@@ -86,6 +107,23 @@ class TV(GameObject):
 
     def add_channel(self, channel):
         self.channels.append(channel)
+
+    def serialize(self):
+        sdict = super().serialize()
+
+        sdict['current_channel'] = self.current_channel
+
+        return sdict
+
+    def deserialize(self, loaddata):
+        valid = super().deserialize(loaddata)
+
+        if valid:
+            obj = loaddata['objects'][self.name]
+            self.current_channel = obj['current_channel']
+            return True
+
+        return False
 
 
 class Commodore(GameObject):
@@ -118,6 +156,25 @@ class Commodore(GameObject):
 
     def get_games_won(self):
         print(f" You won {self.total_won} times.")
+
+    def serialize(self):
+        sdict = super().serialize()
+
+        sdict['game_won'] = self.game_won
+        sdict['total_won'] = self.total_won
+
+        return sdict
+
+    def deserialize(self, loaddata):
+        valid = super().deserialize(loaddata)
+
+        if valid:
+            obj = loaddata['objects'][self.name]
+            self.game_won = obj['game_won']
+            self.total_won = obj['total_won']
+            return True
+
+        return False
 
 
 # 8 Objects that the player can put in their inventory:
@@ -169,6 +226,25 @@ class Tablet(GameObject):
 
     def add_to_folder(self, data):
         self.folder.append(data)
+
+    def serialize(self):
+        sdict = super().serialize()
+
+        sdict['locked'] = self.locked
+        sdict['folder'] = self.folder
+
+        return sdict
+
+    def deserialize(self, loaddata):
+        valid = super().deserialize(loaddata)
+
+        if valid:
+            obj = loaddata['objects'][self.name]
+            self.locked = obj['locked']
+            self.folder = obj['folder']
+            return True
+
+        return False
 
 
 # Object 3

@@ -80,3 +80,21 @@ class Room:
 
     def get_door_desc(self):
         return self.doorDesc
+
+    def serialize(self):
+        sdict = {}
+        sdict['locked'] = self.locked
+        sdict['visible'] = self.visible
+        sdict['visited'] = self.visited
+        return sdict
+
+    def deserialize(self, loaddata):
+        str_index = str(self.index)
+        if str_index in loaddata['rooms']:
+            room = loaddata['rooms'][str_index]
+            self.locked = room['locked']
+            self.visible = room['visible']
+            self.visited = room['visited']
+            return True
+
+        return False

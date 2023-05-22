@@ -1,3 +1,7 @@
+import json
+import time
+from os.path import exists
+
 from language_parser import *
 from room_setup import *
 
@@ -34,6 +38,54 @@ def room_one(room, rooms, objects, inventory):
 
         if user_input[0] == 'q':
             break
+
+        if user_input[0] == 'savegame':
+            savedata = {}
+            savedata['rooms'] = {}
+            savedata['objects'] = {}
+
+            confirm = input(" Are you sure you want to save the game? Type SAVE (all caps) to confirm. ")
+            if confirm == "SAVE":
+                for r in rooms:
+                    savedata['rooms'][r.index] = r.serialize()
+
+                for obj in objects:
+                    savedata['objects'][obj.name] = obj.serialize()
+
+                savedata['current_room'] = room.get_index()
+                savedata['inventory'] = [obj.get_name() for obj in inventory]
+
+                with open('savedata.json', 'w') as outfile:
+                    json.dump(savedata, outfile)
+
+                print(" Game saved.")
+            continue
+
+        if user_input[0] == 'loadgame':
+            confirm = input(" Are you sure you want to load the game? Type LOAD (all caps) to confirm. ")
+            if confirm == "LOAD":
+                if exists('savedata.json'):
+                    loaddata = {}
+                    current_room = 0
+                    inventory.clear()
+                    with open('savedata.json', 'r') as infile:
+                        loaddata = json.load(infile)
+
+                    for r in rooms:
+                        r.deserialize(loaddata)
+                        if (r.get_index() == loaddata['current_room']):
+                            current_room = r
+                    for obj in objects:
+                        obj.deserialize(loaddata)
+                        if obj.get_name() in loaddata['inventory']:
+                            inventory.append(obj)
+
+                    print(" Data loaded successfully.")
+                    time.sleep(1)
+                    return current_room
+                else:
+                    print(" Save Data not found. Please save the game before trying to load data.")
+            continue
 
         parsed_input = parse_input(user_input, inventory)
 
