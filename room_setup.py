@@ -165,6 +165,21 @@ def describe_exiting_room(room, inventory):
               "final breath of the past before venturing back into the "
               "unknown future.")
 
+    if room_index == 8:
+        print("As you prepare to leave the base on Mars, a sense of "
+              "bittersweet nostalgia washes over you. The familiar hum of "
+              "machinery and the bustling activity of scientists and "
+              "engineers surround you, creating a symphony of human "
+              "endeavor. You steal a final glance at the awe-inspiring "
+              "Martian landscape, its rugged beauty etched in your memory. "
+              "The reddish hues of the dunes, the towering mountains, "
+              "and the ethereal sky overhead evoke a profound appreciation "
+              "for the indomitable spirit of exploration. With a mixture of "
+              "excitement and reluctance, you take a deep breath, knowing "
+              "that the time has come to bid farewell to this extraordinary "
+              "world and return to your own time, carrying with you the "
+              "untold stories and infinite possibilities of Mars.\n\n")
+
     time.sleep(1)
 
 
