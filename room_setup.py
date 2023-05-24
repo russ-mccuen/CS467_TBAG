@@ -117,6 +117,7 @@ def do_dance(room):
           "Leg\n 5 - Spin\n\n")
     correct_dance = False
     dance_sequence = [1, 3, 4, 2, 5]
+    num_check = ['1', '2', '3', '4', '5']
     user_dance = []
     dance_length = len(dance_sequence)
     while not correct_dance:
@@ -124,6 +125,10 @@ def do_dance(room):
         if len(dance) > 1:
             print("\n Adam likes to enter more than one number at a time. "
                   "Don't be Adam.\n")
+            continue
+        if dance not in num_check:
+            print("\n Please enter a number. You know, like in the "
+                  "directions.\n")
             continue
         user_dance.append(int(dance))
         if len(user_dance) == dance_length:
