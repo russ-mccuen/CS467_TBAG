@@ -99,6 +99,30 @@ def describe_exiting_room(room, inventory):
               "a testament to the power of music and the unyielding pursuit "
               "of a better world.")
 
+    if room_index == 4:
+        print(" As you stroll through the bustling food court of the 1990s, the nostalgic aromas "
+              "of greasy burgers, fresh popcorn, and sugary treats fill the air. The vibrant neon "
+              "lights and vibrant decor transport you back to an era of vibrant colors and retro "
+              "charm. Laughter and chatter resonate from the crowded tables as people enjoy their "
+              "meals and share stories. You take a moment to soak in the atmosphere, appreciating "
+              "the simplicity and innocence of this bygone time. Before you leave you can't "
+              "help but feel a twinge of bittersweet nostalgia. You carry the memories of this "
+              "vibrant food court, frozen in time, as you prepare to journey back to the present, "
+              "eager to rejoin the world of modern marvels and future possibilities.")
+
+    if room_index == 5:
+        print(" As you stand on the threshold of the living room, your gaze lingers on the "
+              "familiar surroundings, filled with memories of the 2000s. The soft glow of the "
+              "table lamps casts a warm ambiance, illuminating the space where laughter and "
+              "conversations once flowed freely. You take one last glance at the entertainment "
+              "unit, its sleek lines housing the beloved gaming consoles and that prized "
+              "flat-screen television. The familiar hum of the ceiling fan above stirs the air "
+              "gently, as if bidding you farewell. The bookshelf stands proud, displaying the "
+              "cherished collection of books, CDs, and DVDs, a testament to a time when physical "
+              "media reigned supreme. With a mix of nostalgia and anticipation, you reluctantly "
+              "turn away, leaving the room behind, the remnants of the 2000s clinging to your "
+              "thoughts as you prepare to reemerge into the present")
+
     if room_index == 6:
         print(" As you stand on the edge of Washington, D.C. in the remarkable year of 2076, "
               "a surge of anticipation tingles through your veins. The air crackles with an "
