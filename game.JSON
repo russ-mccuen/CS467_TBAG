@@ -25,7 +25,7 @@
      {
        "index": 2,
       "name":  "1970 Room",
-       "door desc": "A glittery door with sequence patters.",
+       "door desc": " A glittery door with sequence patters.",
        "intro": " You realize you are in a different place and time. But the first thing you \nnotice isn't your surroundings, it is the music.\n\nThe music here is absolutely pumping. It is filled with a high-energy dance\nbeat, and you can feel it in every fiber of your being. The bassline is\nthumping through the floor, and the strings are swelling in a way that just\nmakes you want to move. There's a sense of urgency and excitement in the music,\nlike it's pushing you to get up and dance.\n\nAnd the vocals . . . the vocals are pure joy. The singers are belting out these\ncatchy, upbeat melodies that just make you want to sing along. It's all about\nhaving a good time, letting loose, and forgetting your troubles for a while.\n",
       "short desc":  "You are in a disco. There are people dancing, there is loud music, and you\nimmediately think about joining them. Then you remember you don't know any\ndisco dances.\n\nThere is so much going on on the dance floor that it might be worth a second\nlook.\n\nThere is a disco ball hanging above the dance floor that also captures your\nattention.\n",
       "long desc":  "You finally break free from the hold of the music and decide to take in your\nsurroundings.\n\nYou are in a big room with loud music, lights, and people dancing. There\nappears to be a DJ in one corner playing . . . records.\n\nThe decor of the room is flashy and colorful, with neon lights everywhere. The\npeople are dressed fashionably and glamorous, wearing sequined and glittery\nclothing, platform shoes, and knee-high boots. There are lights are flashing\nall around, and everyone is dressed to impress. You can feel the energy of the\ncrowd. It's like one big party, and you're a part of it.\n\nThe combination of the music, the clothes, and the atmosphere hits you.\n\nYou are in a disco.\n\nThe dance floor is in the center of the room.\n",
@@ -47,10 +47,10 @@
      {
        "index": 4,
       "name":  "1990 Room",
-       "door desc": "A bright blue door with a pager on it.",
-       "intro": " When you look around after your latest time-traveling jaunt you are not in a\nbedroom or a disco or someone's farm turned concert venue. You are\nimmediately hit by a blast of noise and activity. People of all ages are\nbustling around, jostling for space, and queuing up to get something to eat.\n\n",
-      "short desc":  " You are in a shopping mall food court. Based on what you see you think it is\nsometime in the 1990s.\n\n",
-      "long desc":  " You are in a . . . food court? In a shopping mall?\n\nThe food court itself is a large, open area, filled with dozens of stalls and\nrestaurants, each with its own distinct aroma and vibe. The decor is modern,\nwith neon lights, metallic finishes, and plastic seating. There's a distinct\nhum of excitement in the air, with shoppers and hungry people alike rubbing\nshoulders and enjoying the lively atmosphere.\n\nThe variety of food options is staggering. You can find fast food staples like\na bunch of burger joints with their familiar logos and signature menus. There's\nalso a host of international cuisine options, including Chinese, Italian, and\nMexican food. You can order whatever you want and then sit down at a table to\nsavor your meal.\n\nThe smells are amazing, with the tantalizing aroma of freshly cooked food\nwafting across the food court. The sound of sizzling burgers, frying chicken,\nand sizzling stir-fries fills the air, punctuated by the occasional beep of a\ncash register or the clattering of cutlery.\n\nAs you walk around the food court, you can see groups of people chatting and\nlaughing, tucking into their meals, and enjoying the bustling atmosphere. The\nseating areas are crowded, but there's a friendly vibe, with strangers striking\nup conversations and sharing stories.\n\n",
+       "door desc": " A bright blue door with a pager on it.",
+       "intro": " When you look around after your latest time-traveling jaunt you are not in a bedroom or a disco or someone's farm turned concert venue. You are immediately hit by a blast of noise and activity. People of all ages are bustling around, jostling for space, and queuing up to get something to eat.\n\n",
+      "short desc":  " You are in a shopping mall food court. Based on what you see you think it is sometime in the 1990s.\n\n",
+      "long desc":  " You are in a . . . food court? In a shopping mall?\n\n The food court itself is a large, open area, filled with dozens of stalls and restaurants, each with its own distinct aroma and vibe. The decor is modern, with neon lights, metallic finishes, and plastic seating. There's a distinct hum of excitement in the air, with shoppers and hungry people alike rubbing shoulders and enjoying the lively atmosphere.\n\n The variety of food options is staggering. You can find fast food staples like a bunch of burger joints with their familiar logos and signature menus. There's also a host of international cuisine options, including Chinese, Italian, and Mexican food. You can order whatever you want and then sit down at a table to savor your meal.\n\n The smells are amazing, with the tantalizing aroma of freshly cooked food wafting across the food court. The sound of sizzling burgers, frying chicken, and sizzling stir-fries fills the air, punctuated by the occasional beep of a cash register or the clattering of cutlery.\n\n As you walk around the food court, you can see groups of people chatting and laughing, tucking into their meals, and enjoying the bustling atmosphere. The seating areas are crowded, but there's a friendly vibe, with strangers striking up conversations and sharing stories.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": "south east"
@@ -68,7 +68,7 @@
     },
      {
        "index": 6,
-      "name":  "Room six",
+      "name":  "2076 Room",
        "door desc": "",
        "intro": "",
       "short desc":  "This is the short description",
@@ -79,7 +79,7 @@
     },
      {
        "index": 7,
-      "name":  "Room seven",
+      "name":  "1950 room",
        "door desc": "",
        "intro": "",
       "short desc":  "This is the short description",
@@ -90,7 +90,7 @@
     },
      {
        "index": 8,
-      "name":  "Room eight",
+      "name":  "2500 Room",
        "door desc": "",
        "intro": "",
       "short desc":  "This is the short description",
@@ -101,7 +101,7 @@
     },
      {
        "index": 9,
-      "name":  "Room nine",
+      "name":  "Final Room",
        "door desc": "",
        "intro": "",
       "short desc":  "This is the short description",
