@@ -8,7 +8,8 @@ from room_setup import *
 
 def room_env(room, rooms, objects, inventory):
     """
-    This is the main room function that facilitates printing room features and receiving user input for interaction.
+    This is the main room function that facilitates printing room features and receiving user
+    input for interaction.
     :param room: Is the room index number.
     :param rooms: A list of room objects.
     :param objects: A list of objects defined in the JSON.
@@ -52,7 +53,8 @@ def room_env(room, rooms, objects, inventory):
             savedata['rooms'] = {}
             savedata['objects'] = {}
 
-            confirm = input(" Are you sure you want to save the game? Type SAVE (all caps) to confirm. ")
+            confirm = input(" Are you sure you want to save the game? Type SAVE (all caps) to "
+                            "confirm. ")
             if confirm == "SAVE":
                 for r in rooms:
                     savedata['rooms'][r.index] = r.serialize()
@@ -70,7 +72,8 @@ def room_env(room, rooms, objects, inventory):
             continue
 
         if user_input[0] == 'loadgame':
-            confirm = input(" Are you sure you want to load the game? Type LOAD (all caps) to confirm. ")
+            confirm = input(" Are you sure you want to load the game? Type LOAD (all caps) to "
+                            "confirm. ")
             if confirm == "LOAD":
                 if exists('savedata.json'):
                     loaddata = {}
@@ -111,6 +114,7 @@ def room_env(room, rooms, objects, inventory):
                     return next_room
 
             else:
-                try_action(available_nav, rooms, room, action_type, option, objects, object_names, inventory)
+                try_action(available_nav, rooms, room, action_type, option, objects,
+                           object_names, inventory)
 
 

@@ -242,7 +242,8 @@ def use_tablet(tablet, rooms, objects):
                 poster.set_description(poster_detail)
 
                 clear_screen()
-                print(" You hear something shift in the room. You unlocked the tablet. On it you see information.")
+                print(" You hear something shift in the room. You unlocked the tablet. On it you "
+                      "see information.")
                 time.sleep(1)
                 rooms[1].set_visible()
             else:
@@ -304,8 +305,8 @@ def print_tab_info(tablet):
 
 
 def update_room_desc(rooms):
-    description = rooms[0].get_long_desc() + "\n\n Wait . . . something is different about the poster. And there " \
-                                             "appears to be a new door. \n"
+    description = rooms[0].get_long_desc() + "\n\n Wait . . . something is different about the " \
+                                             "poster. And there appears to be a new door. \n"
     rooms[0].set_long_desc(description)
 
 

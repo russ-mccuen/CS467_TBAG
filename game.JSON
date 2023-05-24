@@ -58,7 +58,7 @@
      {
        "index": 5,
       "name":  "2000 Room",
-       "door desc": "A green door with writing on it. \'Y2K.\'",
+       "door desc": "A green door with writing on it. 'Y2K.'",
        "intro": " You realize you are in a different place and time. This time you are once again in a house, but this time in what appears to be a living room.\n\n As you step into the living room, you find yourself transported back to the 2000s, a time filled with nostalgia and technological advancements. The space is cozy yet modern, reflecting the trends and styles of the era.\n\n The walls are painted in warm, neutral tones that were popular at the time.\n\n",
       "short desc":  " You are in a cozy living room. You notice a television and a cd player nearby.",
       "long desc":  " A large flat-screen television, a prized possession in the 2000s, takes center stage on an entertainment unit. It is surrounded by various gaming consoles like the PlayStation 2 or Xbox, indicating the love for electronic entertainment during this period.\n\n A plush sofa sits against one wall, upholstered in vibrant or earthy colors, providing ample seating for family and guests. The cushions are adorned with patterns that were in vogue, and a matching coffee table stands in front, hosting magazines and perhaps a stack of CDs or DVDs.\n\n On another side of the room, a bookshelf proudly displays a collection of physical books, CDs, and DVDs. It serves as a testament to the transition from analog to digital media that was taking place during this time. You notice a CD player nearby, offering the option to play favorite music CDs.",
@@ -115,8 +115,8 @@
   "Game Objects": [
     {
     "object name": "Desk",
-      "short desc": " Against the wall there is a desk where you can see a few items.",
-      "description": " This desk is not IKEA. It seems to be made of a rich mahogany.",
+      "short desc": "\n Against the wall there is a desk where you can see a few items.",
+      "description": "\n This desk is not IKEA. It seems to be made of a rich mahogany.",
     "location": 0,
       "is movable": false,
       "is visible": true
@@ -124,8 +124,8 @@
 
     {
     "object name": "TV",
-       "short desc": " An older television. It is a TV/VCR combo. An old television that plays videotapes...",
-      "description": " \n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look\n like big cassette tapes . . . you know, those things that . . . never mind.",
+       "short desc": "\n An older television. It is a TV/VCR combo. An old television that plays videotapes...",
+      "description": "\n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look like big cassette tapes . . . you know, those things that . . . never mind.",
     "location": 0,
       "is movable": false,
       "is visible": true
@@ -133,8 +133,8 @@
 
     {
       "object name": "Tablet",
-       "short desc": " What appears to be a type of tablet.",
-      "description": " \n A transparent item that looks like a tablet but you are not quite sure what it\n is. It definitely looks more modern than the tv.",
+       "short desc": "\n What appears to be a type of tablet.",
+      "description": "\n A transparent item that looks like a tablet but you are not quite sure what it is. It definitely looks more modern than the tv.",
       "location": 0,
       "is movable": true,
       "is visible": false
@@ -142,8 +142,8 @@
 
     {
       "object name": "Letter",
-       "short desc": " A piece of paper that looks like it has something written on it.",
-      "description": " \n I can't believe all you had to do was type 'place bar' and you would have won!\n Then you could have gone to the mailbox, to the barrow, and game over!\n\n You don't know what this means, but it seems important.\n\n",
+       "short desc": "\n A piece of paper that looks like it has something written on it.",
+      "description": "\n I can't believe all you had to do was type 'place bar' and you would have won! Then you could have gone to the mailbox, to the barrow, and game over!\n\n You don't know what this means, but it seems important.\n\n",
       "location": 0,
       "is movable": true,
       "is visible": false
@@ -151,16 +151,16 @@
 
     {
       "object name": "Poster",
-       "short desc": " There is a poster on the wall, but it's the poster you had on\n your wall as a child. At least you think it is...",
-      "description": " \n The poster appears to be blank. . . ",
+       "short desc": "\n There is a poster on the wall, but it's the poster you had on your wall as a child. At least you think it is...",
+      "description": "\n The poster appears to be blank. . . ",
       "location": 0,
       "is movable": false,
       "is visible": true
     },
     {
       "object name": "Remote",
-       "short desc": "A black standard remote. You remember this remote.",
-      "description": " \n The remote is very simple. You are tempted to use it . . . ",
+       "short desc": "\n A black standard remote. You remember this remote.",
+      "description": "\n The remote is very simple. You are tempted to use it . . . ",
       "location": 1,
       "is movable": true,
       "is visible": false
@@ -168,64 +168,64 @@
 
      {
       "object name": "Commodore",
-        "short desc": "A Commodore that you remember from your childhood. How cool!",
-      "description": " \n In the exciting world of technology, let me take you back to the 1980s,\n a time when personal computers were just starting to become popular. \nOne of the most iconic machines of that era was the Commodore 64, a true marvel that captured \nthe hearts and minds of computer enthusiasts everywhere.\n",
+        "short desc": "\n A Commodore that you remember from your childhood. How cool!",
+      "description": "\n In the exciting world of technology, let me take you back to the 1980s,\n a time when personal computers were just starting to become popular. \nOne of the most iconic machines of that era was the Commodore 64, a true marvel that captured \nthe hearts and minds of computer enthusiasts everywhere.\n",
       "location": 1,
       "is movable": false,
        "is visible": true
     },
      {
       "object name": "Desk",
-        "short desc": " A Desk with what appears to be a Commodore computer on it and perhaps something else.",
-      "description": " \n The desk is what you remember from [Details].",
+        "short desc": "\n A Desk with what appears to be a Commodore computer on it and perhaps something else.",
+      "description": "\n The desk is what you remember from [Details].",
       "location": 1,
       "is movable": false,
        "is visible": true
     },
     {
       "object name": "Disco-Ball",
-       "short desc": " There is a disco ball hanging above the dance floor that also captures your attention.",
-      "description": " \n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors \n that are reflecting the colorful lights all over the dance floor. \n It's the centerpiece of the whole room, and it's casting a mesmerizing glow \n that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, \n sending flashes of light in all directions. As it rotates, the mirrored \n tiles catch the light and send it bouncing around the room, creating \n a sparkling, magical effect. It's like a miniature universe up there, \n with thousands of little stars that are pulsing and twinkling \n with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a \n place where anything can happen, where anything is possible.\n",
+       "short desc": "\n There is a disco ball hanging above the dance floor that also captures your attention.",
+      "description": "\n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors \n that are reflecting the colorful lights all over the dance floor. \n It's the centerpiece of the whole room, and it's casting a mesmerizing glow \n that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, \n sending flashes of light in all directions. As it rotates, the mirrored \n tiles catch the light and send it bouncing around the room, creating \n a sparkling, magical effect. It's like a miniature universe up there, \n with thousands of little stars that are pulsing and twinkling \n with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a \n place where anything can happen, where anything is possible.\n",
       "location": 2,
       "is movable": false,
       "is visible": true
     },
     {
       "object name": "Dance-Floor",
-       "short desc": "  \n There is so much going on on the dance floor that it might be worth a second look.",
-      "description": " \n The dance floor is a large, open space that is the centerpiece of the club \n and the focal point for everyone in the room. It is illuminated with bright,\n flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music.\n The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
+       "short desc": "\n There is so much going on on the dance floor that it might be worth a second look.",
+      "description": "\n The dance floor is a large, open space that is the centerpiece of the club \n and the focal point for everyone in the room. It is illuminated with bright,\n flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music.\n The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
       "location": 2,
       "is movable": false,
       "is visible": true
     },
      {
       "object name": "Blacklight",
-        "short desc": " \n There is something that looks like a light bulb, but it is purple.",
-      "description": " \n Somehow you remember that blacklights emit ultraviolet light (must have\n been the discovery channel), and when this light shines on certain types\n of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could\n see with the blacklight.\n",
+        "short desc": "\n There is something that looks like a light bulb, but it is purple.",
+      "description": "\n Somehow you remember that blacklights emit ultraviolet light (must have\n been the discovery channel), and when this light shines on certain types\n of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could\n see with the blacklight.\n",
       "location": 2,
       "is movable": true,
        "is visible": true
     },
     {
       "object name": "Pager",
-        "short desc": " \n A pager. . . a small, rectangular, electronic object.",
-      "description": " \n Is that . . . a pager?\n\n A pager, also known as a beeper, is a small electronic device that was widely used before the advent of mobile phones to receive short text messages or numeric codes. It allowed people to be contacted when they were away from a landline telephone or not near a computer. Pagers were particularly popular in the 1980s and 1990s, serving as a means of communication for various professionals such as doctors, emergency personnel, and business executives.\n\n",
+        "short desc": "\n A pager. . . a small, rectangular, electronic object.",
+      "description": "\n Is that . . . a pager?\n\n A pager, also known as a beeper, is a small electronic device that was widely used before the advent of mobile phones to receive short text messages or numeric codes. It allowed people to be contacted when they were away from a landline telephone or not near a computer. Pagers were particularly popular in the 1980s and 1990s, serving as a means of communication for various professionals such as doctors, emergency personnel, and business executives.\n\n",
       "location": 4,
       "is movable": true,
        "is visible": false
     },
     {
     "object name": "Stage",
-      "short desc": " The stage at Woodstock stood as a colossal altar of music, a towering platform where legends were born and the soul-stirring sounds of counterculture echoed into eternity.",
-      "description": " The music, the heartbeat of Woodstock, echoes from the massive stage at the center of the festival grounds. It reverberates through the air, penetrating the very souls of those in attendance. The sounds of iconic artists like Jimi Hendrix, Janis Joplin, The Who, and Santana blend together in a harmonious symphony, creating a sonic tapestry that resonates with every fiber of my being.\n\n The mood is electric, alive with a palpable sense of unity and camaraderie. Strangers become friends, sharing food, stories, and laughter. The spirit of love and peace permeates the air, fostering an environment of acceptance and understanding. It is a utopia where the boundaries of societal norms are erased, replaced by an unwavering belief in the power of music to transcend differences.\n\n Amidst the music and revelry, nature stands as a silent witness. Towering trees provide shade and respite from the summer heat, their leaves rustling in gentle harmony with the music. A nearby lake beckons festival-goers to take a refreshing dip, washing away the dust and sweat of the day, while the distant hills serve as a serene backdrop, a reminder of the world beyond this temporary sanctuary...",
+      "short desc": "\n The stage at Woodstock stood as a colossal altar of music, a towering platform where legends were born and the soul-stirring sounds of counterculture echoed into eternity.\n\n",
+      "description": "\n The music, the heartbeat of Woodstock, echoes from the massive stage at the center of the festival grounds. It reverberates through the air, penetrating the very souls of those in attendance. The sounds of iconic artists like Jimi Hendrix, Janis Joplin, The Who, and Santana blend together in a harmonious symphony, creating a sonic tapestry that resonates with every fiber of my being.\n\n The mood is electric, alive with a palpable sense of unity and camaraderie. Strangers become friends, sharing food, stories, and laughter. The spirit of love and peace permeates the air, fostering an environment of acceptance and understanding. It is a utopia where the boundaries of societal norms are erased, replaced by an unwavering belief in the power of music to transcend differences.\n\n Amidst the music and revelry, nature stands as a silent witness. Towering trees provide shade and respite from the summer heat, their leaves rustling in gentle harmony with the music. A nearby lake beckons festival-goers to take a refreshing dip, washing away the dust and sweat of the day, while the distant hills serve as a serene backdrop, a reminder of the world beyond this temporary sanctuary...\n\n",
     "location": 3,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Dancing",
-      "short desc": " Bodies intertwined and hearts alight, the dancers at Woodstock moved in a harmonious symphony of freedom and expression, their spirits soaring with every beat.",
-      "description": " As you stand on the outskirts of the crowd, your eyes are drawn to the mesmerizing sight of people dancing in ecstatic abandon. They move with fluidity and grace, their bodies swaying to the pulsating rhythm of the music. Each dancer is a vibrant expression of freedom, their movements an extension of their innermost desires and emotions.\n\n Barefoot and carefree, they twirl and spin, their arms reaching towards the heavens as if trying to touch the very essence of the music. Their energy is infectious, spreading like wildfire throughout the crowd, engulfing everyone in its euphoric embrace. It is a collective celebration of liberation, as bodies move in syncopation, liberated from the shackles of societal expectations.\n\n In this kaleidoscope of movement, you witness a beautiful tapestry of individuality and unity. The dancers come from all walks of life, each one telling their own unique story through their steps. Some move with wild abandon, their bodies unleashing a torrent of energy. Others sway with a gentle sway, lost in a private reverie. Yet, despite their differences, they are bound together by a common thread of joy, love, and the sheer bliss of being alive in this moment.",
+      "short desc": "\n Bodies intertwined and hearts alight, the dancers at Woodstock moved in a harmonious symphony of freedom and expression, their spirits soaring with every beat.\n\n",
+      "description": "\n As you stand on the outskirts of the crowd, your eyes are drawn to the mesmerizing sight of people dancing in ecstatic abandon. They move with fluidity and grace, their bodies swaying to the pulsating rhythm of the music. Each dancer is a vibrant expression of freedom, their movements an extension of their innermost desires and emotions.\n\n Barefoot and carefree, they twirl and spin, their arms reaching towards the heavens as if trying to touch the very essence of the music. Their energy is infectious, spreading like wildfire throughout the crowd, engulfing everyone in its euphoric embrace. It is a collective celebration of liberation, as bodies move in syncopation, liberated from the shackles of societal expectations.\n\n In this kaleidoscope of movement, you witness a beautiful tapestry of individuality and unity. The dancers come from all walks of life, each one telling their own unique story through their steps. Some move with wild abandon, their bodies unleashing a torrent of energy. Others sway with a gentle sway, lost in a private reverie. Yet, despite their differences, they are bound together by a common thread of joy, love, and the sheer bliss of being alive in this moment.\n\n",
     "location": 3,
       "is movable": false,
       "is visible": true
