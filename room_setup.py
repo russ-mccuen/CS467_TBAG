@@ -99,6 +99,19 @@ def describe_exiting_room(room, inventory):
               "a testament to the power of music and the unyielding pursuit "
               "of a better world.")
 
+    if room_index == 6:
+        print(" As you stand on the edge of Washington, D.C. in the remarkable year of 2076, "
+              "a surge of anticipation tingles through your veins. The air crackles with an "
+              "electric energy as you prepare to bid farewell to this extraordinary future. With "
+              "one last look at the awe-inspiring cityscape, adorned with futuristic architecture "
+              "and bustling with advanced technologies, you take a deep breath, savoring the "
+              "moment. The sun casts a warm glow over the horizon, illuminating the sleek "
+              "buildings and reflecting off the surfaces of self-driving vehicles gliding by. You"
+              " pause, absorbing the vibrant atmosphere and the palpable sense of progress. The "
+              "future has unfolded before your eyes, leaving an indelible mark on your memories. "
+              "With gratitude and excitement, you embrace the unknown, ready to carry the lessons "
+              "and inspiration of Washington, D.C. in 2076 back to the present.")
+
     time.sleep(1)
 
 

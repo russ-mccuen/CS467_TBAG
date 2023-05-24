@@ -69,10 +69,10 @@
      {
        "index": 6,
       "name":  "2076 Room",
-       "door desc": "",
-       "intro": "",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
+       "door desc": "Tricentennial Room",
+       "intro": " You realize you are in a different place and time. A bustling metropolis of the future unveils before your eyes. The cityscape, a blend of architectural marvels and sustainable innovations, captivates your senses. Gleaming skyscrapers stretch towards the heavens, adorned with sleek, energy-efficient facades that harness the sun's power. A vibrant network of clean and efficient transportation systems, including autonomous vehicles and hyperloop tubes, seamlessly weaves through the city, ensuring swift and eco-friendly travel. Parks and green spaces abound, with vertical gardens adorning the sides of buildings and floating parks hovering above the Potomac River.\n\n",
+      "short desc":  "You are in Washington, D.C. at the Tricentennial celebration.",
+      "long desc":  " The city hums with a harmonious fusion of cultural diversity, cutting-edge technology, and a deep respect for the nation's rich history. You realize you are in our nation's capital and you know the year is 2076. You know this because you see preparations for the Tricentennial Celebration.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": " south west"
