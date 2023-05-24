@@ -46,7 +46,7 @@ Room four:
 Room five:
 - timeline -> 2000s
 - setting -> living room
-- features -> television and refrigerator
+- features -> television and cd player
 - object(s) -> flip phone
 - poster item -> World Trade Centers
 
