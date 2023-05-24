@@ -229,6 +229,87 @@
     "location": 3,
       "is movable": false,
       "is visible": true
+    },
+
+    {
+    "object name": "Mall Directory",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 4,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Pizza Place",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 4,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Television",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 5,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "CD Player",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 5,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Washington Monument",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 6,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Reflecting Pool",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 6,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Booth Jukebox",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 7,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Menu",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 7,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Earth",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 8,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Mars Landscape",
+      "short desc": "\n ",
+      "description": "\n ",
+    "location": 8,
+      "is movable": false,
+      "is visible": true
     }
   ],
   "Current Room": 0
