@@ -91,6 +91,14 @@ def describe_exiting_room(room, inventory):
         print(" You'd love to stay and dance, but you know "
               "there is more to do.")
 
+    if room_index == 3:
+        print(" As you leave Woodstock, a part of you remains forever changed."
+              "The memories of the music, the people, and the indomitable "
+              "spirit of that magical weekend will forever be etched in your "
+              "heart. Woodstock will forever stand as a symbol of hope, "
+              "a testament to the power of music and the unyielding pursuit "
+              "of a better world.")
+
     time.sleep(1)
 
 
