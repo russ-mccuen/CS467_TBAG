@@ -232,17 +232,17 @@
     },
 
     {
-    "object name": "Mall Directory",
-      "short desc": "\n ",
-      "description": "\n ",
+    "object name": "Mall-Directory",
+      "short desc": "\n A mall directory to help you figure out where you are at.",
+      "description": "\n As you approach the mall directory, you notice a large, colorful sign with bold lettering that reads \"You are Here.\" The directory itself is a large, freestanding display, with a metal frame and a large glass front. Behind the glass are several panels of colorful maps and directories, each with a different section of the mall.\n\n The maps are laid out in a grid, with each store marked with its name and location. They are color-coded, with each section of the mall represented by a different color. The directory is well-organized and easy to read, with clear labels and a simple, straightforward layout.\n\n There are a few other features that make the directory stand out. Along the sides of the display, there are advertisements for various stores and restaurants, with colorful images and catchy slogans. There may also be a few coupons or special offers tucked in among the ads, encouraging shoppers to visit certain stores or try out new products.\n\n You notice the pizza place's location is 'FC-15'. For some reason you think this is important.\n\n",
     "location": 4,
       "is movable": false,
       "is visible": true
     },
     {
-    "object name": "Pizza Place",
-      "short desc": "\n ",
-      "description": "\n ",
+    "object name": "Pizza-Place",
+      "short desc": "\n A pizza place whose pizza looks amazing!",
+      "description": "\n As you approach the pizza place in the food court, you are hit by the delicious aroma of freshly-baked pizza. The pizza place is a small, open stall with a glass display case filled with freshly-made pies. The smell of melting cheese and tomato sauce is mouth-watering, and you can't wait to get your hands on a slice.\n\n The stall is staffed by a few friendly pizza makers, dressed in white aprons and hats. They are busy tossing dough, spreading sauce, and adding toppings to create the perfect pies. The menu is simple but satisfying, with options for cheese, pepperoni, sausage, and veggie pizzas. You can order by the slice or get a whole pie to share with friends.\n\n You see a sign on the glass in front of the freshly-baked pies that reads, ' Find our location key on the directory for a free slice!'\n\n For some reason you think this is important.\n\n",
     "location": 4,
       "is movable": false,
       "is visible": true
@@ -256,7 +256,7 @@
       "is visible": true
     },
     {
-    "object name": "CD Player",
+    "object name": "CD-Player",
       "short desc": "\n ",
       "description": "\n ",
     "location": 5,
@@ -264,7 +264,7 @@
       "is visible": true
     },
     {
-    "object name": "Washington Monument",
+    "object name": "Washington-Monument",
       "short desc": "\n ",
       "description": "\n ",
     "location": 6,
@@ -272,7 +272,7 @@
       "is visible": true
     },
     {
-    "object name": "Reflecting Pool",
+    "object name": "Reflecting-Pool",
       "short desc": "\n ",
       "description": "\n ",
     "location": 6,
@@ -280,7 +280,7 @@
       "is visible": true
     },
     {
-    "object name": "Booth Jukebox",
+    "object name": "Jukebox",
       "short desc": "\n ",
       "description": "\n ",
     "location": 7,
@@ -304,7 +304,7 @@
       "is visible": true
     },
     {
-    "object name": "Mars Landscape",
+    "object name": "Landscape",
       "short desc": "\n ",
       "description": "\n ",
     "location": 8,
