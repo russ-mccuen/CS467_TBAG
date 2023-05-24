@@ -213,6 +213,22 @@
       "location": 4,
       "is movable": true,
        "is visible": false
+    },
+    {
+    "object name": "Stage",
+      "short desc": " The stage at Woodstock stood as a colossal altar of music, a towering platform where legends were born and the soul-stirring sounds of counterculture echoed into eternity.",
+      "description": " The music, the heartbeat of Woodstock, echoes from the massive stage at the center of the festival grounds. It reverberates through the air, penetrating the very souls of those in attendance. The sounds of iconic artists like Jimi Hendrix, Janis Joplin, The Who, and Santana blend together in a harmonious symphony, creating a sonic tapestry that resonates with every fiber of my being.\n\n The mood is electric, alive with a palpable sense of unity and camaraderie. Strangers become friends, sharing food, stories, and laughter. The spirit of love and peace permeates the air, fostering an environment of acceptance and understanding. It is a utopia where the boundaries of societal norms are erased, replaced by an unwavering belief in the power of music to transcend differences.\n\n Amidst the music and revelry, nature stands as a silent witness. Towering trees provide shade and respite from the summer heat, their leaves rustling in gentle harmony with the music. A nearby lake beckons festival-goers to take a refreshing dip, washing away the dust and sweat of the day, while the distant hills serve as a serene backdrop, a reminder of the world beyond this temporary sanctuary...",
+    "location": 3,
+      "is movable": false,
+      "is visible": true
+    },
+    {
+    "object name": "Dancing",
+      "short desc": " Bodies intertwined and hearts alight, the dancers at Woodstock moved in a harmonious symphony of freedom and expression, their spirits soaring with every beat.",
+      "description": " As I stand on the outskirts of the crowd, my eyes are drawn to the mesmerizing sight of people dancing in ecstatic abandon. They move with fluidity and grace, their bodies swaying to the pulsating rhythm of the music. Each dancer is a vibrant expression of freedom, their movements an extension of their innermost desires and emotions.\n\n Barefoot and carefree, they twirl and spin, their arms reaching towards the heavens as if trying to touch the very essence of the music. Their energy is infectious, spreading like wildfire throughout the crowd, engulfing everyone in its euphoric embrace. It is a collective celebration of liberation, as bodies move in syncopation, liberated from the shackles of societal expectations.\n\n In this kaleidoscope of movement, I witness a beautiful tapestry of individuality and unity. The dancers come from all walks of life, each one telling their own unique story through their steps. Some move with wild abandon, their bodies unleashing a torrent of energy. Others sway with a gentle sway, lost in a private reverie. Yet, despite their differences, they are bound together by a common thread of joy, love, and the sheer bliss of being alive in this moment.",
+    "location": 3,
+      "is movable": false,
+      "is visible": true
     }
   ],
   "Current Room": 0
