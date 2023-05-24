@@ -121,6 +121,10 @@ def do_dance(room):
     dance_length = len(dance_sequence)
     while not correct_dance:
         dance = input(" Enter the dance sequence one move at a time! ")
+        if len(dance) > 1:
+            print("\n Adam likes to enter more than one number at a time. "
+                  "Don't be Adam.\n")
+            continue
         user_dance.append(int(dance))
         if len(user_dance) == dance_length:
             if user_dance == dance_sequence:
