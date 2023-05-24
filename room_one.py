@@ -6,7 +6,15 @@ from language_parser import *
 from room_setup import *
 
 
-def room_one(room, rooms, objects, inventory):
+def room_env(room, rooms, objects, inventory):
+    """
+    This is the main room function that facilitates printing room features and receiving user input for interaction.
+    :param room: Is the room index number.
+    :param rooms: A list of room objects.
+    :param objects: A list of objects defined in the JSON.
+    :param inventory: A list of objects with the index designation of -1.
+    :return: room: An int which is the index number of the next room.
+    """
     room_index = room.get_index()
     available_nav, available_objs, object_names = room_setup_objs(room, objects)
     print_room_details(rooms, available_nav, available_objs, room)

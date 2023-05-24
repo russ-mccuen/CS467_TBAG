@@ -1,5 +1,5 @@
 from game_setup import load_game, load_rooms, load_objects
-from room_one import room_one
+from room_one import room_env
 
 
 def main():
@@ -12,6 +12,9 @@ def main():
 
 
 def start_game():
+    """
+    The main function that reads loads all the game information from the JSON file to initialize game objects.
+    """
     inventory = []
     game_data = load_game("game.Json")
     rooms = load_rooms(game_data)
@@ -20,7 +23,7 @@ def start_game():
 
     while current_room is not None:
 
-        current_room = room_one(current_room, rooms, objects, inventory)
+        current_room = room_env(current_room, rooms, objects, inventory)
 
     print(" Exiting Game")
 

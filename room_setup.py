@@ -2,6 +2,10 @@ from terminal import *
 
 
 def describe_exit():
+    """
+    General description of leaving the room to navigate back towards the main room.
+    :return:
+    """
     newline()
     print(" You are also aware of the door that will lead you back to the main room: ")
     print(f" Navigation Option (1) :  The door heading back to the main room that is located south.")
@@ -9,6 +13,12 @@ def describe_exit():
 
 
 def room_setup_objs(room, objects):
+    """
+    Initializes available navigation options, available objects based on room index and an array of those object names.
+    :param room: Index number of current room.
+    :param objects: An array of game objects.
+    :return: a list of available navigation, a list of available objects, a list of object names.
+    """
     room_index = room.get_index()
     available_nav = []
     available_objs = [item for item in objects if item.get_location() == room_index]
@@ -17,6 +27,14 @@ def room_setup_objs(room, objects):
 
 
 def print_room_details(rooms, available_nav, available_objs, room):
+    """
+    Prints the room details based on the current room index.
+    :param rooms: An array of room objects.
+    :param available_nav: An array of rooms that are available to navigate to.
+    :param available_objs: An array of objects with an index position that matches the room index.
+    :param room: The current room's index.
+    :return: None
+    """
     room_index = room.get_index()
     clear_screen()
     newline()
