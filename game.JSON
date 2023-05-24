@@ -57,8 +57,8 @@
     },
      {
        "index": 5,
-      "name":  "Room Five",
-       "door desc": "2000 Room",
+      "name":  "2000 Room",
+       "door desc": "A green door with writing on it. \'Y2K.\'",
        "intro": " You realize you are in a different place and time. This time you are once again in a house, but this time in what appears to be a living room.\n\n As you step into the living room, you find yourself transported back to the 2000s, a time filled with nostalgia and technological advancements. The space is cozy yet modern, reflecting the trends and styles of the era.\n\n The walls are painted in warm, neutral tones that were popular at the time.\n\n",
       "short desc":  " You are in a cozy living room. You notice a television and a cd player nearby.",
       "long desc":  " A large flat-screen television, a prized possession in the 2000s, takes center stage on an entertainment unit. It is surrounded by various gaming consoles like the PlayStation 2 or Xbox, indicating the love for electronic entertainment during this period.\n\n A plush sofa sits against one wall, upholstered in vibrant or earthy colors, providing ample seating for family and guests. The cushions are adorned with patterns that were in vogue, and a matching coffee table stands in front, hosting magazines and perhaps a stack of CDs or DVDs.\n\n On another side of the room, a bookshelf proudly displays a collection of physical books, CDs, and DVDs. It serves as a testament to the transition from analog to digital media that was taking place during this time. You notice a CD player nearby, offering the option to play favorite music CDs.",
@@ -69,7 +69,7 @@
      {
        "index": 6,
       "name":  "2076 Room",
-       "door desc": "Tricentennial Room",
+       "door desc": "A red, white, and blue door with a picture of currency on it.",
        "intro": " You realize you are in a different place and time. A bustling metropolis of the future unveils before your eyes. The cityscape, a blend of architectural marvels and sustainable innovations, captivates your senses. Gleaming skyscrapers stretch towards the heavens, adorned with sleek, energy-efficient facades that harness the sun's power. A vibrant network of clean and efficient transportation systems, including autonomous vehicles and hyperloop tubes, seamlessly weaves through the city, ensuring swift and eco-friendly travel. Parks and green spaces abound, with vertical gardens adorning the sides of buildings and floating parks hovering above the Potomac River.\n\n",
       "short desc":  "You are in Washington, D.C. at the Tricentennial celebration.",
       "long desc":  " The city hums with a harmonious fusion of cultural diversity, cutting-edge technology, and a deep respect for the nation's rich history. You realize you are in our nation's capital and you know the year is 2076. You know this because you see preparations for the Tricentennial Celebration.\n\n",
@@ -80,10 +80,10 @@
      {
        "index": 7,
       "name":  "1950 room",
-       "door desc": "",
-       "intro": "",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
+       "door desc": " A checkered door with a vintage car on it.",
+       "intro": " You realize you are in a different place and time. You find yourself surrounded by a scene straight out of the 1950s. You have arrived in a small town diner, filled with the sights and sounds of the era.\n\n The place is bustling with life. The air is thick with the aroma of freshly brewed coffee and the tantalizing scent of grilled burgers and fries. The walls are adorned with neon signs advertising popular brands of the time. The jukebox in the corner fills the air with the upbeat tunes of rock 'n' roll, as people in their poodle skirts and leather jackets sway to the rhythm.\n\n As you take in the surroundings, you notice the vibrant colors and the retro decor that define this era. The diner's checkered tile floors are immaculately clean, and the chrome-trimmed counters gleam under the fluorescent lights.\n\n",
+      "short desc":  " You find yourself in a bustling 1950s diner, filled with the sights, sounds, and nostalgia of the era, as you take in the vibrant colors, retro decor, and lively atmosphere while eagerly perusing the menu and immersing yourself in the charm of a bygone time.",
+      "long desc":  " Red vinyl booths line the perimeter of the space, with chrome tables that bear miniature jukeboxes at each booth.\n\n You catch the attention of a friendly waitress, her hair neatly styled in a classic 1950s fashion. She smiles warmly and greets you with a cheerful, \"Welcome! Find a seat anywhere you like, hon.\" Her uniform consists of a pastel-colored dress and a white apron cinched at the waist. She guides you to an empty booth, and you slide into the booth's smooth vinyl seat, feeling its coolness against your skin.\n\n Taking a moment to settle in, you peruse the menu — a laminated sheet filled with all-American classics like burgers, milkshakes, and cherry pie. The prices seem unbelievably low compared to today's standards, but it's a refreshing glimpse into a simpler time. It is also worth a closer look.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": "west"

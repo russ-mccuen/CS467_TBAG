@@ -136,6 +136,21 @@ def describe_exiting_room(room, inventory):
               "With gratitude and excitement, you embrace the unknown, ready to carry the lessons "
               "and inspiration of Washington, D.C. in 2076 back to the present.")
 
+    if room_index == 7:
+        print(" As you rise from the booth, a sense of bittersweet nostalgia "
+              "fills your heart, for you know that your time in this "
+              "enchanting 1950s diner is coming to an end; you take a final "
+              "glance around, savoring the vibrant colors, the retro "
+              "ambiance, and the lively conversations that surround you, "
+              "committing every detail to memory, realizing that soon you "
+              "will return to the present, bidding farewell to the jukebox "
+              "melodies, the aroma of freshly brewed coffee, and the warmth "
+              "of a bygone era, cherishing this unique experience as you "
+              "step towards the door, the bell above jingling one last time, "
+              "and with a mixture of gratitude and longing, you take one "
+              "final breath of the past before venturing back into the "
+              "unknown future.")
+
     time.sleep(1)
 
 
