@@ -7,8 +7,10 @@ def describe_exit():
     :return:
     """
     newline()
-    print(" You are also aware of the door that will lead you back to the main room: ")
-    print(f" Navigation Option (1) :  The door heading back to the main room that is located south.")
+    print(" You are also aware of the door that will lead you back to the "
+          "main room: ")
+    print(f" Navigation Option (1) :  The door heading back to the main room "
+          "that is located south.")
     newline()
 
 
@@ -60,8 +62,9 @@ def describe_walls(rooms, available_nav):
     if not visible_rooms:
         print(" There is no door to the room. Actually, you can not see any "
               "way of either entering or "
-              "exiting the room.\n There are not even any windows. You know you have a window in your room.\n "
-              "At least you think you do.")
+              "exiting the room. There are not even any windows. You know "
+              "you have a window in your room.\n\n "
+              " At least you think you do.\n\n")
 
 
 def describe_features(objects, room_num):
@@ -100,41 +103,52 @@ def describe_exiting_room(room, inventory):
               "of a better world.")
 
     if room_index == 4:
-        print(" As you stroll through the bustling food court of the 1990s, the nostalgic aromas "
-              "of greasy burgers, fresh popcorn, and sugary treats fill the air. The vibrant neon "
-              "lights and vibrant decor transport you back to an era of vibrant colors and retro "
-              "charm. Laughter and chatter resonate from the crowded tables as people enjoy their "
-              "meals and share stories. You take a moment to soak in the atmosphere, appreciating "
-              "the simplicity and innocence of this bygone time. Before you leave you can't "
-              "help but feel a twinge of bittersweet nostalgia. You carry the memories of this "
-              "vibrant food court, frozen in time, as you prepare to journey back to the present, "
-              "eager to rejoin the world of modern marvels and future possibilities.")
+        print(" As you stroll through the bustling food court of the 1990s, "
+              "the nostalgic aromas of greasy burgers, fresh popcorn, "
+              "and sugary treats fill the air. The vibrant neon lights and "
+              "vibrant decor transport you back to an era of vibrant colors "
+              "and retro charm. Laughter and chatter resonate from the "
+              "crowded tables as people enjoy their meals and share stories. "
+              "You take a moment to soak in the atmosphere, appreciating the "
+              "simplicity and innocence of this bygone time. Before you leave "
+              "you can't help but feel a twinge of bittersweet nostalgia. "
+              "You carry the memories of this vibrant food court, frozen in "
+              "time, as you prepare to journey back to the present, eager to "
+              "rejoin the world of modern marvels and future possibilities.")
 
     if room_index == 5:
-        print(" As you stand on the threshold of the living room, your gaze lingers on the "
-              "familiar surroundings, filled with memories of the 2000s. The soft glow of the "
-              "table lamps casts a warm ambiance, illuminating the space where laughter and "
-              "conversations once flowed freely. You take one last glance at the entertainment "
-              "unit, its sleek lines housing the beloved gaming consoles and that prized "
-              "flat-screen television. The familiar hum of the ceiling fan above stirs the air "
-              "gently, as if bidding you farewell. The bookshelf stands proud, displaying the "
-              "cherished collection of books, CDs, and DVDs, a testament to a time when physical "
-              "media reigned supreme. With a mix of nostalgia and anticipation, you reluctantly "
-              "turn away, leaving the room behind, the remnants of the 2000s clinging to your "
-              "thoughts as you prepare to reemerge into the present")
+        print(" As you stand on the threshold of the living room, your gaze "
+              "lingers on the familiar surroundings, filled with memories of "
+              "the 2000s. The soft glow of the table lamps casts a warm "
+              "ambiance, illuminating the space where laughter and "
+              "conversations once flowed freely. You take one last glance at "
+              "the entertainment unit, its sleek lines housing the beloved "
+              "gaming consoles and that prized flat-screen television. The "
+              "familiar hum of the ceiling fan above stirs the air gently, "
+              "as if bidding you farewell. The bookshelf stands proud, "
+              "displaying the cherished collection of books, CDs, and DVDs, "
+              "a testament to a time when physical media reigned supreme. "
+              "With a mix of nostalgia and anticipation, you reluctantly "
+              "turn away, leaving the room behind, the remnants of the 2000s "
+              "clinging to your thoughts as you prepare to reemerge into the "
+              "present")
 
     if room_index == 6:
-        print(" As you stand on the edge of Washington, D.C. in the remarkable year of 2076, "
-              "a surge of anticipation tingles through your veins. The air crackles with an "
-              "electric energy as you prepare to bid farewell to this extraordinary future. With "
-              "one last look at the awe-inspiring cityscape, adorned with futuristic architecture "
-              "and bustling with advanced technologies, you take a deep breath, savoring the "
-              "moment. The sun casts a warm glow over the horizon, illuminating the sleek "
-              "buildings and reflecting off the surfaces of self-driving vehicles gliding by. You"
-              " pause, absorbing the vibrant atmosphere and the palpable sense of progress. The "
-              "future has unfolded before your eyes, leaving an indelible mark on your memories. "
-              "With gratitude and excitement, you embrace the unknown, ready to carry the lessons "
-              "and inspiration of Washington, D.C. in 2076 back to the present.")
+        print(" As you stand on the edge of Washington, D.C. in the "
+              "remarkable year of 2076, a surge of anticipation tingles "
+              "through your veins. The air crackles with an electric energy "
+              "as you prepare to bid farewell to this extraordinary future. "
+              "With one last look at the awe-inspiring cityscape, adorned "
+              "with futuristic architecture and bustling with advanced "
+              "technologies, you take a deep breath, savoring the moment. "
+              "The sun casts a warm glow over the horizon, illuminating the "
+              "sleek buildings and reflecting off the surfaces of "
+              "self-driving vehicles gliding by. You pause, absorbing the "
+              "vibrant atmosphere and the palpable sense of progress. The "
+              "future has unfolded before your eyes, leaving an indelible "
+              "mark on your memories. With gratitude and excitement, "
+              "you embrace the unknown, ready to carry the lessons and "
+              "inspiration of Washington, D.C. in 2076 back to the present.")
 
     if room_index == 7:
         print(" As you rise from the booth, a sense of bittersweet nostalgia "
@@ -175,7 +189,8 @@ def navigate(desired_location, rooms, from_room):
 
 def approach_door(room, from_room):
     if room.is_locked():
-        print(" You approach the door but as you turn the handle you realize it is locked.")
+        print(" You approach the door but as you turn the handle you realize "
+              "it is locked.")
         if from_room == 2:
             do_dance(room)
         return None
