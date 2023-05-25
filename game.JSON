@@ -249,16 +249,16 @@
     },
     {
     "object name": "Television",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n A 27-inch CRT television with a black body and a silver bezel.\n\n",
+      "description": "\n The television is a 27-inch CRT, which stands for cathode ray tube. CRT televisions were the most common type of television in the 2000s. They work by using a beam of electrons to scan an image onto a screen coated with phosphors. The phosphors emit light when they are hit by electrons, creating the image that you see on the screen.\n\nCRT televisions are bulky and heavy, and they have a poor picture quality compared to modern flat-panel TVs. However, they are also very durable, and they can last for many years.\n\nThe television is black, with a silver bezel around the screen. It has a remote control, and it can be connected to a variety of sources, including cable, satellite, and DVD players.\n\nThe television is a reminder of a simpler time, when televisions were bulky and heavy, and the picture quality was not as good as it is today. However, they were also very durable, and they could last for many years.\n\n",
     "location": 5,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "CD-Player",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n A black, rectangular CD player with a small display and a few buttons. It can play any CD and produce clear, crisp sound.\n\n",
+      "description": "\n The CD player is a black, rectangular box with a small display on the front. It has a few buttons on the front, including a power button, a play/pause button, and a stop button. There is also a headphone jack on the front.\n\nThe CD player is about the size of a toaster, and it weighs about five pounds. It is made of plastic and metal, and it has a smooth, sleek design.\n\nThe CD player is a simple device, but it is very effective. It can play any CD, and it can produce clear, crisp sound. It is a great way to listen to your favorite music.\n\n",
     "location": 5,
       "is movable": false,
       "is visible": true
@@ -281,16 +281,16 @@
     },
     {
     "object name": "Jukebox",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n A miniature chrome and glass jukebox sits on a table in the diner, waiting to be played.\n\n",
+      "description": "\n You glance up and see a miniature jukebox sitting on the table next to you. It's a beautiful little thing, made of chrome and glass. The front is covered in buttons, each one labeled with a different song.\n\nYou reach out and touch the jukebox. It's cool to the touch, and it feels sturdy and well-made. You wonder how much it would cost to buy one.\n\nYou turn your attention back to the menu, but you can't help but think about the jukebox. You imagine yourself playing your favorite song on it, and you smile.\n\n",
     "location": 7,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Menu",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n You open the menu and see a wide variety of food, including burgers, fries, shakes, and more.\n\n",
+      "description": "\n The menu is a small, black and white pamphlet. It is divided into sections, including breakfast, lunch, and dinner.\n\nThe breakfast section includes a variety of items, such as pancakes, waffles, and eggs. The lunch section includes sandwiches, burgers, and salads. The dinner section includes steak and chicken. The prices are reasonable, and you bet the food is delicious.\n\n",
     "location": 7,
       "is movable": false,
       "is visible": true
