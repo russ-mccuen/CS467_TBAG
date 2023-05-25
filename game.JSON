@@ -265,16 +265,16 @@
     },
     {
     "object name": "Washington-Monument",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n As you stand before the resplendent Washington Monument in the year 2076, its magnificent presence captures your gaze. At its pinnacle, a dynamic holographic display projects images that tell the ever-evolving story of America, reminding all who behold it of the nation's enduring spirit and the unwavering pursuit of a brighter future.\n\n",
+      "description": "\n As you stand before the majestic Washington Monument, towering proudly into the sky, you can't help but marvel at its grandeur. It stands as a testament to the enduring spirit and rich history of the United States, even in the year 2076, where the world has advanced in unimaginable ways.\n\nThe monument, now over two centuries old, has weathered the passage of time with grace and dignity. Its towering obelisk, reaching a staggering height of 555 feet (169 meters), stands tall against the backdrop of a futuristic cityscape. The once familiar marble exterior has undergone a remarkable transformation, seamlessly blending classic elegance with modern technology.\n\nAs you approach, you notice a subtle shimmer emanating from the surface of the monument. Closer inspection reveals that it's covered in a state-of-the-art nanomaterial, designed to both protect and enhance its appearance. The material subtly changes colors, reflecting the sunlight in a mesmerizing display, as if paying homage to the changing times.\n\n As you walk around the base of the monument, you notice a bustling hub of activity. People from all walks of life gather, marveling at the monument's magnificence. Holographic displays surround the base, depicting pivotal moments in American history, bringing them to life in vivid detail. Visitors can interact with these holographic projections, immersing themselves in the rich tapestry of the nation's past.\n\n",
     "location": 6,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Reflecting-Pool",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n In the year 2076, the reflecting pool at the Washington Monument captivates with its rippling, gel-like surface, adorned with floating holographic displays that reflect both the cityscape and the nation's history, creating a serene sanctuary for contemplation and connection.\n\n",
+      "description": "\n As you gaze upon the mesmerizing beauty of the reflecting pool at the Washington Monument in the year 2076, a sense of serenity washes over you. The pool, transformed by innovative technology, is a seamless blend of tranquility and cutting-edge design. Its waters, once still and calm, now ripple with a gentle energy, creating an enchanting dance of light and color. The surface of the pool is no longer a traditional liquid but a transparent, eco-friendly gel, offering a mesmerizing effect that mirrors the surrounding cityscape. Floating above the gel surface, intricate holographic displays showcase historical moments and breathtaking scenes from nature, captivating passersby with their vivid imagery. The reflecting pool has become a sanctuary, a place where people gather to find solace, contemplate, and connect with the essence of the city and its rich history. As you witness this harmonious fusion of tradition and innovation, you feel a profound appreciation for the boundless possibilities that the future holds.\n\n",
     "location": 6,
       "is movable": false,
       "is visible": true
@@ -297,16 +297,16 @@
     },
     {
     "object name": "Earth",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n From your Mars vantage point, you behold the distant blue orb of Earth, a fragile yet resilient sanctuary of swirling clouds, vast oceans, and sprawling continents, evoking both homesickness and wonder, and reminding you of the interconnectedness of all life.\n\n",
+      "description": "\n From this vantage point on Mars, you gaze out into the vastness of space and fix your eyes on the distant blue orb that is planet Earth. As you take in the view, a profound sense of interconnectedness washes over you. Earth, suspended in the velvety blackness, appears both fragile and resilient, a sanctuary teeming with life amidst the endless cosmic expanse. You can't help but feel a surge of homesickness mixed with wonder as you observe the swirling clouds, the vast oceans, and the sprawling continents of your distant home. It's a reminder of the shared human experience, the intricate tapestry of existence, and the undeniable bond that unites us all.\n\n",
     "location": 8,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Landscape",
-      "short desc": "\n ",
-      "description": "\n ",
+      "short desc": "\n As you gaze out from the base on Mars, the rugged and awe-inspiring landscape unfolds before you, with rust-colored sand dunes, towering mountains, and ancient dried-up riverbeds, all under the pale orange-hued sky, offering a captivating reminder of the planet's untamed beauty and the endless possibilities that lie within its barren expanse.\n\n",
+      "description": "\n As you stand at the base on Mars, the breathtaking landscape stretches out before you, captivating your senses with its otherworldly allure. The Martian terrain, characterized by its rugged and desolate beauty, showcases a striking contrast of colors and textures. The rust-colored sand dunes undulate like waves frozen in time, their crests and troughs sculpted by the relentless Martian winds. The sunlight casts elongated shadows across the slopes, creating a mesmerizing play of light and shadow.\n\nIn the distance, majestic mountains rise, their peaks reaching towards the thin Martian atmosphere. Time and erosion have sculpted these ancient giants, revealing layers of sedimentary rock and exposing the planet's geological history. Their weathered slopes bear witness to the countless cycles of dust storms that have swept across the planet, leaving their mark on the stoic landscape.\n\nTraversing the terrain are the remnants of long-dried riverbeds, etched into the Martian surface like delicate scars. These meandering channels, once carved by ancient rivers and now devoid of water, serve as reminders of the planet's tumultuous past and the potential for scientific discovery that lies within them. The barrenness of this arid world is both captivating and humbling, a constant reminder of the challenges humanity faces in the quest to explore and understand the mysteries of the cosmos.\n\nAs you take in the panoramic view of this Martian vista, you can't help but marvel at the raw and untamed beauty that surrounds you. It's a landscape of stark contrasts, where tranquility meets harshness, and solitude coexists with the echoes of a planet's tumultuous history. In this moment, you realize that you are a witness to a world that few have seen firsthand, a testament to human curiosity and the unwavering spirit of exploration.\n\n",
     "location": 8,
       "is movable": false,
       "is visible": true
