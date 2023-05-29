@@ -185,10 +185,17 @@ def describe_exiting_room(room, inventory):
 
 def navigate_from_main(desired_location, rooms, from_room):
     available_rooms = [room.get_index() for room in rooms if room.is_visible()]
+    room_dir = [room.get_direction() for room in rooms if room.is_visible()]
     if desired_location.isnumeric():
         door_index = int(desired_location)
         if door_index in available_rooms:
             room = rooms[door_index]
+            return approach_door(room, from_room)
+    else:
+        if desired_location in room_dir:
+            room_dir_index = room_dir.index(desired_location)
+            room_index = available_rooms[room_dir_index]
+            room = rooms[room_index]
             return approach_door(room, from_room)
 
 

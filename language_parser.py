@@ -8,6 +8,10 @@ DIRECTIONS = {
     "south": ["s", "south"],
     "east": ["e", "east"],
     "west": ["w", "west"],
+    "northeast": ["ne", "northeast"],
+    "southeast": ["se", "southeast"],
+    "northwest": ["ne", "northwest"],
+    "southwest": ["se", "southwest"],
     "up": ["u", "up"],
     "down": ["d", "down"]
 }

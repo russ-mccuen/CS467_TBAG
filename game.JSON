@@ -31,7 +31,7 @@
       "long desc":  "You finally break free from the hold of the music and decide to take in your\nsurroundings.\n\nYou are in a big room with loud music, lights, and people dancing. There\nappears to be a DJ in one corner playing . . . records.\n\nThe decor of the room is flashy and colorful, with neon lights everywhere. The\npeople are dressed fashionably and glamorous, wearing sequined and glittery\nclothing, platform shoes, and knee-high boots. There are lights are flashing\nall around, and everyone is dressed to impress. You can feel the energy of the\ncrowd. It's like one big party, and you're a part of it.\n\nThe combination of the music, the clothes, and the atmosphere hits you.\n\nYou are in a disco.\n\nThe dance floor is in the center of the room.\n",
       "is locked": false,
        "is visible": false,
-       "direction": "north east"
+       "direction": "northeast"
     },
      {
        "index": 3,
@@ -53,7 +53,7 @@
       "long desc":  " You are in a . . . food court? In a shopping mall?\n\n The food court itself is a large, open area, filled with dozens of stalls and restaurants, each with its own distinct aroma and vibe. The decor is modern, with neon lights, metallic finishes, and plastic seating. There's a distinct hum of excitement in the air, with shoppers and hungry people alike rubbing shoulders and enjoying the lively atmosphere.\n\n The variety of food options is staggering. You can find fast food staples like a bunch of burger joints with their familiar logos and signature menus. There's also a host of international cuisine options, including Chinese, Italian, and Mexican food. You can order whatever you want and then sit down at a table to savor your meal.\n\n The smells are amazing, with the tantalizing aroma of freshly cooked food wafting across the food court. The sound of sizzling burgers, frying chicken, and sizzling stir-fries fills the air, punctuated by the occasional beep of a cash register or the clattering of cutlery.\n\n As you walk around the food court, you can see groups of people chatting and laughing, tucking into their meals, and enjoying the bustling atmosphere. The seating areas are crowded, but there's a friendly vibe, with strangers striking up conversations and sharing stories.\n\n",
       "is locked": false,
         "is visible": false,
-       "direction": "south east"
+       "direction": "southeast"
     },
      {
        "index": 5,
@@ -75,7 +75,7 @@
       "long desc":  " The city hums with a harmonious fusion of cultural diversity, cutting-edge technology, and a deep respect for the nation's rich history. You realize you are in our nation's capital and you know the year is 2076. You know this because you see preparations for the Tricentennial Celebration.\n\n",
       "is locked": false,
         "is visible": false,
-       "direction": " south west"
+       "direction": " southwest"
     },
      {
        "index": 7,
@@ -97,7 +97,7 @@
       "long desc":  " You are on Mars! The base you've arrived at is a testament to human ingenuity and perseverance. It stands proudly amidst the Martian expanse, a cluster of futuristic structures built to withstand the harsh conditions of the planet. The buildings are a mix of metallic and translucent materials, their sleek designs blending harmoniously with the surrounding environment. The reflective surfaces glimmer under the sunlight, casting an ethereal glow.\n\n Around you, scientists and engineers bustle about, engaged in their daily activities. Some are clad in sleek spacesuits, while others move with purpose in more casual attire within the protected confines of the base. The sound of equipment hums in the background, intermingling with the intermittent beeps and whirs of advanced machinery. It's a symphony of human endeavor, a chorus of progress in the face of a formidable frontier.\n\n",
       "is locked": false,
         "is visible": false,
-       "direction": "north west"
+       "direction": "northwest"
     },
      {
        "index": 9,
@@ -108,7 +108,7 @@
       "long desc":  "This is the long description",
       "is locked": false,
         "is visible": false,
-       "direction": "down"
+       "direction": "up"
     }
   ],
 
