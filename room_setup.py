@@ -10,7 +10,7 @@ def describe_exit():
     print(" You are also aware of the door that will lead you back to the "
           "main room: ")
     print(f" Navigation Option (1) :  The door heading back to the main room "
-          "that is located south.")
+          "that is located in the center.")
     newline()
 
 
@@ -184,6 +184,9 @@ def describe_exiting_room(room, inventory):
 
 
 def navigate_from_main(desired_location, rooms, from_room):
+    if desired_location == 'center' and from_room != 0:
+        room = rooms[0]
+        return approach_door(room, from_room)
     available_rooms = [room.get_index() for room in rooms if room.is_visible()]
     room_dir = [room.get_direction() for room in rooms if room.is_visible()]
     if desired_location.isnumeric():

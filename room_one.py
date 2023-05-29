@@ -121,16 +121,20 @@ def room_env(room, rooms, objects, inventory):
                      inventory)
             continue
 
+        if user_input[0] in DIRECTIONS:
+            next_room = navigate_from_main(user_input[0], rooms, room_index)
+            if next_room is not None:
+                describe_exiting_room(room, inventory)
+                return next_room
+
         parsed_input = parse_input(user_input, inventory)
 
         if parsed_input is not None:
             action_type, option = parsed_input
+            print(option)
 
             if action_type == "navigate":
-                if room_index == 0:
-                    next_room = navigate_from_main(option, rooms, room_index)
-                else:
-                    next_room = navigate(option, rooms, room_index)
+                next_room = navigate_from_main(option, rooms, room_index)
 
                 if next_room is not None:
                     describe_exiting_room(room, inventory)

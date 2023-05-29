@@ -13,7 +13,8 @@ DIRECTIONS = {
     "northwest": ["ne", "northwest"],
     "southwest": ["se", "southwest"],
     "up": ["u", "up"],
-    "down": ["d", "down"]
+    "down": ["d", "down"],
+    "center": ["c", "center", "middle"]
 }
 
 # define possible verbs
