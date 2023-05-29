@@ -268,6 +268,7 @@ def use_tablet(tablet, rooms, objects):
 
                 tablet.add_to_folder(description)
                 rooms[2].set_visible()
+                rooms[2].unlock_room()
                 clear_screen()
                 print(" \n You unlocked more information.")
                 time.sleep(1)
