@@ -204,10 +204,19 @@ def navigate(desired_location, rooms, from_room):
 
 def approach_door(room, from_room):
     if room.is_locked():
-        print(" You approach the door but as you turn the handle you realize "
-              "it is locked.")
+        print("\n You approach the door but as you turn the handle you "
+              "realize it is locked.\n\n")
         if from_room == 2:
-            do_dance(room)
+            dance = False
+            while not dance:
+                dance2 = input(" You feel like before you leave the 1970s, "
+                               "you really should do a disco dance! How "
+                               "about it? Will you dance? ")
+                if dance2 == 'dance':
+                    do_dance(room)
+                    dance = True
+                else:
+                    print("\n You really should dance.\n\n")
         return None
 
     else:
@@ -219,8 +228,8 @@ def approach_door(room, from_room):
 
 
 def do_dance(room):
-    print(" Although you want to leave, you feel like you should dance "
-          "first!\n You can do the dance you watched before! Try it!\n\n"
+    print("\n Great choice! You can do the dance you watched before! Try "
+          "it!\n\n"
           " Moves:\n 1 - Left Arm\n 2 - Left Leg\n 3 - Right Arm\n 4 - Right "
           "Leg\n 5 - Spin\n\n")
     correct_dance = False
@@ -231,8 +240,7 @@ def do_dance(room):
     while not correct_dance:
         dance = input(" Enter the dance sequence one move at a time! ")
         if len(dance) > 1:
-            print("\n Adam likes to enter more than one number at a time. "
-                  "Don't be Adam.\n")
+            print("\n Please enter one number at a time.\n")
             continue
         if dance not in num_check:
             print("\n Please enter a number. You know, like in the "

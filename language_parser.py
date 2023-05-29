@@ -290,12 +290,12 @@ def use_tablet(tablet, rooms, objects):
 
 
 def use_blacklight():
-    print(" You turn the blacklight on and shine it around the room. "
-          "Different \n things suddenly appear on the walls. You see a "
-          "peace\n sign, a few names written with hearts between them, "
-          "but what\n catches your eye is a drawing of a television with the "
-          "letters\n WKRP written underneath it. For some reason you think "
-          "you\n should remember this.\n")
+    print("\n You turn the blacklight on and shine it around the room. "
+          "Different things suddenly appear on the walls. You see a "
+          "peace sign, a few names written with hearts between them, "
+          "but what catches your eye is a drawing of a television with the "
+          "letters 'WKRP' written underneath it. For some reason you think "
+          "you should remember this.\n\n")
     return
 
 
