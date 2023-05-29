@@ -183,7 +183,7 @@
        "is visible": true
     },
     {
-      "object name": "Disco-Ball",
+      "object name": "Disco Ball",
        "short desc": "\n There is a disco ball hanging above the dance floor that also captures your attention.",
       "description": "\n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors \n that are reflecting the colorful lights all over the dance floor. \n It's the centerpiece of the whole room, and it's casting a mesmerizing glow \n that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, \n sending flashes of light in all directions. As it rotates, the mirrored \n tiles catch the light and send it bouncing around the room, creating \n a sparkling, magical effect. It's like a miniature universe up there, \n with thousands of little stars that are pulsing and twinkling \n with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a \n place where anything can happen, where anything is possible.\n",
       "location": 2,
@@ -191,7 +191,7 @@
       "is visible": true
     },
     {
-      "object name": "Dance-Floor",
+      "object name": "Dance Floor",
        "short desc": "\n There is so much going on on the dance floor that it might be worth a second look.",
       "description": "\n The dance floor is a large, open space that is the centerpiece of the club \n and the focal point for everyone in the room. It is illuminated with bright,\n flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music.\n The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
       "location": 2,
@@ -232,7 +232,7 @@
     },
 
     {
-    "object name": "Mall-Directory",
+    "object name": "Mall Directory",
       "short desc": "\n A mall directory to help you figure out where you are at.",
       "description": "\n As you approach the mall directory, you notice a large, colorful sign with bold lettering that reads \"You are Here.\" The directory itself is a large, freestanding display, with a metal frame and a large glass front. Behind the glass are several panels of colorful maps and directories, each with a different section of the mall.\n\n The maps are laid out in a grid, with each store marked with its name and location. They are color-coded, with each section of the mall represented by a different color. The directory is well-organized and easy to read, with clear labels and a simple, straightforward layout.\n\n There are a few other features that make the directory stand out. Along the sides of the display, there are advertisements for various stores and restaurants, with colorful images and catchy slogans. There may also be a few coupons or special offers tucked in among the ads, encouraging shoppers to visit certain stores or try out new products.\n\n You notice the pizza place's location is 'FC-15'. For some reason you think this is important.\n\n",
     "location": 4,
@@ -240,7 +240,7 @@
       "is visible": true
     },
     {
-    "object name": "Pizza-Place",
+    "object name": "Pizza Place",
       "short desc": "\n A pizza place whose pizza looks amazing!",
       "description": "\n As you approach the pizza place in the food court, you are hit by the delicious aroma of freshly-baked pizza. The pizza place is a small, open stall with a glass display case filled with freshly-made pies. The smell of melting cheese and tomato sauce is mouth-watering, and you can't wait to get your hands on a slice.\n\n The stall is staffed by a few friendly pizza makers, dressed in white aprons and hats. They are busy tossing dough, spreading sauce, and adding toppings to create the perfect pies. The menu is simple but satisfying, with options for cheese, pepperoni, sausage, and veggie pizzas. You can order by the slice or get a whole pie to share with friends.\n\n You see a sign on the glass in front of the freshly-baked pies that reads, ' Find our location key on the directory for a free slice!'\n\n For some reason you think this is important.\n\n",
     "location": 4,
@@ -256,7 +256,7 @@
       "is visible": true
     },
     {
-    "object name": "CD-Player",
+    "object name": "CD Player",
       "short desc": "\n A black, rectangular CD player with a small display and a few buttons. It can play any CD and produce clear, crisp sound.\n\n",
       "description": "\n The CD player is a black, rectangular box with a small display on the front. It has a few buttons on the front, including a power button, a play/pause button, and a stop button. There is also a headphone jack on the front.\n\nThe CD player is about the size of a toaster, and it weighs about five pounds. It is made of plastic and metal, and it has a smooth, sleek design.\n\nThe CD player is a simple device, but it is very effective. It can play any CD, and it can produce clear, crisp sound. It is a great way to listen to your favorite music.\n\n",
     "location": 5,
@@ -264,7 +264,7 @@
       "is visible": true
     },
     {
-    "object name": "Washington-Monument",
+    "object name": "Washington Monument",
       "short desc": "\n As you stand before the resplendent Washington Monument in the year 2076, its magnificent presence captures your gaze. At its pinnacle, a dynamic holographic display projects images that tell the ever-evolving story of America, reminding all who behold it of the nation's enduring spirit and the unwavering pursuit of a brighter future.\n\n",
       "description": "\n As you stand before the majestic Washington Monument, towering proudly into the sky, you can't help but marvel at its grandeur. It stands as a testament to the enduring spirit and rich history of the United States, even in the year 2076, where the world has advanced in unimaginable ways.\n\nThe monument, now over two centuries old, has weathered the passage of time with grace and dignity. Its towering obelisk, reaching a staggering height of 555 feet (169 meters), stands tall against the backdrop of a futuristic cityscape. The once familiar marble exterior has undergone a remarkable transformation, seamlessly blending classic elegance with modern technology.\n\nAs you approach, you notice a subtle shimmer emanating from the surface of the monument. Closer inspection reveals that it's covered in a state-of-the-art nanomaterial, designed to both protect and enhance its appearance. The material subtly changes colors, reflecting the sunlight in a mesmerizing display, as if paying homage to the changing times.\n\n As you walk around the base of the monument, you notice a bustling hub of activity. People from all walks of life gather, marveling at the monument's magnificence. Holographic displays surround the base, depicting pivotal moments in American history, bringing them to life in vivid detail. Visitors can interact with these holographic projections, immersing themselves in the rich tapestry of the nation's past.\n\n",
     "location": 6,
@@ -272,7 +272,7 @@
       "is visible": true
     },
     {
-    "object name": "Reflecting-Pool",
+    "object name": "Reflecting Pool",
       "short desc": "\n In the year 2076, the reflecting pool at the Washington Monument captivates with its rippling, gel-like surface, adorned with floating holographic displays that reflect both the cityscape and the nation's history, creating a serene sanctuary for contemplation and connection.\n\n",
       "description": "\n As you gaze upon the mesmerizing beauty of the reflecting pool at the Washington Monument in the year 2076, a sense of serenity washes over you. The pool, transformed by innovative technology, is a seamless blend of tranquility and cutting-edge design. Its waters, once still and calm, now ripple with a gentle energy, creating an enchanting dance of light and color. The surface of the pool is no longer a traditional liquid but a transparent, eco-friendly gel, offering a mesmerizing effect that mirrors the surrounding cityscape. Floating above the gel surface, intricate holographic displays showcase historical moments and breathtaking scenes from nature, captivating passersby with their vivid imagery. The reflecting pool has become a sanctuary, a place where people gather to find solace, contemplate, and connect with the essence of the city and its rich history. As you witness this harmonious fusion of tradition and innovation, you feel a profound appreciation for the boundless possibilities that the future holds.\n\n",
     "location": 6,

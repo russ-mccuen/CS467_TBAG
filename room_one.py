@@ -33,6 +33,11 @@ def room_env(room, rooms, objects, inventory):
         if len(user_input) == 0:
             continue
 
+        if len(user_input) == 1 and user_input[0] == 'look':
+            try_look(available_nav, rooms, room, 'room', objects, object_names,
+                     inventory)
+            continue
+
         if user_input[0] == "unlock":
             print(" REMOVE THIS FEATURE")
             rooms[1].unlock_room()
@@ -96,6 +101,24 @@ def room_env(room, rooms, objects, inventory):
                     return current_room
                 else:
                     print(" Save Data not found. Please save the game before trying to load data.")
+            continue
+
+        if user_input[0] == 'look' and user_input[1] == 'at':
+            rest_of_list = " ".join(user_input[2:])
+            try_look(available_nav, rooms, room, rest_of_list, objects, object_names,
+                     inventory)
+            continue
+
+        if user_input[0] == 'examine':
+            rest_of_list = " ".join(user_input[1:])
+            try_look(available_nav, rooms, room, rest_of_list, objects, object_names,
+                     inventory)
+            continue
+
+        if user_input[0] == 'inspect':
+            rest_of_list = " ".join(user_input[1:])
+            try_look(available_nav, rooms, room, rest_of_list, objects, object_names,
+                     inventory)
             continue
 
         parsed_input = parse_input(user_input, inventory)
