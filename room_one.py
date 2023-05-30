@@ -48,6 +48,14 @@ def room_env(room, rooms, objects, inventory):
             rooms[3].set_visible()
             rooms[4].unlock_room()
             rooms[4].set_visible()
+            rooms[5].unlock_room()
+            rooms[5].set_visible()
+            rooms[6].unlock_room()
+            rooms[6].set_visible()
+            rooms[7].unlock_room()
+            rooms[7].set_visible()
+            rooms[8].unlock_room()
+            rooms[8].set_visible()
             continue
 
         if user_input[0] == 'q':

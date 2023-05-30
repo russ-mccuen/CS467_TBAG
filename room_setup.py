@@ -1,6 +1,7 @@
 from terminal import *
 
 
+
 def describe_exit():
     """
     General description of leaving the room to navigate back towards the main room.
@@ -223,7 +224,7 @@ def approach_door(room, from_room):
         if from_room == 2:
             dance = False
             while not dance:
-                dance2 = input(" You feel like before you leave the 1970s "
+                dance2 = input("\n You feel like before you leave the 1970s "
                                "you really should do a disco dance! How "
                                "about it? Will you dance? ")
                 if dance2 == 'dance':
@@ -235,13 +236,31 @@ def approach_door(room, from_room):
         if from_room == 4:
             eat = False
             while not eat:
-                eat2 = input(" You feel like before you leave the 1990s you "
-                             "really should get a slice of pizza.")
+                eat2 = input("\n You feel like before you leave the 1990s you "
+                             "really should get a slice of pizza. What do "
+                             "you want to do? ")
                 if eat2 == 'eat pizza':
                     eat_pizza(room)
                     eat = True
                 else:
                     print("\n You really should eat a slice of pizza.\n\n")
+
+        if from_room == 6:
+            swim = False
+            while not swim:
+                swim2 = input("\n You remember how hot it is in July. You "
+                              "wish there was someway to cool off before you "
+                              "left. You'd bet that the reflecting pool is "
+                              "refreshing! But surely you can't swim in the "
+                              "reflecting pool . . . can you? What do you "
+                              "want to do? ")
+                if swim2 == 'swim' or swim2 == 'swim in reflecting pool':
+                    go_swim(room)
+                    swim = True
+                else:
+                    print("\n You really should go for a swim. I'll bet "
+                          "if you type 'swim' or 'swim in reflecting pool' "
+                          "then you could probably swim!\n\n")
         return None
 
     else:
@@ -308,6 +327,16 @@ def eat_pizza(room):
                   " be here somewhere.\n\n")
             return
 
+
+def go_swim(room):
+    print("\n It is so hot you can't help but go for a swim, and the only "
+          "place around to swim is the reflecting pool! You jump in quickly "
+          "and then realize the pool is only 18 inches deep at the edges, "
+          "30 inches deep in the middle. So you lie down to cool off.\n\n "
+          " While lying in the pool you notice a coin. For some reason you "
+          "think you should take it.\n\n")
+    room.unlock_room()
+    return
 
 def print_interactive_objs(objects, room_num):
     newline()

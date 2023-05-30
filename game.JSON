@@ -295,6 +295,14 @@
       "is visible": true
     },
     {
+    "object name": "Coin",
+      "short desc": "\n The coin from the year 2076 is a gleaming marvel, adorned with holographic engravings and embedded with a powerful microchip, representing the fusion of tradition and advanced technology.\n\n Stamped on the coin is 2076-P, the date and location where the coin was minted. For some reason you think this is important.\n\n",
+      "description": "\n As you hold the coin from the year 2076 in your hands, its gleaming metallic surface feels both familiar and extraordinary, a testament to the passage of time and the advancements of civilization. The coin, crafted with meticulous precision, showcases intricate holographic engravings that shimmer with vibrant colors, depicting scenes that encapsulate the spirit of the era. Embedded within its core lies a minuscule yet powerful microchip, representing the fusion of traditional currency with advanced digital technologies. Its weight, balance, and texture evoke a sense of authenticity, connecting you to the stories and aspirations of a future generation. As you run your fingers over its edges, you can't help but marvel at the coin's ability to bridge the gap between the past and the future, a tangible artifact embodying the progress and ingenuity of mankind.\n\n Stamped on the coin is 2076-P, the date and location where the coin was minted. For some reason you think this is important.\n\n",
+      "location": 6,
+      "is movable": true,
+      "is visible": false
+    },
+    {
     "object name": "Jukebox",
       "short desc": "\n A miniature chrome and glass jukebox sits on a table in the diner, waiting to be played.\n\n",
       "description": "\n You glance up and see a miniature jukebox sitting on the table next to you. It's a beautiful little thing, made of chrome and glass. The front is covered in buttons, each one labeled with a different song.\n\nYou reach out and touch the jukebox. It's cool to the touch, and it feels sturdy and well-made. You wonder how much it would cost to buy one.\n\nYou turn your attention back to the menu, but you can't help but think about the jukebox. You imagine yourself playing your favorite song on it, and you smile.\n\n",

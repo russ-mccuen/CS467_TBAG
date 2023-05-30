@@ -325,6 +325,21 @@ def use_tablet(tablet, rooms, objects):
                 time.sleep(1)
                 continue
 
+        if user_input == "2076-P":
+            description = "Info 7: Room 7 unlocked"
+            if description not in available_info:
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " Washington Monument."
+                poster.set_description(poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[7].set_visible()
+                rooms[7].unlock_room()
+                clear_screen()
+                print(" \n You unlocked another room!")
+                time.sleep(1)
+                continue
+
 
 def use_blacklight():
     # TODO fix room bug so only works in disco room; all other objects also
