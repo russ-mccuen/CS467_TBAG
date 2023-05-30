@@ -29,7 +29,9 @@ VERBS = {
     "eat": ["consume", "devour"],
     "use": ["activate", "operate"],
     "talk": ["speak", "converse"],
-    "dance": ["boogie", "get-down"]
+    "dance": ["boogie", "get-down"],
+    "wear": ["put-on", "dress"],
+    "jump": ["go airborn", "elevate"]
 }
 
 

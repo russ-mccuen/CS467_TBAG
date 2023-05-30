@@ -1,7 +1,6 @@
 from terminal import *
 
 
-
 def describe_exit():
     """
     General description of leaving the room to navigate back towards the main room.
@@ -277,6 +276,21 @@ def approach_door(room, from_room):
                     print("\n You really should try a burger. Maybe you "
                           "should 'sit in booth' or perhaps 'sit booth'.")
 
+        if from_room == 8:
+            print("\n It's a good thing because you remember that "
+                  "gravity on Mars in only 38% that of Earth! (You really "
+                  "paid attention in school so you remember stuff like "
+                  "this.) Conveniently there is a spacesuit nearby.\n\n")
+            suit = False
+            while not suit:
+                suit2 = input("What do you want to do? ")
+                if suit2 == 'wear spacesuit':
+                    put_on_spacesuit(room)
+                    suit = True
+                else:
+                    print("\n You really should jump on Mars. Maybe you "
+                          "should 'wear spacesuit'. Just a thought.\n\n")
+
         return None
 
     else:
@@ -337,6 +351,7 @@ def eat_pizza(room):
                   "hungry. Regardless, it was quite a slice!\n\n"
                   " The door unlocks.\n\n")
             room.unlock_room()
+            correct_code = True
             return
         else:
             print("\n That's not the right code. Have a look around. It has to"
@@ -370,10 +385,12 @@ def eat_burger(room):
                   "tastes so fresh. It is like you've never eaten a burger "
                   "before you had this one.\n\n")
             room.unlock_room()
+            eaten = True
             return
         else:
             print("\n Maybe you should, you know, eat the burger. Or, in game "
                   "talk, 'eat burger'.\n\n")
+
 
 def go_swim(room):
     print("\n It is so hot you can't help but go for a swim, and the only "
@@ -384,6 +401,32 @@ def go_swim(room):
           "think you should take it.\n\n")
     room.unlock_room()
     return
+
+
+def put_on_spacesuit(room):
+    print("\n Surprisingly enough, the spacesuit fits perfectly! It's just "
+          "like in the movies!\n\n You go through the airlock and find "
+          "yourself on the surface of Mars. On Earth you can't jump very "
+          "high. Maybe a few feet if that. But on Mars you think you could "
+          "probably jump high enough to dunk a basketball. Maybe.\n\n There "
+          "is only one way to find out.\n\n")
+    jump = False
+    while not jump:
+        jump2 = input(" What do you want to do? ")
+        if jump2 == "jump":
+            print("\n You crouch down, tense up, and explode off of the "
+                  "surface of Mars! You have never jumped so high in your "
+                  "life! You could dunk a basketball on Mars for sure!\n\n "
+                  "For what seems like an eternity you slowly rise up, "
+                  "then just as slowly come back down before landing gently "
+                  "on the Martian surface.\n\n You head back inside, "
+                  "and hang your borrowed spacesuit back up before anyone "
+                  "notices it was gone.\n\n")
+            room.unlock_room()
+            return
+        else:
+            print("Might as well jump!")
+
 
 def print_interactive_objs(objects, room_num):
     newline()
