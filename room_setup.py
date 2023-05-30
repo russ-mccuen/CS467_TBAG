@@ -214,7 +214,7 @@ def navigate(desired_location, rooms, from_room):
 
 def approach_door(room, from_room):
     if room.is_locked():
-        if from_room == 3:
+        if from_room == 3 or from_room == 5:
             room.unlock_room()
             return
 
@@ -312,9 +312,9 @@ def do_dance(room):
     user_dance = []
     dance_length = len(dance_sequence)
     while not correct_dance:
-        dance = input(" Enter the dance sequence one move at a time!\n\n")
+        dance = input(" Enter the dance sequence one move at a time! ")
         if len(dance) > 1:
-            print("\n Please enter one number at a time.\n")
+            print("\n Please enter one number at a time.\n\n")
             continue
         if dance not in num_check:
             print("\n Please enter a number. You know, like in the "
@@ -345,7 +345,9 @@ def eat_pizza(room):
     while not correct_code:
         free_slice = input(" What is the code? ")
         if free_slice == code:
-            print("\n Yes, it is a slice of pizza. but somehow it just tastes "
+            print("\n The person working behind the counter says, 'That's "
+                  "it! Here's a slice of pizza on us. Enjoy!'\n\n"
+                  "Yes, it is a slice of pizza. but somehow it just tastes "
                   "different. It is better. It may be the best slice of "
                   "pizza you've ever had! Or you could just be really "
                   "hungry. Regardless, it was quite a slice!\n\n"
@@ -377,7 +379,7 @@ def sit_booth(room):
 def eat_burger(room):
     eaten = False
     while not eaten:
-        num_nums = input("\n You start to drool as the enveloped by the "
+        num_nums = input("\n You start to drool as you are enveloped by the "
                          "aroma of the burger.\n\n What do you want to do? ")
         if num_nums == 'eat burger':
             print("\n This is the best burger you've ever had. And you are "
