@@ -468,4 +468,18 @@ def print_inventory(inventory):
 
 
 def print_help():
-    print(" Implement Help Screen")
+    print(" \n The following commands are some of the options available to "
+          "you throughout the game:\n\n"
+          " - 'go' + room number/direction - allows you to travel to a room "
+          "if unlocked\n"
+          " - 'take' - allows you to add an item to inventory, if possible\n"
+          " - 'drop' - allows you to drop an item from your inventory\n"
+          " - 'inventory' - prints what is currently in your inventory\n"
+          " - 'look' - gives you a long description of the current room\n"
+          " - 'look at' - describes room feature or item\n"
+          " - 'examine' - examine room feature or item in room\n"
+          " - 'savegame' - allows you to save your progress (ONLY ONE SAVE "
+          "GAME ALLOWED!!!)\n"
+          " - 'loadgame' - allows you to load a previously saved game\n\n"
+          " These are just some of the commands you can use. You will "
+          "discover more as you play!\n\n")

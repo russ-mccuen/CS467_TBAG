@@ -5,8 +5,8 @@
       "name":  "Main Room",
       "door desc": "",
       "intro": "",
-      "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n",
-      "long desc":  " You see a room that looks like the room you usually sleep in.",
+      "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n\n",
+      "long desc":  " You see a room that looks like the room you usually sleep in.\n\n",
       "is locked": false,
       "is visible": false,
       "direction": "center"
@@ -15,8 +15,8 @@
       "index": 1,
       "name":  "1980 Room",
     "door desc": " A freshly painted bright yellow door.",
-    "intro": " You realize you are in a different place and time. Your surroundings are very familiar.\n",
-      "short desc":  " You are in what appears to be your childhood bedroom.",
+    "intro": " You realize you are in a different place and time. Your surroundings are very familiar.\n\n",
+      "short desc":  " You are in what appears to be your childhood bedroom.\n\n",
       "long desc":  " You are still in a bedroom, but as you look around you notice the walls adorned with posters of movies, including Star Wars, Back to the Future, and Indiana Jones. The posters are carefully placed to cover the blue paint on the walls, giving the room a cozy and immersive feel.\n\n The bed is a twin-sized mattress, situated against the wall with a colorful patchwork quilt covering it. There are stuffed animals and pillows of all shapes and sizes piled up at the head of the bed. A lamp with a green shade is placed on the nightstand next to the bed, providing the perfect amount of light for reading.\\n\\nThe carpet is beige and soft, with a few small stains from spilled drinks and snacks. A small bookshelf is placed next to the desk, filled with classic books like \"The Hobbit\" and \"The Chronicles of Narnia.\" A few action figures and a Rubik's Cube are also scattered on the shelves.\n\n The curtains are thick and dark blue, keeping the sunlight out during the day. A few posters of music artists, like Michael Jackson and Prince, are placed in between the movie posters, adding some musical flair to the room.\n\n This is a bedroom straight out of the 1980s. It is a cozy and nostalgic space, perfect for immersing yourself in the adventures of your favorite movies and video games.\n\n",
       "is locked": false,
     "is visible": false,
@@ -27,8 +27,8 @@
       "name":  "1970 Room",
        "door desc": " A glittery door with sequence patters.",
        "intro": " You realize you are in a different place and time. But the first thing you notice isn't your surroundings, it is the music.\n\n The music here is absolutely pumping. It is filled with a high-energy dance beat, and you can feel it in every fiber of your being. The bassline is thumping through the floor, and the strings are swelling in a way that just makes you want to move. There's a sense of urgency and excitement in the music, like it's pushing you to get up and dance.\n\n And the vocals . . . the vocals are pure joy. The singers are belting out these catchy, upbeat melodies that just make you want to sing along. It's all about having a good time, letting loose, and forgetting your troubles for a while.\n\n",
-      "short desc":  "You are in a disco. There are people dancing, there is loud music, and you immediately think about joining them. Then you remember you don't know any disco dances.\n\n There is so much going on on the dance floor that it might be worth a second look.\n\n There is a disco ball hanging above the dance floor that also captures your attention.\n\n",
-      "long desc":  "You finally break free from the hold of the music and decide to take in your surroundings.\n\n You are in a big room with loud music, lights, and people dancing. There appears to be a DJ in one corner playing . . . records.\n\n The decor of the room is flashy and colorful, with neon lights everywhere. The people are dressed fashionably and glamorous, wearing sequined and glittery clothing, platform shoes, and knee-high boots. There are lights are flashing all around, and everyone is dressed to impress. You can feel the energy of the crowd. It's like one big party, and you're a part of it.\n\n The combination of the music, the clothes, and the atmosphere hits you.\n\n You are in a disco.\n\n The dance floor is in the center of the room.\n\n",
+      "short desc":  "\n You are in a disco. There are people dancing, there is loud music, and you immediately think about joining them. Then you remember you don't know any disco dances.\n\n There is so much going on on the dance floor that it might be worth a second look.\n\n There is a disco ball hanging above the dance floor that also captures your attention.\n\n",
+      "long desc":  "\n You finally break free from the hold of the music and decide to take in your surroundings.\n\n You are in a big room with loud music, lights, and people dancing. There appears to be a DJ in one corner playing . . . records.\n\n The decor of the room is flashy and colorful, with neon lights everywhere. The people are dressed fashionably and glamorous, wearing sequined and glittery clothing, platform shoes, and knee-high boots. There are lights are flashing all around, and everyone is dressed to impress. You can feel the energy of the crowd. It's like one big party, and you're a part of it.\n\n The combination of the music, the clothes, and the atmosphere hits you.\n\n You are in a disco.\n\n The dance floor is in the center of the room.\n\n",
       "is locked": false,
        "is visible": false,
        "direction": "northeast"
@@ -38,8 +38,8 @@
       "name":  "1960 Room",
        "door desc": "A multicolored door with a peace sign on it.",
        "intro": " You realize you are in a different place and time. This time you are outside. At first you are unsure where and when you are, but it soon becomes quite apparent.\n\n",
-      "short desc":  " Surrounded by a kaleidoscope of colors, the sprawling fields of Woodstock come alive with a diverse sea of barefooted souls, dancing and singing in harmonious unity, while the air pulsates with the electrifying energy of music and the intoxicating scent of freedom.",
-      "long desc":  " As you step onto the hallowed grounds of Woodstock, you are instantly swept up in an atmosphere of raw energy and anticipation. It is the summer of 1969, and Max Yasgur's farm in Bethel, New York, has become a mecca for thousands of free-spirited souls seeking a temporary haven from the chaos of the outside world.\n\n The air is thick with the scent of freedom and the unmistakable aroma of incense, mingling with the sweet and earthy fragrance of nature. The sun casts a golden glow over the sprawling fields, where multicolored tents and makeshift structures stand side by side. Vibrant tapestries flutter in the warm breeze, adding a kaleidoscope of color to the landscape.\n\n As you navigate through the sea of bodies, you are struck by the diversity of the crowd. People of all ages, backgrounds, and walks of life have converged here, united by their shared love for music, peace, and counterculture. Long-haired and barefooted, they wear tie-dye shirts, bell-bottoms, and flower crowns, expressing their individuality with a free-spirited flair.\n\n",
+      "short desc":  "\n Surrounded by a kaleidoscope of colors, the sprawling fields of Woodstock come alive with a diverse sea of barefooted souls, dancing and singing in harmonious unity, while the air pulsates with the electrifying energy of music and the intoxicating scent of freedom.\n\n",
+      "long desc":  "\n As you step onto the hallowed grounds of Woodstock, you are instantly swept up in an atmosphere of raw energy and anticipation. It is the summer of 1969, and Max Yasgur's farm in Bethel, New York, has become a mecca for thousands of free-spirited souls seeking a temporary haven from the chaos of the outside world.\n\n The air is thick with the scent of freedom and the unmistakable aroma of incense, mingling with the sweet and earthy fragrance of nature. The sun casts a golden glow over the sprawling fields, where multicolored tents and makeshift structures stand side by side. Vibrant tapestries flutter in the warm breeze, adding a kaleidoscope of color to the landscape.\n\n As you navigate through the sea of bodies, you are struck by the diversity of the crowd. People of all ages, backgrounds, and walks of life have converged here, united by their shared love for music, peace, and counterculture. Long-haired and barefooted, they wear tie-dye shirts, bell-bottoms, and flower crowns, expressing their individuality with a free-spirited flair.\n\n",
       "is locked": true,
         "is visible": false,
        "direction": "east"
@@ -49,8 +49,8 @@
       "name":  "1990 Room",
        "door desc": " A bright blue door with a pager on it.",
        "intro": " You realize you are in a different place and time. When you look around after your latest time-traveling jaunt you are not in a bedroom or a disco or someone's farm turned concert venue. You are immediately hit by a blast of noise and activity. People of all ages are bustling around, jostling for space, and queuing up to get something to eat.\n\n",
-      "short desc":  " You are in a shopping mall food court. Based on what you see you think it is sometime in the 1990s.\n\n",
-      "long desc":  " You are in a . . . food court? In a shopping mall?\n\n The food court itself is a large, open area, filled with dozens of stalls and restaurants, each with its own distinct aroma and vibe. The decor is modern, with neon lights, metallic finishes, and plastic seating. There's a distinct hum of excitement in the air, with shoppers and hungry people alike rubbing shoulders and enjoying the lively atmosphere.\n\n The variety of food options is staggering. You can find fast food staples like a bunch of burger joints with their familiar logos and signature menus. There's also a host of international cuisine options, including Chinese, Italian, and Mexican food. You can order whatever you want and then sit down at a table to savor your meal.\n\n The smells are amazing, with the tantalizing aroma of freshly cooked food wafting across the food court. The sound of sizzling burgers, frying chicken, and sizzling stir-fries fills the air, punctuated by the occasional beep of a cash register or the clattering of cutlery.\n\n As you walk around the food court, you can see groups of people chatting and laughing, tucking into their meals, and enjoying the bustling atmosphere. The seating areas are crowded, but there's a friendly vibe, with strangers striking up conversations and sharing stories.\n\n",
+      "short desc":  "\n You are in a shopping mall food court. Based on what you see you think it is sometime in the 1990s.\n\n",
+      "long desc":  "\n You are in a . . . food court? In a shopping mall?\n\n The food court itself is a large, open area, filled with dozens of stalls and restaurants, each with its own distinct aroma and vibe. The decor is modern, with neon lights, metallic finishes, and plastic seating. There's a distinct hum of excitement in the air, with shoppers and hungry people alike rubbing shoulders and enjoying the lively atmosphere.\n\n The variety of food options is staggering. You can find fast food staples like a bunch of burger joints with their familiar logos and signature menus. There's also a host of international cuisine options, including Chinese, Italian, and Mexican food. You can order whatever you want and then sit down at a table to savor your meal.\n\n The smells are amazing, with the tantalizing aroma of freshly cooked food wafting across the food court. The sound of sizzling burgers, frying chicken, and sizzling stir-fries fills the air, punctuated by the occasional beep of a cash register or the clattering of cutlery.\n\n As you walk around the food court, you can see groups of people chatting and laughing, tucking into their meals, and enjoying the bustling atmosphere. The seating areas are crowded, but there's a friendly vibe, with strangers striking up conversations and sharing stories.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": "southeast"
@@ -60,8 +60,8 @@
       "name":  "2000 Room",
        "door desc": "A green door with writing on it. 'Y2K.'",
        "intro": " You realize you are in a different place and time. This time you are once again in a house, but this time in what appears to be a living room.\n\n As you step into the living room, you find yourself transported back to the 2000s, a time filled with nostalgia and technological advancements. The space is cozy yet modern, reflecting the trends and styles of the era.\n\n The walls are painted in warm, neutral tones that were popular at the time.\n\n",
-      "short desc":  " You are in a cozy living room. You notice a television and a cd player nearby.",
-      "long desc":  " A large flat-screen television, a prized possession in the 2000s, takes center stage on an entertainment unit. It is surrounded by various gaming consoles like the PlayStation 2 or Xbox, indicating the love for electronic entertainment during this period.\n\n A plush sofa sits against one wall, upholstered in vibrant or earthy colors, providing ample seating for family and guests. The cushions are adorned with patterns that were in vogue, and a matching coffee table stands in front, hosting magazines and perhaps a stack of CDs or DVDs.\n\n On another side of the room, a bookshelf proudly displays a collection of physical books, CDs, and DVDs. It serves as a testament to the transition from analog to digital media that was taking place during this time. You notice a CD player nearby, offering the option to play favorite music CDs.",
+      "short desc":  "\n You are in a cozy living room. You notice a television and a cd player nearby.\n\n",
+      "long desc":  "\n A large flat-screen television, a prized possession in the 2000s, takes center stage on an entertainment unit. It is surrounded by various gaming consoles like the PlayStation 2 or Xbox, indicating the love for electronic entertainment during this period.\n\n A plush sofa sits against one wall, upholstered in vibrant or earthy colors, providing ample seating for family and guests. The cushions are adorned with patterns that were in vogue, and a matching coffee table stands in front, hosting magazines and perhaps a stack of CDs or DVDs.\n\n On another side of the room, a bookshelf proudly displays a collection of physical books, CDs, and DVDs. It serves as a testament to the transition from analog to digital media that was taking place during this time. You notice a CD player nearby, offering the option to play favorite music CDs.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": "south"
@@ -71,8 +71,8 @@
       "name":  "2076 Room",
        "door desc": "A red, white, and blue door with a picture of currency on it.",
        "intro": " You realize you are in a different place and time. A bustling metropolis of the future unveils before your eyes. The cityscape, a blend of architectural marvels and sustainable innovations, captivates your senses. Gleaming skyscrapers stretch towards the heavens, adorned with sleek, energy-efficient facades that harness the sun's power. A vibrant network of clean and efficient transportation systems, including autonomous vehicles and hyperloop tubes, seamlessly weaves through the city, ensuring swift and eco-friendly travel. Parks and green spaces abound, with vertical gardens adorning the sides of buildings and floating parks hovering above the Potomac River.\n\n",
-      "short desc":  "You are in Washington, D.C. at the Tricentennial celebration.",
-      "long desc":  " The city hums with a harmonious fusion of cultural diversity, cutting-edge technology, and a deep respect for the nation's rich history. You realize you are in our nation's capital and you know the year is 2076. You know this because you see preparations for the Tricentennial Celebration.\n\n",
+      "short desc":  "\n You are in Washington, D.C. at the Tricentennial celebration.\n\n",
+      "long desc":  "\n The city hums with a harmonious fusion of cultural diversity, cutting-edge technology, and a deep respect for the nation's rich history. You realize you are in our nation's capital and you know the year is 2076. You know this because you see preparations for the Tricentennial Celebration.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": " southwest"
@@ -82,8 +82,8 @@
       "name":  "1950 room",
        "door desc": " A checkered door with a vintage car on it.",
        "intro": " You realize you are in a different place and time. You find yourself surrounded by a scene straight out of the 1950s. You have arrived in a small town diner, filled with the sights and sounds of the era.\n\n The place is bustling with life. The air is thick with the aroma of freshly brewed coffee and the tantalizing scent of grilled burgers and fries. The walls are adorned with neon signs advertising popular brands of the time. The jukebox in the corner fills the air with the upbeat tunes of rock 'n' roll, as people in their poodle skirts and leather jackets sway to the rhythm.\n\n As you take in the surroundings, you notice the vibrant colors and the retro decor that define this era. The diner's checkered tile floors are immaculately clean, and the chrome-trimmed counters gleam under the fluorescent lights.\n\n",
-      "short desc":  " You find yourself in a bustling 1950s diner, filled with the sights, sounds, and nostalgia of the era, as you take in the vibrant colors, retro decor, and lively atmosphere while eagerly perusing the menu and immersing yourself in the charm of a bygone time.",
-      "long desc":  " Red vinyl booths line the perimeter of the space, with chrome tables that bear miniature jukeboxes at each booth.\n\n You catch the attention of a friendly waitress, her hair neatly styled in a classic 1950s fashion. She smiles warmly and greets you with a cheerful, \"Welcome! Find a seat anywhere you like, hon.\" Her uniform consists of a pastel-colored dress and a white apron cinched at the waist. She guides you to an empty booth, and you slide into the booth's smooth vinyl seat, feeling its coolness against your skin.\n\n Taking a moment to settle in, you peruse the menu — a laminated sheet filled with all-American classics like burgers, milkshakes, and cherry pie. The prices seem unbelievably low compared to today's standards, but it's a refreshing glimpse into a simpler time. It is also worth a closer look.\n\n",
+      "short desc":  "\n You find yourself in a bustling 1950s diner, filled with the sights, sounds, and nostalgia of the era, as you take in the vibrant colors, retro decor, and lively atmosphere while eagerly perusing the menu and immersing yourself in the charm of a bygone time.\n\n",
+      "long desc":  "\n Red vinyl booths line the perimeter of the space, with chrome tables that bear miniature jukeboxes at each booth.\n\n You catch the attention of a friendly waitress, her hair neatly styled in a classic 1950s fashion. She smiles warmly and greets you with a cheerful, 'Welcome! Find a seat anywhere you like, hon.' Her uniform consists of a pastel-colored dress and a white apron cinched at the waist. She guides you to an empty booth, and you slide into the booth's smooth vinyl seat, feeling its coolness against your skin.\n\n Taking a moment to settle in, you peruse the menu — a laminated sheet filled with all-American classics like burgers, milkshakes, and cherry pie. The prices seem unbelievably low compared to today's standards, but it's a refreshing glimpse into a simpler time. It is also worth a closer look.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": "west"
@@ -93,8 +93,8 @@
       "name":  "2500 Room",
        "door desc": " A red door with rust-colored planet on it.",
        "intro": " You realize you are in a different time and place. The first thing that captures your attention is the striking red landscape stretching out before you, its rugged terrain and barren beauty contrasting with the vastness of the alien sky above. The air feels thin and crisp, carrying a faint metallic tang as you take your first breaths in this new world.\n\n",
-      "short desc":  " You are in a base on the surface of Mars!",
-      "long desc":  " You are on Mars! The base you've arrived at is a testament to human ingenuity and perseverance. It stands proudly amidst the Martian expanse, a cluster of futuristic structures built to withstand the harsh conditions of the planet. The buildings are a mix of metallic and translucent materials, their sleek designs blending harmoniously with the surrounding environment. The reflective surfaces glimmer under the sunlight, casting an ethereal glow.\n\n Around you, scientists and engineers bustle about, engaged in their daily activities. Some are clad in sleek spacesuits, while others move with purpose in more casual attire within the protected confines of the base. The sound of equipment hums in the background, intermingling with the intermittent beeps and whirs of advanced machinery. It's a symphony of human endeavor, a chorus of progress in the face of a formidable frontier.\n\n",
+      "short desc":  "\n You are in a base on the surface of Mars!\n\n",
+      "long desc":  "\n You are on Mars! The base you've arrived at is a testament to human ingenuity and perseverance. It stands proudly amidst the Martian expanse, a cluster of futuristic structures built to withstand the harsh conditions of the planet. The buildings are a mix of metallic and translucent materials, their sleek designs blending harmoniously with the surrounding environment. The reflective surfaces glimmer under the sunlight, casting an ethereal glow.\n\n Around you, scientists and engineers bustle about, engaged in their daily activities. Some are clad in sleek spacesuits, while others move with purpose in more casual attire within the protected confines of the base. The sound of equipment hums in the background, intermingling with the intermittent beeps and whirs of advanced machinery. It's a symphony of human endeavor, a chorus of progress in the face of a formidable frontier.\n\n",
       "is locked": false,
         "is visible": false,
        "direction": "northwest"
@@ -115,8 +115,8 @@
   "Game Objects": [
     {
     "object name": "Desk",
-      "short desc": "\n Against the wall there is a desk where you can see a few items.",
-      "description": "\n This desk is not IKEA. It seems to be made of a rich mahogany.",
+      "short desc": "\n Against the wall there is a desk where you can see a few items.\n\n",
+      "description": "\n This desk is not IKEA. It seems to be made of a rich mahogany.\n\n",
     "location": 0,
       "is movable": false,
       "is visible": true
@@ -124,8 +124,8 @@
 
     {
     "object name": "TV",
-       "short desc": "\n An older television. It is a TV/VCR combo. An old television that plays videotapes...",
-      "description": "\n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look like big cassette tapes . . . you know, those things that . . . never mind.",
+       "short desc": "\n An older television. It is a TV/VCR combo. An old television that plays videotapes...\n\n",
+      "description": "\n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look like big cassette tapes . . . you know, those things that . . . never mind.\n\n",
     "location": 0,
       "is movable": false,
       "is visible": true
@@ -133,8 +133,8 @@
 
     {
       "object name": "Tablet",
-       "short desc": "\n What appears to be a type of tablet.",
-      "description": "\n A transparent item that looks like a tablet but you are not quite sure what it is. It definitely looks more modern than the tv.",
+       "short desc": "\n What appears to be a type of tablet.\n\n",
+      "description": "\n A transparent item that looks like a tablet but you are not quite sure what it is. It definitely looks more modern than the tv.\n\n",
       "location": 0,
       "is movable": true,
       "is visible": false
@@ -142,7 +142,7 @@
 
     {
       "object name": "Letter",
-       "short desc": "\n A piece of paper that looks like it has something written on it.",
+       "short desc": "\n A piece of paper that looks like it has something written on it.\n\n",
       "description": "\n The letter is written in your handwriting, although you don't remember writing it. It reads:\n\n 'I can't believe all you had to do was type 'place bar' and you would have won! Then you could have gone to the mailbox, to the barrow, and game over!'\n\n You don't know what this means, but it seems important.\n\n",
       "location": 0,
       "is movable": true,
@@ -151,16 +151,16 @@
 
     {
       "object name": "Poster",
-       "short desc": "\n There is a poster on the wall, but it's the poster you had on your wall as a child. At least you think it is...",
-      "description": "\n The poster appears to be blank. . . ",
+       "short desc": "\n There is a poster on the wall, but it's the poster you had on your wall as a child. At least you think it is...\n\n",
+      "description": "\n The poster appears to be blank. . . \n\n",
       "location": 0,
       "is movable": false,
       "is visible": true
     },
     {
       "object name": "Remote",
-       "short desc": "\n A black standard remote. You remember this remote.",
-      "description": "\n The remote is very simple. You are tempted to use it . . . ",
+       "short desc": "\n A black standard remote. You remember this remote.\n\n",
+      "description": "\n The remote is very simple. You are tempted to use it . . . \n\n",
       "location": 1,
       "is movable": true,
       "is visible": false
@@ -168,40 +168,40 @@
 
      {
       "object name": "Commodore",
-        "short desc": "\n A Commodore that you remember from your childhood. How cool!",
-      "description": "\n In the exciting world of technology, let me take you back to the 1980s,\n a time when personal computers were just starting to become popular. \nOne of the most iconic machines of that era was the Commodore 64, a true marvel that captured \nthe hearts and minds of computer enthusiasts everywhere.\n",
+        "short desc": "\n A Commodore that you remember from your childhood. How cool!\n\n",
+      "description": "\n In the exciting world of technology, let me take you back to the 1980s, a time when personal computers were just starting to become popular. One of the most iconic machines of that era was the Commodore 64, a true marvel that captured the hearts and minds of computer enthusiasts everywhere.\n\n",
       "location": 1,
       "is movable": false,
        "is visible": true
     },
      {
       "object name": "Desk",
-        "short desc": "\n A Desk with what appears to be a Commodore computer on it and perhaps something else.",
-      "description": "\n The desk is what you remember from [Details].",
+        "short desc": "\n A Desk with what appears to be a Commodore computer on it and perhaps something else.\n\n",
+      "description": "\n This was the desk you had in your room when you were a kid! You remember doing homework here (yuck!), and playing video games here (yay!) You played the games on your Commodore-64. That sure was fun (hint hint).\n\n",
       "location": 1,
       "is movable": false,
        "is visible": true
     },
     {
       "object name": "Disco Ball",
-       "short desc": "\n There is a disco ball hanging above the dance floor that also captures your attention.",
-      "description": "\n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors \n that are reflecting the colorful lights all over the dance floor. \n It's the centerpiece of the whole room, and it's casting a mesmerizing glow \n that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, \n sending flashes of light in all directions. As it rotates, the mirrored \n tiles catch the light and send it bouncing around the room, creating \n a sparkling, magical effect. It's like a miniature universe up there, \n with thousands of little stars that are pulsing and twinkling \n with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a \n place where anything can happen, where anything is possible.\n",
+       "short desc": "\n There is a disco ball hanging above the dance floor that also captures your attention.\n\n",
+      "description": "\n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors that are reflecting the colorful lights all over the dance floor. It's the centerpiece of the whole room, and it's casting a mesmerizing glow that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, sending flashes of light in all directions. As it rotates, the mirrored tiles catch the light and send it bouncing around the room, creating  a sparkling, magical effect. It's like a miniature universe up there, with thousands of little stars that are pulsing and twinkling with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a place where anything can happen, where anything is possible.\n\n",
       "location": 2,
       "is movable": false,
       "is visible": true
     },
     {
       "object name": "Dance Floor",
-       "short desc": "\n There is so much going on on the dance floor that it might be worth a second look.",
-      "description": "\n The dance floor is a large, open space that is the centerpiece of the club \n and the focal point for everyone in the room. It is illuminated with bright,\n flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music.\n The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
+       "short desc": "\n There is so much going on on the dance floor that it might be worth a second look.\n\n",
+      "description": "\n The dance floor is a large, open space that is the centerpiece of the club and the focal point for everyone in the room. It is illuminated with bright, flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music. The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n\n",
       "location": 2,
       "is movable": false,
       "is visible": true
     },
      {
       "object name": "Blacklight",
-        "short desc": "\n There is something that looks like a light bulb, but it is purple.",
-      "description": "\n Somehow you remember that blacklights emit ultraviolet light (must have\n been the discovery channel), and when this light shines on certain types\n of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could\n see with the blacklight.\n",
+        "short desc": "\n There is something that looks like a light bulb, but it is purple.\n\n",
+      "description": "\n Somehow you remember that blacklights emit ultraviolet light, and when this light shines on certain types of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could see with the blacklight.\n\n",
       "location": 2,
       "is movable": true,
        "is visible": true
@@ -248,7 +248,7 @@
     },
     {
     "object name": "Pizza Place",
-      "short desc": "\n A pizza place whose pizza looks amazing!",
+      "short desc": "\n A pizza place whose pizza looks amazing!\n\n",
       "description": "\n As you approach the pizza place in the food court, you are hit by the delicious aroma of freshly-baked pizza. The pizza place is a small, open stall with a glass display case filled with freshly-made pies. The smell of melting cheese and tomato sauce is mouth-watering, and you can't wait to get your hands on a slice.\n\n The stall is staffed by a few friendly pizza makers, dressed in white aprons and hats. They are busy tossing dough, spreading sauce, and adding toppings to create the perfect pies. The menu is simple but satisfying, with options for cheese, pepperoni, sausage, and veggie pizzas. You can order by the slice or get a whole pie to share with friends.\n\n You see a sign on the glass in front of the freshly-baked pies that reads, ' Find our location key on the directory for a free slice!'\n\n For some reason you think this is important.\n\n",
     "location": 4,
       "is movable": false,
