@@ -425,7 +425,7 @@ def put_on_spacesuit(room):
             room.unlock_room()
             return
         else:
-            print("Might as well jump!")
+            print("\n Might as well jump!\n\n")
 
 
 def print_interactive_objs(objects, room_num):

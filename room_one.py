@@ -133,6 +133,39 @@ def room_env(room, rooms, objects, inventory):
                      inventory)
             continue
 
+        if user_input[0] == 'jump' and room.get_index() != 8:
+            print("\n Yay! You jumped so high! Good job!\n\n")
+            continue
+
+        if user_input[0] == 'eat' and (room.get_index() != 4 or
+                                       room.get_index() != 7):
+            print("\n Sorry. There is nothing to eat here.\n\n")
+            continue
+
+        if user_input[0] == 'wear' and room.get_index() != 7:
+            print("\n You already have on clothes.\n\n")
+            continue
+
+        if user_input[0] == 'swim' and room.get_index() != 6:
+            print("\n Ummmmm . . . where are you going to swim?\n\n")
+            continue
+
+        if user_input[0] == 'dance' and room.get_index() != 2:
+            print("\n You bust a move.\n\n")
+            continue
+
+        if user_input[0] in ['nap', 'sleep', 'rest']:
+            valid_input = False
+            while not valid_input:
+                rest_time = input("\n How many hours would you like to "
+                                  "sleep? ")
+                if rest_time.isnumeric():
+                    print(f"\n You sleep for {rest_time} hours.\n\n")
+                    valid_input = True
+                else:
+                    print("\n Seriously? Enter a number, please.\n\n")
+            continue
+
         if user_input[0] in DIRECTIONS:
             next_room = navigate_from_main(user_input[0], rooms, room_index)
             if next_room is not None:

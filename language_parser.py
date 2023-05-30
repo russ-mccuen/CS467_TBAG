@@ -31,7 +31,8 @@ VERBS = {
     "talk": ["speak", "converse"],
     "dance": ["boogie", "get-down"],
     "wear": ["put-on", "dress"],
-    "jump": ["go airborn", "elevate"]
+    "jump": ["go airborne", "elevate"],
+    "nap": ["sleep", "rest"]
 }
 
 
