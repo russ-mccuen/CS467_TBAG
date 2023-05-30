@@ -214,6 +214,9 @@ def navigate(desired_location, rooms, from_room):
 
 def approach_door(room, from_room):
     if room.is_locked():
+        if from_room == 3:
+            room.unlock_room()
+            return
         print("\n You approach the door but as you turn the handle you "
               "realize it is locked.\n\n")
         if from_room == 2:
@@ -285,7 +288,8 @@ def eat_pizza(room):
           "starts to water. After waiting in line for a minute, you finally "
           "get to order a slice. You reach for your wallet and realize you "
           "don't have it!\n\n The person working the register says, 'If you "
-          "know the code, you can have a free slice! What is the code?'\n\n")
+          "know the map location of our store on the mall directory you can "
+          "have a free slice! What is the location?'\n\n")
     code = 'FC-15'
     correct_code = False
     while not correct_code:
@@ -299,7 +303,7 @@ def eat_pizza(room):
             room.unlock_room()
             return
         else:
-            print(" That's not the right code. Have a look around. It has to"
+            print("\n That's not the right code. Have a look around. It has to"
                   " be here somewhere.\n\n")
             return
 

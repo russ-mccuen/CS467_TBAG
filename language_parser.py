@@ -247,8 +247,9 @@ def use_tablet(tablet, rooms, objects):
                 poster.set_description(poster_detail)
 
                 clear_screen()
-                print(" You hear something shift in the room. You unlocked the tablet. On it you "
-                      "see information.")
+                print(" You hear something shift in the room. You unlocked "
+                      "the tablet. On it you see doors. Some locked, "
+                      "some unlocked.\n\n")
                 time.sleep(1)
                 rooms[1].set_visible()
             else:
@@ -275,7 +276,7 @@ def use_tablet(tablet, rooms, objects):
                 rooms[2].set_visible()
                 rooms[2].unlock_room()
                 clear_screen()
-                print(" \n You unlocked more information.")
+                print(" \n You unlocked another room!.")
                 time.sleep(1)
                 continue
 
@@ -290,7 +291,22 @@ def use_tablet(tablet, rooms, objects):
                 rooms[3].set_visible()
                 rooms[3].unlock_room()
                 clear_screen()
-                print(" \n You unlocked more information.")
+                print(" \n You unlocked another room!.")
+                time.sleep(1)
+                continue
+
+        if user_input == "White Lake":
+            description = "Info 4: Room 4 unlocked"
+            if description not in available_info:
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " A disco ball."
+                poster.set_description(poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[3].set_visible()
+                rooms[3].unlock_room()
+                clear_screen()
+                print(" \n You unlocked another room!")
                 time.sleep(1)
                 continue
 
