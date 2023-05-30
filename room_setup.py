@@ -217,6 +217,7 @@ def approach_door(room, from_room):
         if from_room == 3:
             room.unlock_room()
             return
+
         print("\n You approach the door but as you turn the handle you "
               "realize it is locked.\n\n")
         if from_room == 2:

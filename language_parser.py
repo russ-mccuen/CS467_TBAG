@@ -299,12 +299,27 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 4: Room 4 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " A disco ball."
+                poster_detail = cur_desc + " A peace sign."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
-                rooms[3].set_visible()
-                rooms[3].unlock_room()
+                rooms[4].set_visible()
+                rooms[4].unlock_room()
+                clear_screen()
+                print(" \n You unlocked another room!")
+                time.sleep(1)
+                continue
+
+        if user_input == "421-6827":
+            description = "Info 5: Room 5 unlocked"
+            if description not in available_info:
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " A compact disc."
+                poster.set_description(poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[5].set_visible()
+                rooms[5].unlock_room()
                 clear_screen()
                 print(" \n You unlocked another room!")
                 time.sleep(1)
@@ -312,6 +327,7 @@ def use_tablet(tablet, rooms, objects):
 
 
 def use_blacklight():
+    # TODO fix room bug so only works in disco room; all other objects also
     print("\n You turn the blacklight on and shine it around the room. "
           "Different things suddenly appear on the walls. You see a "
           "peace sign, a few names written with hearts between them, "

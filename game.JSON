@@ -256,8 +256,8 @@
     },
     {
     "object name": "Television",
-      "short desc": "\n A 27-inch CRT television with a black body and a silver bezel.\n\n",
-      "description": "\n The television is a 27-inch CRT, which stands for cathode ray tube. CRT televisions were the most common type of television in the 2000s. They work by using a beam of electrons to scan an image onto a screen coated with phosphors. The phosphors emit light when they are hit by electrons, creating the image that you see on the screen.\n\nCRT televisions are bulky and heavy, and they have a poor picture quality compared to modern flat-panel TVs. However, they are also very durable, and they can last for many years.\n\nThe television is black, with a silver bezel around the screen. It has a remote control, and it can be connected to a variety of sources, including cable, satellite, and DVD players.\n\nThe television is a reminder of a simpler time, when televisions were bulky and heavy, and the picture quality was not as good as it is today. However, they were also very durable, and they could last for many years.\n\n",
+      "short desc": "\n A 27-inch CRT television with a black body and a silver bezel.\n\n On the entertainment center near the television you is an old VHS tape. It might be worth checking out.\n\n",
+      "description": "\n The television is a 27-inch CRT, which stands for cathode ray tube. CRT televisions were the most common type of television in the 2000s. They work by using a beam of electrons to scan an image onto a screen coated with phosphors. The phosphors emit light when they are hit by electrons, creating the image that you see on the screen.\n\nCRT televisions are bulky and heavy, and they have a poor picture quality compared to modern flat-panel TVs. However, they are also very durable, and they can last for many years.\n\nThe television is black, with a silver bezel around the screen. It can be connected to a variety of sources, including cable, satellite, and DVD players.\n\n The television is a reminder of a simpler time, when televisions were bulky and heavy, and the picture quality was not as good as it is today. However, they were also very durable, and they could last for many years.\n\n On the entertainment center near the television you see a old VHS tape . It might be worth checking out.\n\n",
     "location": 5,
       "is movable": false,
       "is visible": true
@@ -269,6 +269,14 @@
     "location": 5,
       "is movable": false,
       "is visible": true
+    },
+    {
+    "object name": "VHS tape",
+      "short desc": "\n As you hold the VHS tape in your hands, you can't help but be transported back to a time when these rectangular relics were the primary source of home entertainment. You can't play this tape here, but you might be able to play it somewhere else.\n\n",
+      "description": "\n As you hold the VHS tape in your hands, you can feel the weight of nostalgia settle upon you, a tangible link to the past. The plastic casing, worn and weathered, tells tales of countless viewings and treasured memories. The familiar label, adorned with handwritten titles or the printed names of movies, triggers a flood of emotions as you remember the excitement of browsing video rental stores and carefully selecting the perfect film for an evening's entertainment. With its magnetic tape hidden within, the VHS tape embodies a time when physical media reigned supreme, offering a tangible connection to the stories and experiences that shaped your personal history. You can't play this tape here, but you might be able to play it somewhere else.\n\n",
+      "location": 5,
+      "is movable": true,
+      "is visible": false
     },
     {
     "object name": "Washington Monument",
