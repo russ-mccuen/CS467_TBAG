@@ -32,7 +32,8 @@ VERBS = {
     "dance": ["boogie", "get-down"],
     "wear": ["put-on", "dress"],
     "jump": ["go airborne", "elevate"],
-    "nap": ["sleep", "rest"]
+    "nap": ["sleep", "rest"],
+    "think": ["ponder", "reminisce"]
 }
 
 

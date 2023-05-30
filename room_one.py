@@ -166,6 +166,12 @@ def room_env(room, rooms, objects, inventory):
                     print("\n Seriously? Enter a number, please.\n\n")
             continue
 
+        if user_input[0] in ['think', 'ponder', 'reminisce']:
+            print("\n You are not sure how to proceed, so you decide to stop "
+                  "and think about what you should do next. It works! You "
+                  "now know what you have to do.\n\n")
+            continue
+
         if user_input[0] in DIRECTIONS:
             next_room = navigate_from_main(user_input[0], rooms, room_index)
             if next_room is not None:
