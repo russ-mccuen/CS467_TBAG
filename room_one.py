@@ -38,6 +38,10 @@ def room_env(room, rooms, objects, inventory):
                      inventory)
             continue
 
+        if user_input[0] == 'take':
+            try_take(" ".join(user_input[1:]), objects, object_names, inventory, room)
+            continue
+
         if user_input[0] == "unlock":
             print(" REMOVE THIS FEATURE")
             rooms[1].unlock_room()

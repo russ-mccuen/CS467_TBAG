@@ -261,6 +261,22 @@ def approach_door(room, from_room):
                     print("\n You really should go for a swim. I'll bet "
                           "if you type 'swim' or 'swim in reflecting pool' "
                           "then you could probably swim!\n\n")
+
+        if from_room == 7:
+            booth = False
+            while not booth:
+                booth2 = input("\n The smell of the food stops you from "
+                               "leaving. It smells so good and you realize "
+                               "you are so hungry that you have to try "
+                               "something.\n\n Maybe you should sit in a "
+                               "booth.\n\n What do you want to do? ")
+                if booth2 == 'sit in booth' or booth2 == 'sit booth':
+                    sit_booth(room)
+                    booth = True
+                else:
+                    print("\n You really should try a burger. Maybe you "
+                          "should 'sit in booth' or perhaps 'sit booth'.")
+
         return None
 
     else:
@@ -327,6 +343,37 @@ def eat_pizza(room):
                   " be here somewhere.\n\n")
             return
 
+
+def sit_booth(room):
+    print("\n You sit down in a booth, the waitress comes over and asks, "
+          "'What'll you have, sugar?'\n\n You realize you forgot your "
+          "wallet. Again. Although your money would be no good here. Sensing "
+          "your hesitation, the waitress smiles and says, 'How about a burger?"
+          " On me.\n\n The shocked look on your face tells her everything she "
+          "needs to know.\n\n 'Be right back with that burger, hon.'\n\n A "
+          "few minutes later the waitress arrives with a burger that looks "
+          "amazing, and a soda for you to drink. You are about the thank her "
+          "when she smiles, winks, and walks away.\n\n As you sit in the "
+          "booth, you notice a small, weathered baseball card peeking out "
+          "from beneath the edge of the seat cushion.\n\n")
+    eat_burger(room)
+
+
+def eat_burger(room):
+    eaten = False
+    while not eaten:
+        num_nums = input("\n You start to drool as the enveloped by the "
+                         "aroma of the burger.\n\n What do you want to do? ")
+        if num_nums == 'eat burger':
+            print("\n This is the best burger you've ever had. And you are "
+                  "not saying that just because you are hungry. The burger "
+                  "tastes so fresh. It is like you've never eaten a burger "
+                  "before you had this one.\n\n")
+            room.unlock_room()
+            return
+        else:
+            print("\n Maybe you should, you know, eat the burger. Or, in game "
+                  "talk, 'eat burger'.\n\n")
 
 def go_swim(room):
     print("\n It is so hot you can't help but go for a swim, and the only "

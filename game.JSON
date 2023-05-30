@@ -319,6 +319,14 @@
       "is visible": true
     },
     {
+    "object name": "Baseball Card",
+      "short desc": "\n In your hands rests a treasured artifact—a weathered baseball card from the 1950s—depicting a determined young player, a glimpse into a bygone era of baseball legends and the enduring spirit of the game. You notice the player's batting average was .353. For some reason you think this is important.\n\n",
+      "description": "\n  With careful curiosity, you retrieve the card. In your hands you hold a precious relic from the 1950s - a faded, yet cherished, baseball card featuring a young and determined player captured in a classic pose, his uniform vibrant against the sepia-toned background, his gaze filled with dreams of glory and triumph, a tangible piece of history that transports you to a bygone era of baseball legends and the timeless allure of the national pastime.\n\n You notice the player's batting average was .353. For some reason you think this is important.\n\n",
+      "location": 7,
+      "is movable": true,
+      "is visible": false
+    },
+    {
     "object name": "Earth",
       "short desc": "\n From your Mars vantage point, you behold the distant blue orb of Earth, a fragile yet resilient sanctuary of swirling clouds, vast oceans, and sprawling continents, evoking both homesickness and wonder, and reminding you of the interconnectedness of all life.\n\n",
       "description": "\n From this vantage point on Mars, you gaze out into the vastness of space and fix your eyes on the distant blue orb that is planet Earth. As you take in the view, a profound sense of interconnectedness washes over you. Earth, suspended in the velvety blackness, appears both fragile and resilient, a sanctuary teeming with life amidst the endless cosmic expanse. You can't help but feel a surge of homesickness mixed with wonder as you observe the swirling clouds, the vast oceans, and the sprawling continents of your distant home. It's a reminder of the shared human experience, the intricate tapestry of existence, and the undeniable bond that unites us all.\n\n",
