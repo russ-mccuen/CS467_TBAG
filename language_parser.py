@@ -265,7 +265,7 @@ def use_tablet(tablet, rooms, objects):
 
         user_input = input(" \n Enter a new pin to access more or q to quit. ")
         if user_input == 'q':
-            print("You put the tablet away.")
+            print("\n You put the tablet away.\n\n")
             time.sleep(1)
             break
 
@@ -280,7 +280,7 @@ def use_tablet(tablet, rooms, objects):
                 rooms[2].set_visible()
                 rooms[2].unlock_room()
                 clear_screen()
-                print(" \n You unlocked another room!.")
+                print(" \n You unlocked another room!")
                 time.sleep(1)
                 continue
 
@@ -295,7 +295,7 @@ def use_tablet(tablet, rooms, objects):
                 rooms[3].set_visible()
                 rooms[3].unlock_room()
                 clear_screen()
-                print(" \n You unlocked another room!.")
+                print(" \n You unlocked another room!")
                 time.sleep(1)
                 continue
 
@@ -333,12 +333,27 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 7: Room 7 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " Washington Monument."
+                poster_detail = cur_desc + " The Washington Monument."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
                 rooms[7].set_visible()
                 rooms[7].unlock_room()
+                clear_screen()
+                print(" \n You unlocked another room!")
+                time.sleep(1)
+                continue
+
+        if user_input == ".353":
+            description = "Info 8: Room 8 unlocked"
+            if description not in available_info:
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " A vintage car."
+                poster.set_description(poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[8].set_visible()
+                rooms[8].unlock_room()
                 clear_screen()
                 print(" \n You unlocked another room!")
                 time.sleep(1)
