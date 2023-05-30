@@ -208,8 +208,8 @@
     },
     {
       "object name": "Pager",
-        "short desc": "\n A pager. . . a small, rectangular, electronic object.",
-      "description": "\n Is that . . . a pager?\n\n A pager, also known as a beeper, is a small electronic device that was widely used before the advent of mobile phones to receive short text messages or numeric codes. It allowed people to be contacted when they were away from a landline telephone or not near a computer. Pagers were particularly popular in the 1980s and 1990s, serving as a means of communication for various professionals such as doctors, emergency personnel, and business executives.\n\n",
+        "short desc": "\n A pager. . . a small, rectangular, electronic object. On the display you see the number 421-6827. For some reason you think this is important.\n\n",
+      "description": "\n Is that . . . a pager?\n\n A pager, also known as a beeper, is a small electronic device that was widely used before the advent of mobile phones to receive short text messages or numeric codes. It allowed people to be contacted when they were away from a landline telephone or not near a computer. Pagers were particularly popular in the 1980s and 1990s, serving as a means of communication for various professionals such as doctors, emergency personnel, and business executives.\n\n On the display you see the number 421-6827. For some reason you think this is important.\n\n",
       "location": 4,
       "is movable": true,
        "is visible": false
@@ -233,8 +233,8 @@
 
     {
     "object name": "Mall Directory",
-      "short desc": "\n A mall directory to help you figure out where you are at.",
-      "description": "\n As you approach the mall directory, you notice a large, colorful sign with bold lettering that reads \"You are Here.\" The directory itself is a large, freestanding display, with a metal frame and a large glass front. Behind the glass are several panels of colorful maps and directories, each with a different section of the mall.\n\n The maps are laid out in a grid, with each store marked with its name and location. They are color-coded, with each section of the mall represented by a different color. The directory is well-organized and easy to read, with clear labels and a simple, straightforward layout.\n\n There are a few other features that make the directory stand out. Along the sides of the display, there are advertisements for various stores and restaurants, with colorful images and catchy slogans. There may also be a few coupons or special offers tucked in among the ads, encouraging shoppers to visit certain stores or try out new products.\n\n You notice the pizza place's location is 'FC-15'. For some reason you think this is important.\n\n",
+      "short desc": "\n A mall directory to help you figure out where you are at. On the ground next to the mall directory you see a small rectangular electronic object that looks interesting..\n\n",
+      "description": "\n As you approach the mall directory, you notice a large, colorful sign with bold lettering that reads \"You are Here.\" The directory itself is a large, freestanding display, with a metal frame and a large glass front. Behind the glass are several panels of colorful maps and directories, each with a different section of the mall.\n\n The maps are laid out in a grid, with each store marked with its name and location. They are color-coded, with each section of the mall represented by a different color. The directory is well-organized and easy to read, with clear labels and a simple, straightforward layout.\n\n There are a few other features that make the directory stand out. Along the sides of the display, there are advertisements for various stores and restaurants, with colorful images and catchy slogans. There may also be a few coupons or special offers tucked in among the ads, encouraging shoppers to visit certain stores or try out new products.\n\n You notice the pizza place's location is 'FC-15'. For some reason you think this is important.\n\n On the ground near the directory you see a small rectangular electronic object that looks interesting.\n\n",
     "location": 4,
       "is movable": false,
       "is visible": true

@@ -219,7 +219,7 @@ def approach_door(room, from_room):
         if from_room == 2:
             dance = False
             while not dance:
-                dance2 = input(" You feel like before you leave the 1970s, "
+                dance2 = input(" You feel like before you leave the 1970s "
                                "you really should do a disco dance! How "
                                "about it? Will you dance? ")
                 if dance2 == 'dance':
@@ -227,6 +227,17 @@ def approach_door(room, from_room):
                     dance = True
                 else:
                     print("\n You really should dance.\n\n")
+
+        if from_room == 4:
+            eat = False
+            while not eat:
+                eat2 = input(" You feel like before you leave the 1990s you "
+                             "really should get a slice of pizza.")
+                if eat2 == 'eat pizza':
+                    eat_pizza(room)
+                    eat = True
+                else:
+                    print("\n You really should eat a slice of pizza.\n\n")
         return None
 
     else:
@@ -248,7 +259,7 @@ def do_dance(room):
     user_dance = []
     dance_length = len(dance_sequence)
     while not correct_dance:
-        dance = input(" Enter the dance sequence one move at a time! ")
+        dance = input(" Enter the dance sequence one move at a time!\n\n")
         if len(dance) > 1:
             print("\n Please enter one number at a time.\n")
             continue
@@ -267,6 +278,30 @@ def do_dance(room):
             else:
                 print(" Wait. That's not it. Let's try again!")
                 user_dance = []
+
+
+def eat_pizza(room):
+    print("\n Great choice! As you approach the pizza place your mouth "
+          "starts to water. After waiting in line for a minute, you finally "
+          "get to order a slice. You reach for your wallet and realize you "
+          "don't have it!\n\n The person working the register says, 'If you "
+          "know the code, you can have a free slice! What is the code?'\n\n")
+    code = 'FC-15'
+    correct_code = False
+    while not correct_code:
+        free_slice = input(" What is the code? ")
+        if free_slice == code:
+            print("\n Yes, it is a slice of pizza. but somehow it just tastes "
+                  "different. It is better. It may be the best slice of "
+                  "pizza you've ever had! Or you could just be really "
+                  "hungry. Regardless, it was quite a slice!\n\n"
+                  " The door unlocks.\n\n")
+            room.unlock_room()
+            return
+        else:
+            print(" That's not the right code. Have a look around. It has to"
+                  " be here somewhere.\n\n")
+            return
 
 
 def print_interactive_objs(objects, room_num):
