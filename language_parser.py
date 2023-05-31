@@ -376,6 +376,20 @@ def use_tablet(tablet, rooms, objects):
                 time.sleep(1)
                 continue
 
+        if user_input == "Curiosity":
+            description = "One way. No return."
+            if description not in available_info:
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " A question mark."
+                poster.set_description(poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[9].set_visible()
+                rooms[9].unlock_room()
+                clear_screen()
+                print(" \n You unlocked the final room!")
+                time.sleep(1)
+                continue
 
 def use_blacklight(room):
     if room.get_index() == 2:

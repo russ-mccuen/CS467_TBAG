@@ -421,9 +421,13 @@ def put_on_spacesuit(room):
                   "life! You could dunk a basketball on Mars for sure!\n\n "
                   "For what seems like an eternity you slowly rise up, "
                   "then just as slowly come back down before landing gently "
-                  "on the Martian surface.\n\n You head back inside, "
-                  "and hang your borrowed spacesuit back up before anyone "
-                  "notices it was gone.\n\n")
+                  "on the Martian surface.\n\n While airborne, "
+                  "you happened to catch a glimpse of what appeared to be "
+                  "one of NASA's rovers! What was it called?\n\n "
+                  "Curiousity!\n\n For some reason you think this is "
+                  "important.\n\nYou head back "
+                  "inside, and hang your borrowed spacesuit back up before "
+                  "anyone notices it was gone.\n\n")
             room.unlock_room()
             return
         else:
