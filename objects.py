@@ -68,7 +68,8 @@ class TV(GameObject):
         self.on = False
         self.channels = [
             "\n You see static with UHF-73 in green at the top right of the screen.\n",
-            "\n You see [TODO: Provide Description] the code UHF-74 at the top right of screen."]
+            "\n You still see static but the channel seems to have changed. "
+            "It now reads UHF-74 at the top right of screen.\n\n"]
         self.vcr = []
         self.current_channel = 0
         super(TV, self).__init__(name, short_desc, description, location,
