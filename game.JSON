@@ -5,8 +5,8 @@
       "name":  "Main Room",
       "door desc": "",
       "intro": "",
-      "short desc":  " You are in a room that looks like your bedroom, but a few things seem different.\n\n",
-      "long desc":  " You see a room that looks like the room you usually sleep in.\n\n",
+      "short desc":  "\n You are in a room that looks like your bedroom, but a few things seem different.\n",
+      "long desc":  "\n You see a room that looks like the room you usually sleep in.\n",
       "is locked": false,
       "is visible": false,
       "direction": "center"
@@ -15,9 +15,9 @@
       "index": 1,
       "name":  "1980 Room",
     "door desc": " A freshly painted bright yellow door",
-    "intro": " You realize you are in a different place and time. Your surroundings are very familiar.\n\n",
-      "short desc":  " You are in what appears to be your childhood bedroom.\n\n",
-      "long desc":  " You are still in a bedroom, but as you look around you notice the walls adorned with posters of movies, including Star Wars, Back to the Future, and Indiana Jones. The posters are carefully placed to cover the blue paint on the walls, giving the room a cozy and immersive feel.\n\n The bed is a twin-sized mattress, situated against the wall with a colorful patchwork quilt covering it. There are stuffed animals and pillows of all shapes and sizes piled up at the head of the bed. A lamp with a green shade is placed on the nightstand next to the bed, providing the perfect amount of light for reading.\\n\\nThe carpet is beige and soft, with a few small stains from spilled drinks and snacks. A small bookshelf is placed next to the desk, filled with classic books like \"The Hobbit\" and \"The Chronicles of Narnia.\" A few action figures and a Rubik's Cube are also scattered on the shelves.\n\n The curtains are thick and dark blue, keeping the sunlight out during the day. A few posters of music artists, like Michael Jackson and Prince, are placed in between the movie posters, adding some musical flair to the room.\n\n This is a bedroom straight out of the 1980s. It is a cozy and nostalgic space, perfect for immersing yourself in the adventures of your favorite movies and video games.\n\n",
+    "intro": "\n You realize you are in a different place and time. Your surroundings are very familiar.\n",
+      "short desc":  "\n You are in what appears to be your childhood bedroom.\n",
+      "long desc":  "\n You are still in a bedroom, but as you look around you notice the walls adorned with posters of movies, including Star Wars, Back to the Future, and Indiana Jones. The posters are carefully placed to cover the blue paint on the walls, giving the room a cozy and immersive feel.\n\n The bed is a twin-sized mattress, situated against the wall with a colorful patchwork quilt covering it. There are stuffed animals and pillows of all shapes and sizes piled up at the head of the bed. A lamp with a green shade is placed on the nightstand next to the bed, providing the perfect amount of light for reading.\\n\\nThe carpet is beige and soft, with a few small stains from spilled drinks and snacks. A small bookshelf is placed next to the desk, filled with classic books like \"The Hobbit\" and \"The Chronicles of Narnia.\" A few action figures and a Rubik's Cube are also scattered on the shelves.\n\n The curtains are thick and dark blue, keeping the sunlight out during the day. A few posters of music artists, like Michael Jackson and Prince, are placed in between the movie posters, adding some musical flair to the room.\n\n This is a bedroom straight out of the 1980s. It is a cozy and nostalgic space, perfect for immersing yourself in the adventures of your favorite movies and video games.\n",
       "is locked": false,
     "is visible": false,
     "direction": "north"
@@ -26,9 +26,9 @@
        "index": 2,
       "name":  "1970 Room",
        "door desc": " A glittery door with sequence patters",
-       "intro": " You realize you are in a different place and time. But the first thing you notice isn't your surroundings, it is the music.\n\n The music here is absolutely pumping. It is filled with a high-energy dance beat, and you can feel it in every fiber of your being. The bassline is thumping through the floor, and the strings are swelling in a way that just makes you want to move. There's a sense of urgency and excitement in the music, like it's pushing you to get up and dance.\n\n And the vocals . . . the vocals are pure joy. The singers are belting out these catchy, upbeat melodies that just make you want to sing along. It's all about having a good time, letting loose, and forgetting your troubles for a while.\n\n",
-      "short desc":  "\n You are in a disco. There are people dancing, there is loud music, and you immediately think about joining them. Then you remember you don't know any disco dances.\n\n There is so much going on on the dance floor that it might be worth a second look.\n\n There is a disco ball hanging above the dance floor that also captures your attention.\n\n",
-      "long desc":  "\n You finally break free from the hold of the music and decide to take in your surroundings.\n\n You are in a big room with loud music, lights, and people dancing. There appears to be a DJ in one corner playing . . . records.\n\n The decor of the room is flashy and colorful, with neon lights everywhere. The people are dressed fashionably and glamorous, wearing sequined and glittery clothing, platform shoes, and knee-high boots. There are lights are flashing all around, and everyone is dressed to impress. You can feel the energy of the crowd. It's like one big party, and you're a part of it.\n\n The combination of the music, the clothes, and the atmosphere hits you.\n\n You are in a disco.\n\n The dance floor is in the center of the room.\n\n",
+       "intro": "\n You realize you are in a different place and time. But the first thing you notice isn't your surroundings, it is the music.\n\n The music here is absolutely pumping. It is filled with a high-energy dance beat, and you can feel it in every fiber of your being. The bassline is thumping through the floor, and the strings are swelling in a way that just makes you want to move. There's a sense of urgency and excitement in the music, like it's pushing you to get up and dance.\n\n And the vocals . . . the vocals are pure joy. The singers are belting out these catchy, upbeat melodies that just make you want to sing along. It's all about having a good time, letting loose, and forgetting your troubles for a while.\n",
+      "short desc":  "\n You are in a disco. There are people dancing, there is loud music, and you immediately think about joining them. Then you remember you don't know any disco dances.\n\n There is so much going on on the dance floor that it might be worth a second look.\n\n There is a disco ball hanging above the dance floor that also captures your attention.\n",
+      "long desc":  "\n You finally break free from the hold of the music and decide to take in your surroundings.\n\n You are in a big room with loud music, lights, and people dancing. There appears to be a DJ in one corner playing . . . records.\n\n The decor of the room is flashy and colorful, with neon lights everywhere. The people are dressed fashionably and glamorous, wearing sequined and glittery clothing, platform shoes, and knee-high boots. There are lights are flashing all around, and everyone is dressed to impress. You can feel the energy of the crowd. It's like one big party, and you're a part of it.\n\n The combination of the music, the clothes, and the atmosphere hits you.\n\n You are in a disco.\n\n The dance floor is in the center of the room.\n",
       "is locked": false,
        "is visible": false,
        "direction": "northeast"
@@ -37,9 +37,9 @@
        "index": 3,
       "name":  "1960 Room",
        "door desc": "A multicolored door with a peace sign on it",
-       "intro": " You realize you are in a different place and time. This time you are outside. At first you are unsure where and when you are, but it soon becomes quite apparent.\n\n",
-      "short desc":  "\n Surrounded by a kaleidoscope of colors, the sprawling fields of Woodstock come alive with a diverse sea of barefooted souls, dancing and singing in harmonious unity, while the air pulsates with the electrifying energy of music and the intoxicating scent of freedom.\n\n",
-      "long desc":  "\n As you step onto the hallowed grounds of Woodstock, you are instantly swept up in an atmosphere of raw energy and anticipation. It is the summer of 1969, and Max Yasgur's farm in Bethel, New York, has become a mecca for thousands of free-spirited souls seeking a temporary haven from the chaos of the outside world.\n\n The air is thick with the scent of freedom and the unmistakable aroma of incense, mingling with the sweet and earthy fragrance of nature. The sun casts a golden glow over the sprawling fields, where multicolored tents and makeshift structures stand side by side. Vibrant tapestries flutter in the warm breeze, adding a kaleidoscope of color to the landscape.\n\n As you navigate through the sea of bodies, you are struck by the diversity of the crowd. People of all ages, backgrounds, and walks of life have converged here, united by their shared love for music, peace, and counterculture. Long-haired and barefooted, they wear tie-dye shirts, bell-bottoms, and flower crowns, expressing their individuality with a free-spirited flair.\n\n",
+       "intro": "\n You realize you are in a different place and time. This time you are outside. At first you are unsure where and when you are, but it soon becomes quite apparent.\n",
+      "short desc":  "\n Surrounded by a kaleidoscope of colors, the sprawling fields of Woodstock come alive with a diverse sea of barefooted souls, dancing and singing in harmonious unity, while the air pulsates with the electrifying energy of music and the intoxicating scent of freedom.\n",
+      "long desc":  "\n As you step onto the hallowed grounds of Woodstock, you are instantly swept up in an atmosphere of raw energy and anticipation. It is the summer of 1969, and Max Yasgur's farm in Bethel, New York, has become a mecca for thousands of free-spirited souls seeking a temporary haven from the chaos of the outside world.\n\n The air is thick with the scent of freedom and the unmistakable aroma of incense, mingling with the sweet and earthy fragrance of nature. The sun casts a golden glow over the sprawling fields, where multicolored tents and makeshift structures stand side by side. Vibrant tapestries flutter in the warm breeze, adding a kaleidoscope of color to the landscape.\n\n As you navigate through the sea of bodies, you are struck by the diversity of the crowd. People of all ages, backgrounds, and walks of life have converged here, united by their shared love for music, peace, and counterculture. Long-haired and barefooted, they wear tie-dye shirts, bell-bottoms, and flower crowns, expressing their individuality with a free-spirited flair.\n",
       "is locked": true,
         "is visible": false,
        "direction": "east"
@@ -48,9 +48,9 @@
        "index": 4,
       "name":  "1990 Room",
        "door desc": " A bright blue door with a pager on it",
-       "intro": " You realize you are in a different place and time. When you look around after your latest time-traveling jaunt you are not in a bedroom or a disco or someone's farm turned concert venue. You are immediately hit by a blast of noise and activity. People of all ages are bustling around, jostling for space, and queuing up to get something to eat.\n\n",
+       "intro": "\n You realize you are in a different place and time. When you look around after your latest time-traveling jaunt you are not in a bedroom or a disco or someone's farm turned concert venue. You are immediately hit by a blast of noise and activity. People of all ages are bustling around, jostling for space, and queuing up to get something to eat.\n",
       "short desc":  "\n You are in a shopping mall food court. Based on what you see you think it is sometime in the 1990s.\n\n",
-      "long desc":  "\n You are in a . . . food court? In a shopping mall?\n\n The food court itself is a large, open area, filled with dozens of stalls and restaurants, each with its own distinct aroma and vibe. The decor is modern, with neon lights, metallic finishes, and plastic seating. There's a distinct hum of excitement in the air, with shoppers and hungry people alike rubbing shoulders and enjoying the lively atmosphere.\n\n The variety of food options is staggering. You can find fast food staples like a bunch of burger joints with their familiar logos and signature menus. There's also a host of international cuisine options, including Chinese, Italian, and Mexican food. You can order whatever you want and then sit down at a table to savor your meal.\n\n The smells are amazing, with the tantalizing aroma of freshly cooked food wafting across the food court. The sound of sizzling burgers, frying chicken, and sizzling stir-fries fills the air, punctuated by the occasional beep of a cash register or the clattering of cutlery.\n\n As you walk around the food court, you can see groups of people chatting and laughing, tucking into their meals, and enjoying the bustling atmosphere. The seating areas are crowded, but there's a friendly vibe, with strangers striking up conversations and sharing stories.\n\n",
+      "long desc":  "\n You are in a . . . food court? In a shopping mall?\n\n The food court itself is a large, open area, filled with dozens of stalls and restaurants, each with its own distinct aroma and vibe. The decor is modern, with neon lights, metallic finishes, and plastic seating. There's a distinct hum of excitement in the air, with shoppers and hungry people alike rubbing shoulders and enjoying the lively atmosphere.\n\n The variety of food options is staggering. You can find fast food staples like a bunch of burger joints with their familiar logos and signature menus. There's also a host of international cuisine options, including Chinese, Italian, and Mexican food. You can order whatever you want and then sit down at a table to savor your meal.\n\n The smells are amazing, with the tantalizing aroma of freshly cooked food wafting across the food court. The sound of sizzling burgers, frying chicken, and sizzling stir-fries fills the air, punctuated by the occasional beep of a cash register or the clattering of cutlery.\n\n As you walk around the food court, you can see groups of people chatting and laughing, tucking into their meals, and enjoying the bustling atmosphere. The seating areas are crowded, but there's a friendly vibe, with strangers striking up conversations and sharing stories.\n",
       "is locked": false,
         "is visible": false,
        "direction": "southeast"
@@ -59,9 +59,9 @@
        "index": 5,
       "name":  "2000 Room",
        "door desc": "A green door with writing on it, 'Y2K',",
-       "intro": " You realize you are in a different place and time. This time you are once again in a house, but this time in what appears to be a living room.\n\n As you step into the living room, you find yourself transported back to the 2000s, a time filled with nostalgia and technological advancements. The space is cozy yet modern, reflecting the trends and styles of the era.\n\n The walls are painted in warm, neutral tones that were popular at the time.\n\n",
-      "short desc":  "\n You are in a cozy living room. You notice a television and a cd player nearby.\n\n",
-      "long desc":  "\n A large flat-screen television, a prized possession in the 2000s, takes center stage on an entertainment unit. It is surrounded by various gaming consoles like the PlayStation 2 or Xbox, indicating the love for electronic entertainment during this period.\n\n A plush sofa sits against one wall, upholstered in vibrant or earthy colors, providing ample seating for family and guests. The cushions are adorned with patterns that were in vogue, and a matching coffee table stands in front, hosting magazines and perhaps a stack of CDs or DVDs.\n\n On another side of the room, a bookshelf proudly displays a collection of physical books, CDs, and DVDs. It serves as a testament to the transition from analog to digital media that was taking place during this time. You notice a CD player nearby, offering the option to play favorite music CDs.\n\n",
+       "intro": "\n You realize you are in a different place and time. This time you are once again in a house, but this time in what appears to be a living room.\n\n As you step into the living room, you find yourself transported back to the 2000s, a time filled with nostalgia and technological advancements. The space is cozy yet modern, reflecting the trends and styles of the era.\n\n The walls are painted in warm, neutral tones that were popular at the time.\n",
+      "short desc":  "\n You are in a cozy living room. You notice a television and a cd player nearby.\n",
+      "long desc":  "\n A large flat-screen television, a prized possession in the 2000s, takes center stage on an entertainment unit. It is surrounded by various gaming consoles like the PlayStation 2 or Xbox, indicating the love for electronic entertainment during this period.\n\n A plush sofa sits against one wall, upholstered in vibrant or earthy colors, providing ample seating for family and guests. The cushions are adorned with patterns that were in vogue, and a matching coffee table stands in front, hosting magazines and perhaps a stack of CDs or DVDs.\n\n On another side of the room, a bookshelf proudly displays a collection of physical books, CDs, and DVDs. It serves as a testament to the transition from analog to digital media that was taking place during this time. You notice a CD player nearby, offering the option to play favorite music CDs.\n",
       "is locked": false,
         "is visible": false,
        "direction": "south"
@@ -70,9 +70,9 @@
        "index": 6,
       "name":  "2076 Room",
        "door desc": "A red, white, and blue door with a picture of currency on it",
-       "intro": " You realize you are in a different place and time. A bustling metropolis of the future unveils before your eyes. The cityscape, a blend of architectural marvels and sustainable innovations, captivates your senses. Gleaming skyscrapers stretch towards the heavens, adorned with sleek, energy-efficient facades that harness the sun's power. A vibrant network of clean and efficient transportation systems, including autonomous vehicles and hyperloop tubes, seamlessly weaves through the city, ensuring swift and eco-friendly travel. Parks and green spaces abound, with vertical gardens adorning the sides of buildings and floating parks hovering above the Potomac River.\n\n",
-      "short desc":  "\n You are in Washington, D.C. at the Tricentennial celebration.\n\n",
-      "long desc":  "\n The city hums with a harmonious fusion of cultural diversity, cutting-edge technology, and a deep respect for the nation's rich history. You realize you are in our nation's capital and you know the year is 2076. You know this because you see preparations for the Tricentennial Celebration.\n\n",
+       "intro": "\n You realize you are in a different place and time. A bustling metropolis of the future unveils before your eyes. The cityscape, a blend of architectural marvels and sustainable innovations, captivates your senses. Gleaming skyscrapers stretch towards the heavens, adorned with sleek, energy-efficient facades that harness the sun's power. A vibrant network of clean and efficient transportation systems, including autonomous vehicles and hyperloop tubes, seamlessly weaves through the city, ensuring swift and eco-friendly travel. Parks and green spaces abound, with vertical gardens adorning the sides of buildings and floating parks hovering above the Potomac River.\n",
+      "short desc":  "\n You are in Washington, D.C. at the Tricentennial celebration.\n",
+      "long desc":  "\n The city hums with a harmonious fusion of cultural diversity, cutting-edge technology, and a deep respect for the nation's rich history. You realize you are in our nation's capital and you know the year is 2076. You know this because you see preparations for the Tricentennial Celebration.\n",
       "is locked": false,
         "is visible": false,
        "direction": " southwest"
@@ -81,9 +81,9 @@
        "index": 7,
       "name":  "1950 room",
        "door desc": " A checkered door with a vintage car on it",
-       "intro": " You realize you are in a different place and time. You find yourself surrounded by a scene straight out of the 1950s. You have arrived in a small town diner, filled with the sights and sounds of the era.\n\n The place is bustling with life. The air is thick with the aroma of freshly brewed coffee and the tantalizing scent of grilled burgers and fries. The walls are adorned with neon signs advertising popular brands of the time. The jukebox in the corner fills the air with the upbeat tunes of rock 'n' roll, as people in their poodle skirts and leather jackets sway to the rhythm.\n\n As you take in the surroundings, you notice the vibrant colors and the retro decor that define this era. The diner's checkered tile floors are immaculately clean, and the chrome-trimmed counters gleam under the fluorescent lights.\n\n",
-      "short desc":  "\n You find yourself in a bustling 1950s diner, filled with the sights, sounds, and nostalgia of the era, as you take in the vibrant colors, retro decor, and lively atmosphere while eagerly perusing the menu and immersing yourself in the charm of a bygone time.\n\n",
-      "long desc":  "\n Red vinyl booths line the perimeter of the space, with chrome tables that bear miniature jukeboxes at each booth.\n\n You catch the attention of a friendly waitress, her hair neatly styled in a classic 1950s fashion. She smiles warmly and greets you with a cheerful, 'Welcome! Find a seat anywhere you like, hon.' Her uniform consists of a pastel-colored dress and a white apron cinched at the waist. She guides you to an empty booth, and you slide into the booth's smooth vinyl seat, feeling its coolness against your skin.\n\n Taking a moment to settle in, you peruse the menu — a laminated sheet filled with all-American classics like burgers, milkshakes, and cherry pie. The prices seem unbelievably low compared to today's standards, but it's a refreshing glimpse into a simpler time. It is also worth a closer look.\n\n",
+       "intro": "\n You realize you are in a different place and time. You find yourself surrounded by a scene straight out of the 1950s. You have arrived in a small town diner, filled with the sights and sounds of the era.\n\n The place is bustling with life. The air is thick with the aroma of freshly brewed coffee and the tantalizing scent of grilled burgers and fries. The walls are adorned with neon signs advertising popular brands of the time. The jukebox in the corner fills the air with the upbeat tunes of rock 'n' roll, as people in their poodle skirts and leather jackets sway to the rhythm.\n\n As you take in the surroundings, you notice the vibrant colors and the retro decor that define this era. The diner's checkered tile floors are immaculately clean, and the chrome-trimmed counters gleam under the fluorescent lights.\n",
+      "short desc":  "\n You find yourself in a bustling 1950s diner, filled with the sights, sounds, and nostalgia of the era, as you take in the vibrant colors, retro decor, and lively atmosphere while eagerly perusing the menu and immersing yourself in the charm of a bygone time.\n",
+      "long desc":  "\n Red vinyl booths line the perimeter of the space, with chrome tables that bear miniature jukeboxes at each booth.\n\n You catch the attention of a friendly waitress, her hair neatly styled in a classic 1950s fashion. She smiles warmly and greets you with a cheerful, 'Welcome! Find a seat anywhere you like, hon.' Her uniform consists of a pastel-colored dress and a white apron cinched at the waist. She guides you to an empty booth, and you slide into the booth's smooth vinyl seat, feeling its coolness against your skin.\n\n Taking a moment to settle in, you peruse the menu — a laminated sheet filled with all-American classics like burgers, milkshakes, and cherry pie. The prices seem unbelievably low compared to today's standards, but it's a refreshing glimpse into a simpler time. It is also worth a closer look.\n",
       "is locked": false,
         "is visible": false,
        "direction": "west"
@@ -92,9 +92,9 @@
        "index": 8,
       "name":  "2500 Room",
        "door desc": " A red door with rust-colored planet on it",
-       "intro": " You realize you are in a different time and place. The first thing that captures your attention is the striking red landscape stretching out before you, its rugged terrain and barren beauty contrasting with the vastness of the alien sky above. The air feels thin and crisp, carrying a faint metallic tang as you take your first breaths in this new world.\n\n",
-      "short desc":  "\n You are in a base on the surface of Mars!\n\n",
-      "long desc":  "\n You are on Mars! The base you've arrived at is a testament to human ingenuity and perseverance. It stands proudly amidst the Martian expanse, a cluster of futuristic structures built to withstand the harsh conditions of the planet. The buildings are a mix of metallic and translucent materials, their sleek designs blending harmoniously with the surrounding environment. The reflective surfaces glimmer under the sunlight, casting an ethereal glow.\n\n Around you, scientists and engineers bustle about, engaged in their daily activities. Some are clad in sleek spacesuits, while others move with purpose in more casual attire within the protected confines of the base. The sound of equipment hums in the background, intermingling with the intermittent beeps and whirs of advanced machinery. It's a symphony of human endeavor, a chorus of progress in the face of a formidable frontier.\n\n",
+       "intro": "\n You realize you are in a different time and place. The first thing that captures your attention is the striking red landscape stretching out before you, its rugged terrain and barren beauty contrasting with the vastness of the alien sky above. The air feels thin and crisp, carrying a faint metallic tang as you take your first breaths in this new world.\n",
+      "short desc":  "\n You are in a base on the surface of Mars!\n",
+      "long desc":  "\n You are on Mars! The base you've arrived at is a testament to human ingenuity and perseverance. It stands proudly amidst the Martian expanse, a cluster of futuristic structures built to withstand the harsh conditions of the planet. The buildings are a mix of metallic and translucent materials, their sleek designs blending harmoniously with the surrounding environment. The reflective surfaces glimmer under the sunlight, casting an ethereal glow.\n\n Around you, scientists and engineers bustle about, engaged in their daily activities. Some are clad in sleek spacesuits, while others move with purpose in more casual attire within the protected confines of the base. The sound of equipment hums in the background, intermingling with the intermittent beeps and whirs of advanced machinery. It's a symphony of human endeavor, a chorus of progress in the face of a formidable frontier.\n",
       "is locked": false,
         "is visible": false,
        "direction": "northwest"
@@ -115,8 +115,8 @@
   "Game Objects": [
     {
     "object name": "Desk",
-      "short desc": "\n Against the wall there is a desk where you can see a few items.\n\n",
-      "description": "\n This desk is not IKEA. It seems to be made of a rich mahogany.\n\n",
+      "short desc": "\n Against the wall there is a desk where you can see a few items.\n",
+      "description": "\n This desk is not IKEA. It seems to be made of a rich mahogany.\n",
     "location": 0,
       "is movable": false,
       "is visible": true
@@ -124,8 +124,8 @@
 
     {
     "object name": "TV",
-       "short desc": "\n An older television. It is a TV/VCR combo. An old television that plays videotapes...\n\n",
-      "description": "\n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look like big cassette tapes . . . you know, those things that . . . never mind.\n\n",
+       "short desc": "\n An older television. It is a TV/VCR combo. An old television that plays videotapes...\n",
+      "description": "\n An old television that plays videotapes. You know, it's how people watched movies in the '80s. They look like big cassette tapes . . . you know, those things that . . . never mind.\n",
     "location": 0,
       "is movable": false,
       "is visible": true
@@ -133,8 +133,8 @@
 
     {
       "object name": "Tablet",
-       "short desc": "\n What appears to be a type of tablet.\n\n",
-      "description": "\n A transparent item that looks like a tablet but you are not quite sure what it is. It definitely looks more modern than the tv.\n\n",
+       "short desc": "\n What appears to be a type of tablet.\n",
+      "description": "\n A transparent item that looks like a tablet but you are not quite sure what it is. It definitely looks more modern than the tv.\n",
       "location": 0,
       "is movable": true,
       "is visible": false
@@ -142,8 +142,8 @@
 
     {
       "object name": "Letter",
-       "short desc": "\n A piece of paper that looks like it has something written on it.\n\n",
-      "description": "\n The letter is written in your handwriting, although you don't remember writing it. It reads:\n\n 'I can't believe all you had to do was type 'place bar' and you would have won! Then you could have gone to the mailbox, to the barrow, and game over!'\n\n You don't know what this means, but it seems important.\n\n",
+       "short desc": "\n A piece of paper that looks like it has something written on it.\n",
+      "description": "\n The letter is written in your handwriting, although you don't remember writing it. It reads:\n\n 'I can't believe all you had to do was type 'place bar' and you would have won! Then you could have gone to the mailbox, to the barrow, and game over!'\n\n You don't know what this means, but it seems important.\n",
       "location": 0,
       "is movable": true,
       "is visible": false
@@ -151,16 +151,16 @@
 
     {
       "object name": "Poster",
-       "short desc": "\n There is a poster on the wall, but it's the poster you had on your wall as a child. At least you think it is...\n\n",
-      "description": "\n The poster appears to be blank. . . \n\n",
+       "short desc": "\n There is a poster on the wall, but it's the poster you had on your wall as a child. At least you think it is...\n",
+      "description": "\n The poster appears to be blank. . . \n",
       "location": 0,
       "is movable": false,
       "is visible": true
     },
     {
       "object name": "Remote",
-       "short desc": "\n A black standard remote. You remember this remote.\n\n",
-      "description": "\n The remote is very simple. You are tempted to use it . . . \n\n",
+       "short desc": "\n A black standard remote. You remember this remote.\n",
+      "description": "\n The remote is very simple. You are tempted to use it . . . \n",
       "location": 1,
       "is movable": true,
       "is visible": false
@@ -168,96 +168,96 @@
 
      {
       "object name": "Commodore",
-        "short desc": "\n A Commodore that you remember from your childhood. How cool!\n\n",
-      "description": "\n In the exciting world of technology, let me take you back to the 1980s, a time when personal computers were just starting to become popular. One of the most iconic machines of that era was the Commodore 64, a true marvel that captured the hearts and minds of computer enthusiasts everywhere.\n\n",
+        "short desc": "\n A Commodore that you remember from your childhood. How cool!\n",
+      "description": "\n In the exciting world of technology, let me take you back to the 1980s, a time when personal computers were just starting to become popular. One of the most iconic machines of that era was the Commodore 64, a true marvel that captured the hearts and minds of computer enthusiasts everywhere.\n",
       "location": 1,
       "is movable": false,
        "is visible": true
     },
      {
       "object name": "Desk",
-        "short desc": "\n A Desk with what appears to be a Commodore computer on it and perhaps something else.\n\n",
-      "description": "\n This was the desk you had in your room when you were a kid! You remember doing homework here (yuck!), and playing video games here (yay!) You played the games on your Commodore-64. That sure was fun (hint hint).\n\n",
+        "short desc": "\n A Desk with what appears to be a Commodore computer on it and perhaps something else.\n",
+      "description": "\n This was the desk you had in your room when you were a kid! You remember doing homework here (yuck!), and playing video games here (yay!) You played the games on your Commodore-64. That sure was fun (hint hint).\n",
       "location": 1,
       "is movable": false,
        "is visible": true
     },
     {
       "object name": "Disco Ball",
-       "short desc": "\n There is a disco ball hanging above the dance floor that also captures your attention.\n\n",
-      "description": "\n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors that are reflecting the colorful lights all over the dance floor. It's the centerpiece of the whole room, and it's casting a mesmerizing glow that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, sending flashes of light in all directions. As it rotates, the mirrored tiles catch the light and send it bouncing around the room, creating  a sparkling, magical effect. It's like a miniature universe up there, with thousands of little stars that are pulsing and twinkling with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a place where anything can happen, where anything is possible.\n\n",
+       "short desc": "\n There is a disco ball hanging above the dance floor that also captures your attention.\n",
+      "description": "\n Wow, check out that disco ball up there! It's massive, covered in shimmering mirrors that are reflecting the colorful lights all over the dance floor. It's the centerpiece of the whole room, and it's casting a mesmerizing glow that just makes you want to dance.\n\n The ball is hanging from the ceiling, and it's slowly spinning, sending flashes of light in all directions. As it rotates, the mirrored tiles catch the light and send it bouncing around the room, creating  a sparkling, magical effect. It's like a miniature universe up there, with thousands of little stars that are pulsing and twinkling with the rhythm of the music.\n\n When you see that disco ball up there, you know you're in a place where anything can happen, where anything is possible.\n",
       "location": 2,
       "is movable": false,
       "is visible": true
     },
     {
       "object name": "Dance Floor",
-       "short desc": "\n There is so much going on on the dance floor that it might be worth a second look.\n\n",
-      "description": "\n The dance floor is a large, open space that is the centerpiece of the club and the focal point for everyone in the room. It is illuminated with bright, flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music. The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n\n",
+       "short desc": "\n There is so much going on on the dance floor that it might be worth a second look.\n",
+      "description": "\n The dance floor is a large, open space that is the centerpiece of the club and the focal point for everyone in the room. It is illuminated with bright, flashing lights that create visual display.\n\n You notice everyone on the floor is moving together in sync to the beat of the music. The dance has a pattern. After watching a while, you figure it out.\n\n Left arm\n Right arm\n Right leg\n Left leg\n Spin\n\n For some reason you think you should remember this pattern.\n",
       "location": 2,
       "is movable": false,
       "is visible": true
     },
      {
       "object name": "Blacklight",
-        "short desc": "\n There is something that looks like a light bulb, but it is purple.\n\n",
-      "description": "\n Somehow you remember that blacklights emit ultraviolet light, and when this light shines on certain types of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could see with the blacklight.\n\n",
+        "short desc": "\n There is something that looks like a light bulb, but it is purple.\n",
+      "description": "\n Somehow you remember that blacklights emit ultraviolet light, and when this light shines on certain types of paint of ink, it makes that paint or ink glow.\n\n You wonder if there are any hidden messages in the disco that you could see with the blacklight.\n",
       "location": 2,
       "is movable": true,
        "is visible": true
     },
     {
       "object name": "Pager",
-        "short desc": "\n A pager. . . a small, rectangular, electronic object. On the display you see the number 421-6827. For some reason you think this is important.\n\n",
-      "description": "\n Is that . . . a pager?\n\n A pager, also known as a beeper, is a small electronic device that was widely used before the advent of mobile phones to receive short text messages or numeric codes. It allowed people to be contacted when they were away from a landline telephone or not near a computer. Pagers were particularly popular in the 1980s and 1990s, serving as a means of communication for various professionals such as doctors, emergency personnel, and business executives.\n\n On the display you see the number 421-6827. For some reason you think this is important.\n\n",
+        "short desc": "\n A pager. . . a small, rectangular, electronic object. On the display you see the number 421-6827. For some reason you think this is important.\n",
+      "description": "\n Is that . . . a pager?\n\n A pager, also known as a beeper, is a small electronic device that was widely used before the advent of mobile phones to receive short text messages or numeric codes. It allowed people to be contacted when they were away from a landline telephone or not near a computer. Pagers were particularly popular in the 1980s and 1990s, serving as a means of communication for various professionals such as doctors, emergency personnel, and business executives.\n\n On the display you see the number 421-6827. For some reason you think this is important.\n",
       "location": 4,
       "is movable": true,
        "is visible": false
     },
     {
     "object name": "Stage",
-      "short desc": "\n The stage at Woodstock stood as a colossal altar of music, a towering platform where legends were born and the soul-stirring sounds of counterculture echoed into eternity.\n\n",
-      "description": "\n The music, the heartbeat of Woodstock, echoes from the massive stage at the center of the festival grounds. It reverberates through the air, penetrating the very souls of those in attendance. The sounds of iconic artists like Jimi Hendrix, Janis Joplin, The Who, and Santana blend together in a harmonious symphony, creating a sonic tapestry that resonates with every fiber of my being.\n\n The mood is electric, alive with a palpable sense of unity and camaraderie. Strangers become friends, sharing food, stories, and laughter. The spirit of love and peace permeates the air, fostering an environment of acceptance and understanding. It is a utopia where the boundaries of societal norms are erased, replaced by an unwavering belief in the power of music to transcend differences.\n\n Amidst the music and revelry, nature stands as a silent witness. Towering trees provide shade and respite from the summer heat, their leaves rustling in gentle harmony with the music. A nearby lake beckons festival-goers to take a refreshing dip, washing away the dust and sweat of the day, while the distant hills serve as a serene backdrop, a reminder of the world beyond this temporary sanctuary...\n\n",
+      "short desc": "\n The stage at Woodstock stood as a colossal altar of music, a towering platform where legends were born and the soul-stirring sounds of counterculture echoed into eternity.\n",
+      "description": "\n The music, the heartbeat of Woodstock, echoes from the massive stage at the center of the festival grounds. It reverberates through the air, penetrating the very souls of those in attendance. The sounds of iconic artists like Jimi Hendrix, Janis Joplin, The Who, and Santana blend together in a harmonious symphony, creating a sonic tapestry that resonates with every fiber of my being.\n\n The mood is electric, alive with a palpable sense of unity and camaraderie. Strangers become friends, sharing food, stories, and laughter. The spirit of love and peace permeates the air, fostering an environment of acceptance and understanding. It is a utopia where the boundaries of societal norms are erased, replaced by an unwavering belief in the power of music to transcend differences.\n\n Amidst the music and revelry, nature stands as a silent witness. Towering trees provide shade and respite from the summer heat, their leaves rustling in gentle harmony with the music. A nearby lake beckons festival-goers to take a refreshing dip, washing away the dust and sweat of the day, while the distant hills serve as a serene backdrop, a reminder of the world beyond this temporary sanctuary...\n",
     "location": 3,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Dancing",
-      "short desc": "\n Bodies intertwined and hearts alight, the dancers at Woodstock moved in a harmonious symphony of freedom and expression, their spirits soaring with every beat.\n\n On the ground near a group of people dancing, you see a flier. It might be worth a look.\n\n",
-      "description": "\n As you stand on the outskirts of the crowd, your eyes are drawn to the mesmerizing sight of people dancing in ecstatic abandon. They move with fluidity and grace, their bodies swaying to the pulsating rhythm of the music. Each dancer is a vibrant expression of freedom, their movements an extension of their innermost desires and emotions.\n\n Barefoot and carefree, they twirl and spin, their arms reaching towards the heavens as if trying to touch the very essence of the music. Their energy is infectious, spreading like wildfire throughout the crowd, engulfing everyone in its euphoric embrace. It is a collective celebration of liberation, as bodies move in syncopation, liberated from the shackles of societal expectations.\n\n In this kaleidoscope of movement, you witness a beautiful tapestry of individuality and unity. The dancers come from all walks of life, each one telling their own unique story through their steps. Some move with wild abandon, their bodies unleashing a torrent of energy. Others sway with a gentle sway, lost in a private reverie. Yet, despite their differences, they are bound together by a common thread of joy, love, and the sheer bliss of being alive in this moment.\n\n On the ground near a group of people dancing, you see a flier. It might be worth a look.\n\n",
+      "short desc": "\n Bodies intertwined and hearts alight, the dancers at Woodstock moved in a harmonious symphony of freedom and expression, their spirits soaring with every beat.\n\n On the ground near a group of people dancing, you see a flier. It might be worth a look.\n",
+      "description": "\n As you stand on the outskirts of the crowd, your eyes are drawn to the mesmerizing sight of people dancing in ecstatic abandon. They move with fluidity and grace, their bodies swaying to the pulsating rhythm of the music. Each dancer is a vibrant expression of freedom, their movements an extension of their innermost desires and emotions.\n\n Barefoot and carefree, they twirl and spin, their arms reaching towards the heavens as if trying to touch the very essence of the music. Their energy is infectious, spreading like wildfire throughout the crowd, engulfing everyone in its euphoric embrace. It is a collective celebration of liberation, as bodies move in syncopation, liberated from the shackles of societal expectations.\n\n In this kaleidoscope of movement, you witness a beautiful tapestry of individuality and unity. The dancers come from all walks of life, each one telling their own unique story through their steps. Some move with wild abandon, their bodies unleashing a torrent of energy. Others sway with a gentle sway, lost in a private reverie. Yet, despite their differences, they are bound together by a common thread of joy, love, and the sheer bliss of being alive in this moment.\n\n On the ground near a group of people dancing, you see a flier. It might be worth a look.\n",
     "location": 3,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Flier",
-      "short desc": "\n A flier about Woodstock! What a keepsake. The event took place in White Lake. For some reason you think this is important.\n\n",
-      "description": "\n As you hold the original flier for Woodstock in your hands, time seems to stand still. The paper tells a story of a bygone era, its edges delicately frayed with the weight of history. The vibrant colors and psychedelic font transport you back to the summer of '69, evoking a sense of anticipation and rebellion. The lineup of iconic artists, meticulously printed, sparks a surge of excitement within you. You can almost hear the echo of the crowd, feel the pulsating rhythm of the music. It's a tangible connection to a momentous event, a portal to a time when a generation came together to embrace peace, love, and the power of music.\n\n The event took place in White Lake. For some reason you think this is important.\n\n",
+      "short desc": "\n A flier about Woodstock! What a keepsake. The event took place in White Lake. For some reason you think this is important.\n",
+      "description": "\n As you hold the original flier for Woodstock in your hands, time seems to stand still. The paper tells a story of a bygone era, its edges delicately frayed with the weight of history. The vibrant colors and psychedelic font transport you back to the summer of '69, evoking a sense of anticipation and rebellion. The lineup of iconic artists, meticulously printed, sparks a surge of excitement within you. You can almost hear the echo of the crowd, feel the pulsating rhythm of the music. It's a tangible connection to a momentous event, a portal to a time when a generation came together to embrace peace, love, and the power of music.\n\n The event took place in White Lake. For some reason you think this is important.\n",
       "location": 3,
       "is movable": true,
       "is visible": false
     },
     {
     "object name": "Mall Directory",
-      "short desc": "\n A mall directory to help you figure out where you are at. On the ground next to the mall directory you see a small rectangular electronic object that looks interesting. You think it is a pager!\n\n",
-      "description": "\n As you approach the mall directory, you notice a large, colorful sign with bold lettering that reads \"You are Here.\" The directory itself is a large, freestanding display, with a metal frame and a large glass front. Behind the glass are several panels of colorful maps and directories, each with a different section of the mall.\n\n The maps are laid out in a grid, with each store marked with its name and location. They are color-coded, with each section of the mall represented by a different color. The directory is well-organized and easy to read, with clear labels and a simple, straightforward layout.\n\n There are a few other features that make the directory stand out. Along the sides of the display, there are advertisements for various stores and restaurants, with colorful images and catchy slogans. There may also be a few coupons or special offers tucked in among the ads, encouraging shoppers to visit certain stores or try out new products.\n\n You notice the pizza place's location is 'FC-15'. For some reason you think this is important.\n\n On the ground near the directory you see a small rectangular electronic object that looks interesting. You think it is a pager!\n\n",
+      "short desc": "\n A mall directory to help you figure out where you are at. On the ground next to the mall directory you see a small rectangular electronic object that looks interesting. You think it is a pager!\n",
+      "description": "\n As you approach the mall directory, you notice a large, colorful sign with bold lettering that reads \"You are Here.\" The directory itself is a large, freestanding display, with a metal frame and a large glass front. Behind the glass are several panels of colorful maps and directories, each with a different section of the mall.\n\n The maps are laid out in a grid, with each store marked with its name and location. They are color-coded, with each section of the mall represented by a different color. The directory is well-organized and easy to read, with clear labels and a simple, straightforward layout.\n\n There are a few other features that make the directory stand out. Along the sides of the display, there are advertisements for various stores and restaurants, with colorful images and catchy slogans. There may also be a few coupons or special offers tucked in among the ads, encouraging shoppers to visit certain stores or try out new products.\n\n You notice the pizza place's location is 'FC-15'. For some reason you think this is important.\n\n On the ground near the directory you see a small rectangular electronic object that looks interesting. You think it is a pager!\n",
     "location": 4,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Pizza Place",
-      "short desc": "\n A pizza place whose pizza looks amazing!\n\n",
-      "description": "\n As you approach the pizza place in the food court, you are hit by the delicious aroma of freshly-baked pizza. The pizza place is a small, open stall with a glass display case filled with freshly-made pies. The smell of melting cheese and tomato sauce is mouth-watering, and you can't wait to get your hands on a slice.\n\n The stall is staffed by a few friendly pizza makers, dressed in white aprons and hats. They are busy tossing dough, spreading sauce, and adding toppings to create the perfect pies. The menu is simple but satisfying, with options for cheese, pepperoni, sausage, and veggie pizzas. You can order by the slice or get a whole pie to share with friends.\n\n You see a sign on the glass in front of the freshly-baked pies that reads, ' Find our location key on the directory for a free slice!'\n\n For some reason you think this is important.\n\n",
+      "short desc": "\n A pizza place whose pizza looks amazing!\n",
+      "description": "\n As you approach the pizza place in the food court, you are hit by the delicious aroma of freshly-baked pizza. The pizza place is a small, open stall with a glass display case filled with freshly-made pies. The smell of melting cheese and tomato sauce is mouth-watering, and you can't wait to get your hands on a slice.\n\n The stall is staffed by a few friendly pizza makers, dressed in white aprons and hats. They are busy tossing dough, spreading sauce, and adding toppings to create the perfect pies. The menu is simple but satisfying, with options for cheese, pepperoni, sausage, and veggie pizzas. You can order by the slice or get a whole pie to share with friends.\n\n You see a sign on the glass in front of the freshly-baked pies that reads, ' Find our location key on the directory for a free slice!'\n\n For some reason you think this is important.\n",
     "location": 4,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Television",
-      "short desc": "\n A 27-inch CRT television with a black body and a silver bezel.\n\n On the entertainment center near the television you is an old VHS tape. It might be worth checking out.\n\n",
-      "description": "\n The television is a 27-inch CRT, which stands for cathode ray tube. CRT televisions were the most common type of television in the 2000s. They work by using a beam of electrons to scan an image onto a screen coated with phosphors. The phosphors emit light when they are hit by electrons, creating the image that you see on the screen.\n\nCRT televisions are bulky and heavy, and they have a poor picture quality compared to modern flat-panel TVs. However, they are also very durable, and they can last for many years.\n\nThe television is black, with a silver bezel around the screen. It can be connected to a variety of sources, including cable, satellite, and DVD players.\n\n The television is a reminder of a simpler time, when televisions were bulky and heavy, and the picture quality was not as good as it is today. However, they were also very durable, and they could last for many years.\n\n On the entertainment center near the television you see a old VHS tape . It might be worth checking out.\n\n",
+      "short desc": "\n A 27-inch CRT television with a black body and a silver bezel.\n\n On the entertainment center near the television you is an old VHS tape. It might be worth checking out.\n",
+      "description": "\n The television is a 27-inch CRT, which stands for cathode ray tube. CRT televisions were the most common type of television in the 2000s. They work by using a beam of electrons to scan an image onto a screen coated with phosphors. The phosphors emit light when they are hit by electrons, creating the image that you see on the screen.\n\nCRT televisions are bulky and heavy, and they have a poor picture quality compared to modern flat-panel TVs. However, they are also very durable, and they can last for many years.\n\nThe television is black, with a silver bezel around the screen. It can be connected to a variety of sources, including cable, satellite, and DVD players.\n\n The television is a reminder of a simpler time, when televisions were bulky and heavy, and the picture quality was not as good as it is today. However, they were also very durable, and they could last for many years.\n\n On the entertainment center near the television you see a old VHS tape . It might be worth checking out.\n",
     "location": 5,
       "is movable": false,
       "is visible": true
@@ -265,63 +265,63 @@
     {
     "object name": "CD Player",
       "short desc": "\n A black, rectangular CD player with a small display and a few buttons. It can play any CD and produce clear, crisp sound.\n\n",
-      "description": "\n The CD player is a black, rectangular box with a small display on the front. It has a few buttons on the front, including a power button, a play/pause button, and a stop button. There is also a headphone jack on the front.\n\nThe CD player is about the size of a toaster, and it weighs about five pounds. It is made of plastic and metal, and it has a smooth, sleek design.\n\nThe CD player is a simple device, but it is very effective. It can play any CD, and it can produce clear, crisp sound. It is a great way to listen to your favorite music.\n\n",
+      "description": "\n The CD player is a black, rectangular box with a small display on the front. It has a few buttons on the front, including a power button, a play/pause button, and a stop button. There is also a headphone jack on the front.\n\nThe CD player is about the size of a toaster, and it weighs about five pounds. It is made of plastic and metal, and it has a smooth, sleek design.\n\nThe CD player is a simple device, but it is very effective. It can play any CD, and it can produce clear, crisp sound. It is a great way to listen to your favorite music.\n",
     "location": 5,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "VHS tape",
-      "short desc": "\n As you hold the VHS tape in your hands, you can't help but be transported back to a time when these rectangular relics were the primary source of home entertainment. You can't play this tape here, but you might be able to play it somewhere else.\n\n",
-      "description": "\n As you hold the VHS tape in your hands, you can feel the weight of nostalgia settle upon you, a tangible link to the past. The plastic casing, worn and weathered, tells tales of countless viewings and treasured memories. The familiar label, adorned with handwritten titles or the printed names of movies, triggers a flood of emotions as you remember the excitement of browsing video rental stores and carefully selecting the perfect film for an evening's entertainment. With its magnetic tape hidden within, the VHS tape embodies a time when physical media reigned supreme, offering a tangible connection to the stories and experiences that shaped your personal history. You can't play this tape here, but you might be able to play it somewhere else.\n\n",
+      "short desc": "\n As you hold the VHS tape in your hands, you can't help but be transported back to a time when these rectangular relics were the primary source of home entertainment. You can't play this tape here, but you might be able to play it somewhere else.\n",
+      "description": "\n As you hold the VHS tape in your hands, you can feel the weight of nostalgia settle upon you, a tangible link to the past. The plastic casing, worn and weathered, tells tales of countless viewings and treasured memories. The familiar label, adorned with handwritten titles or the printed names of movies, triggers a flood of emotions as you remember the excitement of browsing video rental stores and carefully selecting the perfect film for an evening's entertainment. With its magnetic tape hidden within, the VHS tape embodies a time when physical media reigned supreme, offering a tangible connection to the stories and experiences that shaped your personal history. You can't play this tape here, but you might be able to play it somewhere else.\n",
       "location": 5,
       "is movable": true,
       "is visible": false
     },
     {
     "object name": "Washington Monument",
-      "short desc": "\n As you stand before the resplendent Washington Monument in the year 2076, its magnificent presence captures your gaze. At its pinnacle, a dynamic holographic display projects images that tell the ever-evolving story of America, reminding all who behold it of the nation's enduring spirit and the unwavering pursuit of a brighter future.\n\n",
-      "description": "\n As you stand before the majestic Washington Monument, towering proudly into the sky, you can't help but marvel at its grandeur. It stands as a testament to the enduring spirit and rich history of the United States, even in the year 2076, where the world has advanced in unimaginable ways.\n\nThe monument, now over two centuries old, has weathered the passage of time with grace and dignity. Its towering obelisk, reaching a staggering height of 555 feet (169 meters), stands tall against the backdrop of a futuristic cityscape. The once familiar marble exterior has undergone a remarkable transformation, seamlessly blending classic elegance with modern technology.\n\nAs you approach, you notice a subtle shimmer emanating from the surface of the monument. Closer inspection reveals that it's covered in a state-of-the-art nanomaterial, designed to both protect and enhance its appearance. The material subtly changes colors, reflecting the sunlight in a mesmerizing display, as if paying homage to the changing times.\n\n As you walk around the base of the monument, you notice a bustling hub of activity. People from all walks of life gather, marveling at the monument's magnificence. Holographic displays surround the base, depicting pivotal moments in American history, bringing them to life in vivid detail. Visitors can interact with these holographic projections, immersing themselves in the rich tapestry of the nation's past.\n\n",
+      "short desc": "\n As you stand before the resplendent Washington Monument in the year 2076, its magnificent presence captures your gaze. At its pinnacle, a dynamic holographic display projects images that tell the ever-evolving story of America, reminding all who behold it of the nation's enduring spirit and the unwavering pursuit of a brighter future.\n",
+      "description": "\n As you stand before the majestic Washington Monument, towering proudly into the sky, you can't help but marvel at its grandeur. It stands as a testament to the enduring spirit and rich history of the United States, even in the year 2076, where the world has advanced in unimaginable ways.\n\nThe monument, now over two centuries old, has weathered the passage of time with grace and dignity. Its towering obelisk, reaching a staggering height of 555 feet (169 meters), stands tall against the backdrop of a futuristic cityscape. The once familiar marble exterior has undergone a remarkable transformation, seamlessly blending classic elegance with modern technology.\n\nAs you approach, you notice a subtle shimmer emanating from the surface of the monument. Closer inspection reveals that it's covered in a state-of-the-art nanomaterial, designed to both protect and enhance its appearance. The material subtly changes colors, reflecting the sunlight in a mesmerizing display, as if paying homage to the changing times.\n\n As you walk around the base of the monument, you notice a bustling hub of activity. People from all walks of life gather, marveling at the monument's magnificence. Holographic displays surround the base, depicting pivotal moments in American history, bringing them to life in vivid detail. Visitors can interact with these holographic projections, immersing themselves in the rich tapestry of the nation's past.\n",
     "location": 6,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Reflecting Pool",
-      "short desc": "\n In the year 2076, the reflecting pool at the Washington Monument captivates with its rippling, gel-like surface, adorned with floating holographic displays that reflect both the cityscape and the nation's history, creating a serene sanctuary for contemplation and connection.\n\n",
-      "description": "\n As you gaze upon the mesmerizing beauty of the reflecting pool at the Washington Monument in the year 2076, a sense of serenity washes over you. The pool, transformed by innovative technology, is a seamless blend of tranquility and cutting-edge design. Its waters, once still and calm, now ripple with a gentle energy, creating an enchanting dance of light and color. The surface of the pool is no longer a traditional liquid but a transparent, eco-friendly gel, offering a mesmerizing effect that mirrors the surrounding cityscape. Floating above the gel surface, intricate holographic displays showcase historical moments and breathtaking scenes from nature, captivating passersby with their vivid imagery. The reflecting pool has become a sanctuary, a place where people gather to find solace, contemplate, and connect with the essence of the city and its rich history. As you witness this harmonious fusion of tradition and innovation, you feel a profound appreciation for the boundless possibilities that the future holds.\n\n",
+      "short desc": "\n In the year 2076, the reflecting pool at the Washington Monument captivates with its rippling, gel-like surface, adorned with floating holographic displays that reflect both the cityscape and the nation's history, creating a serene sanctuary for contemplation and connection.\n",
+      "description": "\n As you gaze upon the mesmerizing beauty of the reflecting pool at the Washington Monument in the year 2076, a sense of serenity washes over you. The pool, transformed by innovative technology, is a seamless blend of tranquility and cutting-edge design. Its waters, once still and calm, now ripple with a gentle energy, creating an enchanting dance of light and color. The surface of the pool is no longer a traditional liquid but a transparent, eco-friendly gel, offering a mesmerizing effect that mirrors the surrounding cityscape. Floating above the gel surface, intricate holographic displays showcase historical moments and breathtaking scenes from nature, captivating passersby with their vivid imagery. The reflecting pool has become a sanctuary, a place where people gather to find solace, contemplate, and connect with the essence of the city and its rich history. As you witness this harmonious fusion of tradition and innovation, you feel a profound appreciation for the boundless possibilities that the future holds.\n",
     "location": 6,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Coin",
-      "short desc": "\n The coin from the year 2076 is a gleaming marvel, adorned with holographic engravings and embedded with a powerful microchip, representing the fusion of tradition and advanced technology.\n\n Stamped on the coin is 2076-P, the date and location where the coin was minted. For some reason you think this is important.\n\n",
-      "description": "\n As you hold the coin from the year 2076 in your hands, its gleaming metallic surface feels both familiar and extraordinary, a testament to the passage of time and the advancements of civilization. The coin, crafted with meticulous precision, showcases intricate holographic engravings that shimmer with vibrant colors, depicting scenes that encapsulate the spirit of the era. Embedded within its core lies a minuscule yet powerful microchip, representing the fusion of traditional currency with advanced digital technologies. Its weight, balance, and texture evoke a sense of authenticity, connecting you to the stories and aspirations of a future generation. As you run your fingers over its edges, you can't help but marvel at the coin's ability to bridge the gap between the past and the future, a tangible artifact embodying the progress and ingenuity of mankind.\n\n Stamped on the coin is 2076-P, the date and location where the coin was minted. For some reason you think this is important.\n\n",
+      "short desc": "\n The coin from the year 2076 is a gleaming marvel, adorned with holographic engravings and embedded with a powerful microchip, representing the fusion of tradition and advanced technology.\n\n Stamped on the coin is 2076-P, the date and location where the coin was minted. For some reason you think this is important.\n",
+      "description": "\n As you hold the coin from the year 2076 in your hands, its gleaming metallic surface feels both familiar and extraordinary, a testament to the passage of time and the advancements of civilization. The coin, crafted with meticulous precision, showcases intricate holographic engravings that shimmer with vibrant colors, depicting scenes that encapsulate the spirit of the era. Embedded within its core lies a minuscule yet powerful microchip, representing the fusion of traditional currency with advanced digital technologies. Its weight, balance, and texture evoke a sense of authenticity, connecting you to the stories and aspirations of a future generation. As you run your fingers over its edges, you can't help but marvel at the coin's ability to bridge the gap between the past and the future, a tangible artifact embodying the progress and ingenuity of mankind.\n\n Stamped on the coin is 2076-P, the date and location where the coin was minted. For some reason you think this is important.\n",
       "location": 6,
       "is movable": true,
       "is visible": false
     },
     {
     "object name": "Jukebox",
-      "short desc": "\n A miniature chrome and glass jukebox sits on a table in the diner, waiting to be played.\n\n",
-      "description": "\n You glance up and see a miniature jukebox sitting on the table next to you. It's a beautiful little thing, made of chrome and glass. The front is covered in buttons, each one labeled with a different song.\n\nYou reach out and touch the jukebox. It's cool to the touch, and it feels sturdy and well-made. You wonder how much it would cost to buy one.\n\nYou turn your attention back to the menu, but you can't help but think about the jukebox. You imagine yourself playing your favorite song on it, and you smile.\n\n",
+      "short desc": "\n A miniature chrome and glass jukebox sits on a table in the diner, waiting to be played.\n",
+      "description": "\n You glance up and see a miniature jukebox sitting on the table next to you. It's a beautiful little thing, made of chrome and glass. The front is covered in buttons, each one labeled with a different song.\n\nYou reach out and touch the jukebox. It's cool to the touch, and it feels sturdy and well-made. You wonder how much it would cost to buy one.\n\nYou turn your attention back to the menu, but you can't help but think about the jukebox. You imagine yourself playing your favorite song on it, and you smile.\n",
     "location": 7,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Menu",
-      "short desc": "\n You open the menu and see a wide variety of food, including burgers, fries, shakes, and more.\n\n",
-      "description": "\n The menu is a small, black and white pamphlet. It is divided into sections, including breakfast, lunch, and dinner.\n\n The breakfast section includes a variety of items, such as pancakes, waffles, and eggs. The lunch section includes sandwiches, burgers, and salads. The dinner section includes steak and chicken. The prices are reasonable, and you bet the food is delicious.\n\n",
+      "short desc": "\n You open the menu and see a wide variety of food, including burgers, fries, shakes, and more.\n",
+      "description": "\n The menu is a small, black and white pamphlet. It is divided into sections, including breakfast, lunch, and dinner.\n\n The breakfast section includes a variety of items, such as pancakes, waffles, and eggs. The lunch section includes sandwiches, burgers, and salads. The dinner section includes steak and chicken. The prices are reasonable, and you bet the food is delicious.\n",
     "location": 7,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Baseball Card",
-      "short desc": "\n In your hands rests a treasured artifact—a weathered baseball card from the 1950s—depicting a determined young player, a glimpse into a bygone era of baseball legends and the enduring spirit of the game. You notice the player's batting average was .353. For some reason you think this is important.\n\n",
-      "description": "\n  With careful curiosity, you retrieve the card. In your hands you hold a precious relic from the 1950s - a faded, yet cherished, baseball card featuring a young and determined player captured in a classic pose, his uniform vibrant against the sepia-toned background, his gaze filled with dreams of glory and triumph, a tangible piece of history that transports you to a bygone era of baseball legends and the timeless allure of the national pastime.\n\n You notice the player's batting average was .353. For some reason you think this is important.\n\n",
+      "short desc": "\n In your hands rests a treasured artifact—a weathered baseball card from the 1950s—depicting a determined young player, a glimpse into a bygone era of baseball legends and the enduring spirit of the game. You notice the player's batting average was .353. For some reason you think this is important.\n",
+      "description": "\n  With careful curiosity, you retrieve the card. In your hands you hold a precious relic from the 1950s - a faded, yet cherished, baseball card featuring a young and determined player captured in a classic pose, his uniform vibrant against the sepia-toned background, his gaze filled with dreams of glory and triumph, a tangible piece of history that transports you to a bygone era of baseball legends and the timeless allure of the national pastime.\n\n You notice the player's batting average was .353. For some reason you think this is important.\n",
       "location": 7,
       "is movable": true,
       "is visible": false
@@ -329,15 +329,15 @@
     {
     "object name": "Earth",
       "short desc": "\n From your Mars vantage point, you behold the distant blue orb of Earth, a fragile yet resilient sanctuary of swirling clouds, vast oceans, and sprawling continents, evoking both homesickness and wonder, and reminding you of the interconnectedness of all life.\n\n",
-      "description": "\n From this vantage point on Mars, you gaze out into the vastness of space and fix your eyes on the distant blue orb that is planet Earth. As you take in the view, a profound sense of interconnectedness washes over you. Earth, suspended in the velvety blackness, appears both fragile and resilient, a sanctuary teeming with life amidst the endless cosmic expanse. You can't help but feel a surge of homesickness mixed with wonder as you observe the swirling clouds, the vast oceans, and the sprawling continents of your distant home. It's a reminder of the shared human experience, the intricate tapestry of existence, and the undeniable bond that unites us all.\n\n",
+      "description": "\n From this vantage point on Mars, you gaze out into the vastness of space and fix your eyes on the distant blue orb that is planet Earth. As you take in the view, a profound sense of interconnectedness washes over you. Earth, suspended in the velvety blackness, appears both fragile and resilient, a sanctuary teeming with life amidst the endless cosmic expanse. You can't help but feel a surge of homesickness mixed with wonder as you observe the swirling clouds, the vast oceans, and the sprawling continents of your distant home. It's a reminder of the shared human experience, the intricate tapestry of existence, and the undeniable bond that unites us all.\n",
     "location": 8,
       "is movable": false,
       "is visible": true
     },
     {
     "object name": "Landscape",
-      "short desc": "\n As you gaze out from the base on Mars, the rugged and awe-inspiring landscape unfolds before you, with rust-colored sand dunes, towering mountains, and ancient dried-up riverbeds, all under the pale orange-hued sky, offering a captivating reminder of the planet's untamed beauty and the endless possibilities that lie within its barren expanse.\n\n",
-      "description": "\n As you stand at the base on Mars, the breathtaking landscape stretches out before you, captivating your senses with its otherworldly allure. The Martian terrain, characterized by its rugged and desolate beauty, showcases a striking contrast of colors and textures. The rust-colored sand dunes undulate like waves frozen in time, their crests and troughs sculpted by the relentless Martian winds. The sunlight casts elongated shadows across the slopes, creating a mesmerizing play of light and shadow.\n\n In the distance, majestic mountains rise, their peaks reaching towards the thin Martian atmosphere. Time and erosion have sculpted these ancient giants, revealing layers of sedimentary rock and exposing the planet's geological history. Their weathered slopes bear witness to the countless cycles of dust storms that have swept across the planet, leaving their mark on the stoic landscape.\n\nTraversing the terrain are the remnants of long-dried riverbeds, etched into the Martian surface like delicate scars. These meandering channels, once carved by ancient rivers and now devoid of water, serve as reminders of the planet's tumultuous past and the potential for scientific discovery that lies within them. The barrenness of this arid world is both captivating and humbling, a constant reminder of the challenges humanity faces in the quest to explore and understand the mysteries of the cosmos.\n\nAs you take in the panoramic view of this Martian vista, you can't help but marvel at the raw and untamed beauty that surrounds you. It's a landscape of stark contrasts, where tranquility meets harshness, and solitude coexists with the echoes of a planet's tumultuous history. In this moment, you realize that you are a witness to a world that few have seen firsthand, a testament to human curiosity and the unwavering spirit of exploration.\n\n",
+      "short desc": "\n As you gaze out from the base on Mars, the rugged and awe-inspiring landscape unfolds before you, with rust-colored sand dunes, towering mountains, and ancient dried-up riverbeds, all under the pale orange-hued sky, offering a captivating reminder of the planet's untamed beauty and the endless possibilities that lie within its barren expanse.\n",
+      "description": "\n As you stand at the base on Mars, the breathtaking landscape stretches out before you, captivating your senses with its otherworldly allure. The Martian terrain, characterized by its rugged and desolate beauty, showcases a striking contrast of colors and textures. The rust-colored sand dunes undulate like waves frozen in time, their crests and troughs sculpted by the relentless Martian winds. The sunlight casts elongated shadows across the slopes, creating a mesmerizing play of light and shadow.\n\n In the distance, majestic mountains rise, their peaks reaching towards the thin Martian atmosphere. Time and erosion have sculpted these ancient giants, revealing layers of sedimentary rock and exposing the planet's geological history. Their weathered slopes bear witness to the countless cycles of dust storms that have swept across the planet, leaving their mark on the stoic landscape.\n\nTraversing the terrain are the remnants of long-dried riverbeds, etched into the Martian surface like delicate scars. These meandering channels, once carved by ancient rivers and now devoid of water, serve as reminders of the planet's tumultuous past and the potential for scientific discovery that lies within them. The barrenness of this arid world is both captivating and humbling, a constant reminder of the challenges humanity faces in the quest to explore and understand the mysteries of the cosmos.\n\nAs you take in the panoramic view of this Martian vista, you can't help but marvel at the raw and untamed beauty that surrounds you. It's a landscape of stark contrasts, where tranquility meets harshness, and solitude coexists with the echoes of a planet's tumultuous history. In this moment, you realize that you are a witness to a world that few have seen firsthand, a testament to human curiosity and the unwavering spirit of exploration.\n",
     "location": 8,
       "is movable": false,
       "is visible": true

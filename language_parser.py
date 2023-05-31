@@ -141,7 +141,7 @@ def try_take(item, objects, object_names, inventory, room):
             if item == obj_in_room and movable and obj not in inventory:
                 inventory.append(obj)
                 obj.set_object_location(-1)
-                print(f" {item} is now in your inventory.")
+                print(f"\n {item} is now in your inventory.\n")
                 break
 
             if item == obj_in_room and not movable:
@@ -176,7 +176,7 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
                 desk_items.append(obj.get_name())
 
         if desk_items:
-            newline()
+            # newline()
             print(" Interactive Desk Items: ")
             for item in desk_items:
                 print(f" Option: {item}")
@@ -253,7 +253,7 @@ def use_tablet(tablet, rooms, objects):
                 poster.set_description(poster_detail)
 
                 clear_screen()
-                print(" You hear something shift in the room. You unlocked "
+                print("\n You hear something shift in the room. You unlocked "
                       "the tablet. On it you see doors. Some locked, "
                       "some unlocked.\n\n")
                 time.sleep(1)
@@ -262,7 +262,7 @@ def use_tablet(tablet, rooms, objects):
                 continue
 
         clear_screen()
-        print(" USING TABLET\n")
+        print("\n USING TABLET\n")
         print_tab_info(tablet)
 
         user_input = input(" \n Enter a new pin to access more or q to quit. ")

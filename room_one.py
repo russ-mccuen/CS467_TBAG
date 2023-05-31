@@ -4,6 +4,7 @@ from os.path import exists
 
 from language_parser import *
 from room_setup import *
+from terminal import *
 
 
 def room_env(room, rooms, objects, inventory):
@@ -32,6 +33,8 @@ def room_env(room, rooms, objects, inventory):
 
         if len(user_input) == 0:
             continue
+
+        clear_screen()
 
         if len(user_input) == 1 and user_input[0] == 'look':
             try_look(available_nav, rooms, room, 'room', objects, object_names,

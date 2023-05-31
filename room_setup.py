@@ -6,12 +6,12 @@ def describe_exit():
     General description of leaving the room to navigate back towards the main room.
     :return:
     """
-    newline()
+    #newline()
     print(" You are also aware of the door that will lead you back to the "
           "main room: ")
     print(f" Navigation Option (1) :  The door heading back to the main room "
           "that is located in the center.")
-    newline()
+    #newline()
 
 
 def room_setup_objs(room, objects):
@@ -39,7 +39,7 @@ def print_room_details(rooms, available_nav, available_objs, room):
     """
     room_index = room.get_index()
     clear_screen()
-    newline()
+    # newline()
     print('', room.get_desc())
     describe_features(available_objs, room.get_index())
 
@@ -50,14 +50,15 @@ def print_room_details(rooms, available_nav, available_objs, room):
 
 
 def describe_walls(rooms, available_nav):
-    newline()
+    # newline()
     visible_rooms = 0
 
     for index, room in enumerate(rooms):
         if room.is_visible():
             visible_rooms += 1
             available_nav.append(index)
-            print(f" Navigation Option ({index}) : {room.get_door_desc()} that is located {room.get_direction()}.")
+            print(f" Navigation Option ({index}) : {room.get_door_desc()} "
+                  f"that is located {room.get_direction()}.\n")
 
     if not visible_rooms:
         print(" There is no door to the room. Actually, you can not see any "
@@ -68,8 +69,8 @@ def describe_walls(rooms, available_nav):
 
 
 def describe_features(objects, room_num):
-    print(" As you look around the room you notice: ")
-    newline()
+    print(" As you look around the room you notice:\n")
+    # newline()
     for obj in objects:
         if obj.get_location() == room_num and obj.is_visible():
             print(obj.get_short_desc())
@@ -80,7 +81,7 @@ def describe_exiting_room(room, inventory):
     inv_names = [obj.get_name().lower() for obj in inventory]
     clear_screen()
     if room_index == 0:
-        print(" You blink and suddenly everything around you has changed.")
+        print("\n You blink and suddenly everything around you has changed.")
 
     if room_index == 1:
         if "remote" not in inv_names:
@@ -207,7 +208,7 @@ def navigate_from_main(desired_location, rooms, from_room):
 def navigate(desired_location, rooms, from_room):
     if desired_location.isnumeric():
         door_index = int(desired_location)
-        if door_index is 1:
+        if door_index == 1:
             room = rooms[0]
             return approach_door(room, from_room)
         else:
@@ -294,7 +295,7 @@ def approach_door(room, from_room):
 
     else:
         clear_screen()
-        print(" You approach the door, turn the handle, and step into the "
+        print("\n You approach the door, turn the handle, and step into the "
               "room.")
         time.sleep(1)
         return room
@@ -434,7 +435,7 @@ def put_on_spacesuit(room):
 
 
 def print_interactive_objs(objects, room_num):
-    newline()
+    #newline()
     print(" Interactive Objects:")
     for index, obj in enumerate(objects):
         if obj.get_location() == room_num and obj.is_visible():
