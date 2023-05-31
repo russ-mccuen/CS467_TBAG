@@ -190,6 +190,8 @@ def navigate_from_main(desired_location, rooms, from_room):
     available_rooms = [room.get_index() for room in rooms if room.is_visible()]
     room_dir = [room.get_direction() for room in rooms if room.is_visible()]
     if desired_location.isnumeric():
+        if from_room != 0 and desired_location == "1":
+            return approach_door(rooms[0], from_room)
         door_index = int(desired_location)
         if door_index in available_rooms:
             room = rooms[door_index]
