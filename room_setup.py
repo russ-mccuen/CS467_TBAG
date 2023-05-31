@@ -9,8 +9,8 @@ def describe_exit():
     #newline()
     print(" You are also aware of the door that will lead you back to the "
           "main room: ")
-    print(f" Navigation Option (1) :  The door heading back to the main room "
-          "that is located in the center.")
+    print(f"\n Navigation Option (1) :  The door heading back to the main "
+          f"room that is located in the center.\n")
     #newline()
 
 
