@@ -2,6 +2,8 @@ import time
 
 from terminal import newline, clear_screen
 from room_setup import *
+from objects import *
+from game_setup import *
 # define possible directions to move
 DIRECTIONS = {
     "north": ["n", "north"],
@@ -329,6 +331,21 @@ def use_tablet(tablet, rooms, objects):
                 time.sleep(1)
                 continue
 
+        if user_input == "54-52":
+            description = "Info 6: Room 6 unlocked"
+            if description not in available_info:
+                cur_desc = poster.get_description()
+                poster_detail = cur_desc + " The phrase 'Y2K'."
+                poster.set_description(poster_detail)
+
+                tablet.add_to_folder(description)
+                rooms[6].set_visible()
+                rooms[6].unlock_room()
+                clear_screen()
+                print(" \n You unlocked another room!")
+                time.sleep(1)
+                continue
+
         if user_input == "2076-P":
             description = "Info 7: Room 7 unlocked"
             if description not in available_info:
@@ -371,6 +388,29 @@ def use_blacklight(room):
     else:
         print("\n You turn on the blacklight but don't see anything "
               "different. Perhaps you need to use it in another room.\n\n")
+    return
+
+
+def play_vhs(room, inventory):
+    if room.get_index() == 0:
+        print("\n You place the VHS tape into the TV/VCR combo and push play. "
+              "After a few seconds of static you see the end of a basketball "
+              "game. You remember this game because you watched it so many "
+              "times. The 1983 national championship game. One of the most "
+              "amazing endings in college basketball history!\n\n You watch "
+              "After the final basket is made, you watch as the winning "
+              "coach runs around the floor in disbelief, looking for someone "
+              "to hug. This is one of your favorite memories in all of "
+              "sports, and you can't help but wonder what it would have been "
+              "like to be there and see it in person.\n\n The final score "
+              "shows on the screen, 54-52, and then the screen goes black. "
+              "You don't think you would ever forget this score, but for "
+              "some reason you think it is important.\n\n")
+    elif 'VHS tape' not in inventory:
+        print("\n You do not have a VHS tape in inventory.\n\n")
+    else:
+        print("\n There is nowhere for you to play the tape here. Perhaps "
+              "there is in another room.\n\n")
     return
 
 

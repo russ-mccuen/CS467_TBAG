@@ -48,7 +48,7 @@ Room five:
 - setting -> living room
 - features -> television and cd player
 - object(s) -> flip phone
-- poster item -> World Trade Centers
+- poster item -> Y2K
 
 Room six:
 - timeline -> 2076

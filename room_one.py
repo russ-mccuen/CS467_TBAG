@@ -172,6 +172,12 @@ def room_env(room, rooms, objects, inventory):
                   "now know what you have to do.\n\n")
             continue
 
+        if (user_input[0] == "play" or user_input[0] == "use") and \
+                user_input[1] == 'vhs':
+            play_vhs(room, inventory)
+            continue
+
+
         if user_input[0] in DIRECTIONS:
             next_room = navigate_from_main(user_input[0], rooms, room_index)
             if next_room is not None:
