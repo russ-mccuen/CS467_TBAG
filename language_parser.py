@@ -215,7 +215,7 @@ def try_use(item, objects, rooms, room):
                 return
 
             elif item == 'blacklight':
-                use_blacklight()
+                use_blacklight(room)
                 return
 
     print(f" Can't use {item}.")
@@ -360,14 +360,17 @@ def use_tablet(tablet, rooms, objects):
                 continue
 
 
-def use_blacklight():
-    # TODO fix room bug so only works in disco room; all other objects also
-    print("\n You turn the blacklight on and shine it around the room. "
-          "Different things suddenly appear on the walls. You see a "
-          "peace sign, a few names written with hearts between them, "
-          "but what catches your eye is a drawing of a television with the "
-          "letters 'WKRP' written underneath it. For some reason you think "
-          "you should remember this.\n\n")
+def use_blacklight(room):
+    if room.get_index() == 2:
+        print("\n You turn the blacklight on and shine it around the room. "
+              "Different things suddenly appear on the walls. You see a "
+              "peace sign, a few names written with hearts between them, "
+              "but what catches your eye is a drawing of a television with the"
+              "letters 'WKRP' written underneath it. For some reason you think"
+              "you should remember this.\n\n")
+    else:
+        print("\n You turn on the blacklight but don't see anything "
+              "different. Perhaps you need to use it in another room.\n\n")
     return
 
 
