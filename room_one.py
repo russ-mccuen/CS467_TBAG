@@ -7,7 +7,7 @@ from room_setup import *
 from terminal import *
 
 
-def room_env(room, rooms, objects, inventory):
+def room_env(room, rooms, objects, inventory, load):
     """
     This is the main room function that facilitates printing room features and receiving user
     input for interaction.
@@ -17,6 +17,9 @@ def room_env(room, rooms, objects, inventory):
     :param inventory: A list of objects with the index designation of -1.
     :return: room: An int which is the index number of the next room.
     """
+    if load:
+        return load_game(inventory, objects, rooms)
+
     room_index = room.get_index()
     available_nav, available_objs, object_names = room_setup_objs(room, objects)
     print_room_details(rooms, available_nav, available_objs, room)
@@ -95,27 +98,7 @@ def room_env(room, rooms, objects, inventory):
             confirm = input(" Are you sure you want to load the game? Type LOAD (all caps) to "
                             "confirm. ")
             if confirm == "LOAD":
-                if exists('savedata.json'):
-                    loaddata = {}
-                    current_room = 0
-                    inventory.clear()
-                    with open('savedata.json', 'r') as infile:
-                        loaddata = json.load(infile)
-
-                    for r in rooms:
-                        r.deserialize(loaddata)
-                        if (r.get_index() == loaddata['current_room']):
-                            current_room = r
-                    for obj in objects:
-                        obj.deserialize(loaddata)
-                        if obj.get_name() in loaddata['inventory']:
-                            inventory.append(obj)
-
-                    print(" Data loaded successfully.")
-                    time.sleep(1)
-                    return current_room
-                else:
-                    print(" Save Data not found. Please save the game before trying to load data.")
+                return load_game(inventory, objects, rooms)
             continue
 
         if user_input[0] == 'look' and user_input[1] == 'at':
@@ -204,3 +187,27 @@ def room_env(room, rooms, objects, inventory):
                            object_names, inventory)
 
 
+def load_game(inventory, objects, rooms):
+    if exists('savedata.json'):
+        loaddata = {}
+        current_room = 0
+        inventory.clear()
+        with open('savedata.json', 'r') as infile:
+            loaddata = json.load(infile)
+
+        for r in rooms:
+            r.deserialize(loaddata)
+            if r.get_index() == loaddata['current_room']:
+                current_room = r
+        for obj in objects:
+            obj.deserialize(loaddata)
+            if obj.get_name() in loaddata['inventory']:
+                inventory.append(obj)
+
+        print(" Data loaded successfully.")
+        time.sleep(1)
+        return current_room
+    else:
+        print(
+            " Save Data not found. Please save the game before trying to "
+            "load data.")

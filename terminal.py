@@ -6,10 +6,10 @@ def menu():
     # Display game menu
     time.sleep(1.5)
     clear_screen()
-    print(" Welcome to Adam and Russ' Awesome Text-Based Adventure Game!")
+    print("\n But an instant . . . \n")
     print(" 1. Start game")
-    print(" 2. Options")
-    print(" 3. Quit")
+    print(" 2. Load game")
+    print(" 3. Quit\n")
 
 
 def loading_screen():
@@ -29,11 +29,17 @@ def start_screen():
             clear_screen()
             return True
         elif choice == "2":
-            print("Options menu...")
-            # TODO: Add options code here
-            break
+            if os.path.exists('savedata.json'):
+                print("Loading game...")
+                return choice
+            else:
+                print("Save data not found.")
+                menu()
+                continue
         elif choice == "3":
             print("Exiting game...")
+            time.sleep(1)
+            clear_screen()
             break
         else:
             print("Invalid input. Please enter a number between 1 and 3.")
