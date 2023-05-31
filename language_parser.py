@@ -124,7 +124,7 @@ def try_action(available_nav, rooms, room, action, item, objects, object_names, 
         try_take(item, objects, object_names, inventory, room)
 
     if action == "use":
-        try_use(item, objects, rooms, room)
+        try_use(item, objects, rooms, room, inventory)
 
     if action == "drop":
         try_drop(item, inventory, room)
@@ -197,7 +197,7 @@ def try_look(available_nav, rooms, room, item, objects, object_names, inventory)
                 print(obj.get_obj_description())
 
 
-def try_use(item, objects, rooms, room):
+def try_use(item, objects, rooms, room, inventory):
     for obj in objects:
         if item == obj.get_name().lower() and (obj.get_location() == room.get_index() or obj.get_location() == -1):
             if item == "tablet":
@@ -220,7 +220,7 @@ def try_use(item, objects, rooms, room):
                 use_blacklight(room)
                 return
 
-    print(f" Can't use {item}.")
+    print(f"\n You can't use {item} right now.\n\n")
 
 
 def get_poster(objects):
@@ -406,6 +406,7 @@ def use_blacklight(room):
 
 
 def play_vhs(room, inventory):
+    inv_names = [obj.get_name().lower() for obj in inventory]
     if room.get_index() == 0:
         print("\n You place the VHS tape into the TV/VCR combo and push play. "
               "After a few seconds of static you see the end of a basketball "
@@ -420,7 +421,7 @@ def play_vhs(room, inventory):
               "shows on the screen, 54-52, and then the screen goes black. "
               "You don't think you would ever forget this score, but for "
               "some reason you think it is important.\n\n")
-    elif 'VHS tape' not in inventory:
+    elif 'vhs tape' not in inv_names:
         print("\n You do not have a VHS tape in inventory.\n\n")
     else:
         print("\n There is nowhere for you to play the tape here. Perhaps "

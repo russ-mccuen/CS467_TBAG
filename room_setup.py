@@ -213,10 +213,7 @@ def navigate(desired_location, rooms, from_room):
 
 
 def approach_door(room, from_room):
-    if room.is_locked():
-        if from_room == 3 or from_room == 5:
-            room.unlock_room()
-            return
+    if room.is_locked() and from_room != 3 and from_room != 5:
 
         print("\n You approach the door but as you turn the handle you "
               "realize it is locked.\n\n")
@@ -425,7 +422,7 @@ def put_on_spacesuit(room):
                   "you happened to catch a glimpse of what appeared to be "
                   "one of NASA's rovers! What was it called?\n\n "
                   "Curiousity!\n\n For some reason you think this is "
-                  "important.\n\nYou head back "
+                  "important.\n\n You head back "
                   "inside, and hang your borrowed spacesuit back up before "
                   "anyone notices it was gone.\n\n")
             room.unlock_room()
