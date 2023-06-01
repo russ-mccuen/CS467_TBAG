@@ -142,7 +142,7 @@
 
     {
       "object name": "Letter",
-       "short desc": "\n A piece of paper that looks like it has something written on it.\n\n Also, typed in big red letters, it reads, 'When in doubt . . . wait.' Whatever that means.\n",
+       "short desc": "\n A piece of paper that looks like it has something written on it.\n",
       "description": "\n The letter is written in your handwriting, although you don't remember writing it. It reads:\n\n 'I can't believe all you had to do was type 'place bar' and you would have won! Then you could have gone to the mailbox, to the barrow, and game over!'\n\n You don't know what this means, but it seems important.\n\n Also, typed in big red letters, it reads, 'When in doubt . . . wait.' Whatever that means.\n",
       "location": 0,
       "is movable": true,
