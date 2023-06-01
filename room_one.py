@@ -172,7 +172,8 @@ def room_env(room, rooms, objects, inventory, load):
 
 
         if user_input[0] in DIRECTIONS:
-            next_room = navigate_from_main(user_input[0], rooms, room_index)
+            next_room = navigate_from_main(user_input[0], rooms, room_index,\
+                        inventory)
             if next_room is not None:
                 describe_exiting_room(room, inventory)
                 return next_room
