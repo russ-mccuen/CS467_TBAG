@@ -95,6 +95,7 @@ def choices():
         clear_screen()
         print("\n Great choice.")
         time.sleep(5)
+        clear_screen()
         outro(final_decision)
 
 

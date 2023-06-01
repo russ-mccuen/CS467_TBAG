@@ -165,9 +165,12 @@ def room_env(room, rooms, objects, inventory, load):
                   "now know what you have to do.\n\n")
             continue
 
-        if (user_input[0] == "play" or user_input[0] == "use") and \
-                user_input[1] == 'vhs':
-            play_vhs(room, inventory)
+        if user_input[0] == "play" or user_input[0] == "use":
+            if len(user_input) < 2:
+                print("Please enter a valid command. Type 'help' for a list "
+                      "of valid commands.")
+            elif user_input[1] == "vhs":
+                play_vhs(room, inventory)
             continue
 
 
