@@ -104,8 +104,8 @@
       "name":  "Final Room",
        "door desc": " A white door with a black question mark on it",
        "intro": "",
-      "short desc":  "This is the short description",
-      "long desc":  "This is the long description",
+      "short desc":  "\n\n",
+      "long desc":  "\n\n",
       "is locked": false,
         "is visible": false,
        "direction": "up"

@@ -45,6 +45,8 @@ def print_room_details(rooms, available_nav, available_objs, room):
 
     if room_index == 0:
         describe_walls(rooms, available_nav)
+    elif room_index == 9:
+        print(" There is no exit.\n")
     else:
         describe_exit()
 
@@ -70,10 +72,13 @@ def describe_walls(rooms, available_nav):
 
 def describe_features(objects, room_num):
     print(" As you look around the room you notice:\n")
-    # newline()
-    for obj in objects:
-        if obj.get_location() == room_num and obj.is_visible():
-            print(obj.get_short_desc())
+
+    if room_num == 9:
+        print(" Nothing. \n")
+    else:
+        for obj in objects:
+            if obj.get_location() == room_num and obj.is_visible():
+                print(obj.get_short_desc())
 
 
 def describe_exiting_room(room, inventory):
@@ -437,6 +442,9 @@ def put_on_spacesuit(room):
 def print_interactive_objs(objects, room_num):
     #newline()
     print(" Interactive Objects:")
-    for index, obj in enumerate(objects):
-        if obj.get_location() == room_num and obj.is_visible():
-            print(f" Option: {obj.get_name()}")
+    if room_num == 9:
+        print("\n None.\n")
+    else:
+        for index, obj in enumerate(objects):
+            if obj.get_location() == room_num and obj.is_visible():
+                print(f" Option: {obj.get_name()}")

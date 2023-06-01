@@ -20,8 +20,8 @@ def start_game(load=False):
     """
     The main function that reads loads all the game information from the JSON file to initialize game objects.
     """
-    if not load:
-        intro()
+    #if not load:
+     #   intro()
 
     inventory = []
     game_data = load_game("game.Json")
@@ -54,10 +54,10 @@ def intro():
     print("\n    Headline: This Generation Worse Off Than Previous Generation")
     time.sleep(2)
     clear_screen()
-    print("\n Headline: Is Butter Actually Good For You?")
+    print("\n Headline: Click to See Which Food is Actually BAD For You!")
     time.sleep(2)
     clear_screen()
-    print("\n     Headline: Is Butter Actually Bad For You?")
+    print("\n     Headline: Click to See Which Food is Actually GOOD For You!")
     time.sleep(1)
     clear_screen()
     print("\n Headline: Video Games Good For Mental Health")

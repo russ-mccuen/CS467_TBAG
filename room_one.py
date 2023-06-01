@@ -1,10 +1,11 @@
 import json
+import sys
 import time
 from os.path import exists
-
 from language_parser import *
 from room_setup import *
 from terminal import *
+from finale import *
 
 
 def room_env(room, rooms, objects, inventory, load):
@@ -34,6 +35,12 @@ def room_env(room, rooms, objects, inventory, load):
     while True:
         user_input = input(" What would you like to do? ").lower().strip().split()
 
+        if room_index == 9:
+            if user_input[0] != 'wait':
+                print("\n Patience is the key.\n")
+                continue
+            else:
+                final_choice()
         if len(user_input) == 0:
             continue
 
