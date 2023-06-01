@@ -1,4 +1,8 @@
 # Room Base Class
+import time
+from terminal import *
+
+
 class Room:
     def __init__(self, index, name, doorDesc, intro, short_desc, long_desc, is_locked, is_visible, direction):
         self.index = index
@@ -31,6 +35,9 @@ class Room:
             return self.shortDesc
         else:
             print(self.intro)
+            if self.index != 0:
+                time.sleep(7)
+                clear_screen()
             return self.longDesc
 
     def get_room_objects(self):

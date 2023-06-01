@@ -234,7 +234,7 @@ def use_tablet(tablet, rooms, objects):
     print(" \n You pick up the tablet.\n")
     if tablet.is_locked():
         print(" You notice that the tablet is locked and is requesting a passcode.\n")
-    time.sleep(1)
+    time.sleep(2)
     clear_screen()
     print(" \n USING TABLET \n")
     available_info = tablet.get_folder()
@@ -245,18 +245,18 @@ def use_tablet(tablet, rooms, objects):
             pin = input(" Please Enter Password or 'q' to cancel: ")
             if pin.lower() == 'q':
                 print(" \n  You put the tablet away.")
-                time.sleep(1)
+                time.sleep(2)
                 break
             tablet.unlock(pin)
             if tablet.is_locked() is False:
-                poster_detail = " A poster with a thin black frame."
+                poster_detail = "\n A poster with a thin black frame."
                 poster.set_description(poster_detail)
 
                 clear_screen()
                 print("\n You hear something shift in the room. You unlocked "
                       "the tablet. On it you see doors. Some locked, "
                       "some unlocked.\n\n")
-                time.sleep(1)
+                time.sleep(2)
                 rooms[1].set_visible()
             else:
                 continue
@@ -275,7 +275,7 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 2: Room 2 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " A shiny Delorean."
+                poster_detail = cur_desc + "\n A shiny Delorean."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -290,7 +290,7 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 3: Room 3 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " A disco ball."
+                poster_detail = cur_desc + "\n A disco ball."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -305,7 +305,7 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 4: Room 4 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " A peace sign."
+                poster_detail = cur_desc + "\n A peace sign."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -320,7 +320,7 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 5: Room 5 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " A compact disc."
+                poster_detail = cur_desc + "\n A compact disc."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -335,7 +335,7 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 6: Room 6 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " The phrase 'Y2K'."
+                poster_detail = cur_desc + "\n The phrase 'Y2K'."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -350,7 +350,7 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 7: Room 7 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " The Washington Monument."
+                poster_detail = cur_desc + "\n The Washington Monument."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -365,7 +365,7 @@ def use_tablet(tablet, rooms, objects):
             description = "Info 8: Room 8 unlocked"
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " A vintage car."
+                poster_detail = cur_desc + "\n A vintage car."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -380,7 +380,7 @@ def use_tablet(tablet, rooms, objects):
             description = "One way. No return."
             if description not in available_info:
                 cur_desc = poster.get_description()
-                poster_detail = cur_desc + " A question mark."
+                poster_detail = cur_desc + "\n A question mark."
                 poster.set_description(poster_detail)
 
                 tablet.add_to_folder(description)
@@ -502,20 +502,22 @@ def use_commodore(pc, mainroom):
 def use_remote(objects, room):
     room_index = room.get_index()
     if room_index != 0:
-        print(" You mash the buttons on the remote but it does not seem to do anything.")
+        print("\n You mash the buttons on the remote but it does not seem to "
+              "do anything.\n")
         return
     channel = 0
     for tv in objects:
         if tv.get_name().lower() == "tv":
             if not tv.is_on():
-                print(" You notice the tv is off. You press the power button on the remote.")
+                print("\n You notice the tv is off. You press the power "
+                      "button on the remote.")
                 tv.turn_on()
             else:
-                print(" You notice the tv is already on.")
+                print("\n You notice the tv is already on.")
                 tv.display_channel()
 
             while True:
-                user_channel = input(" \n USING REMOTE: Type + or - to change channel or q to quit: ").lower()
+                user_channel = input("\n USING REMOTE: Type + or - to change channel or q to quit: ").lower()
                 if user_channel == "q":
                     break
 
@@ -529,7 +531,7 @@ def use_remote(objects, room):
 
 
 def change_channel(channel, tv):
-    print(" You hear a click as you change the channel.", channel)
+    print(" You hear a click as you change the channel.")
     tv.turn_channel(channel)
 
 
