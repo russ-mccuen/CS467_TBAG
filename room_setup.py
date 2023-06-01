@@ -307,6 +307,12 @@ def approach_door(room, from_room, inventory):
 
     else:
         clear_screen()
+        if room.get_index() == 9:
+            yes_go = input("\n Once you travel to the final room, "
+                                 "you can not return. Type 'yes' to confirm, "
+                                 "anything else to go back. ").lower()
+            if yes_go != 'yes':
+                return
         if from_room != 0:
             describe_exiting_room(from_room, inventory)
         clear_screen()

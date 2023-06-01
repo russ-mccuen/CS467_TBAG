@@ -56,7 +56,7 @@ def parse_input(user_input, inventory):
             return
 
     if length != 2:
-        print(" Only two word commands are accepted.")
+        print("\n Please enter a valid command. Use 'help' to learn more.\n")
         return
 
     if user_input[0] == "clear" and user_input[1] == "screen":
@@ -377,7 +377,7 @@ def use_tablet(tablet, rooms, objects):
                 continue
 
         if user_input == "Curiosity":
-            description = "One way. No return."
+            description = "One way. No return. When in doubt, wait."
             if description not in available_info:
                 cur_desc = poster.get_description()
                 poster_detail = cur_desc + "\n A question mark."

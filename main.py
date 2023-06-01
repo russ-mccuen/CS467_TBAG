@@ -6,7 +6,7 @@ import time
 
 def main():
     clear_screen()
-    #loading_screen()
+    loading_screen()
     clear_screen()
     menu()
     choice = start_screen()
@@ -20,8 +20,10 @@ def start_game(load=False):
     """
     The main function that reads loads all the game information from the JSON file to initialize game objects.
     """
-    #if not load:
-     #   intro()
+    if not load:
+        clear_screen()
+        time.sleep(3)
+        intro()
 
     inventory = []
     game_data = load_game("game.Json")
@@ -92,7 +94,6 @@ def intro():
     print("\n You slowly open your eyes . . .")
     time.sleep(3)
     clear_screen()
-
 
 
 if __name__ == "__main__":

@@ -37,7 +37,7 @@ def room_env(room, rooms, objects, inventory, load):
 
         if room_index == 9:
             if user_input[0] != 'wait':
-                print("\n Patience is the key.\n")
+                print("\n Patience is the key. When in doubt . . .\n")
                 continue
             else:
                 final_choice()
@@ -55,25 +55,25 @@ def room_env(room, rooms, objects, inventory, load):
             try_take(" ".join(user_input[1:]), objects, object_names, inventory, room)
             continue
 
-        if user_input[0] == "unlock":
-            print(" REMOVE THIS FEATURE")
-            rooms[1].unlock_room()
-            rooms[1].set_visible()
-            rooms[2].unlock_room()
-            rooms[2].set_visible()
-            rooms[3].unlock_room()
-            rooms[3].set_visible()
-            rooms[4].unlock_room()
-            rooms[4].set_visible()
-            rooms[5].unlock_room()
-            rooms[5].set_visible()
-            rooms[6].unlock_room()
-            rooms[6].set_visible()
-            rooms[7].unlock_room()
-            rooms[7].set_visible()
-            rooms[8].unlock_room()
-            rooms[8].set_visible()
-            continue
+        # if user_input[0] == "unlock":
+        #     print(" REMOVE THIS FEATURE")
+        #     rooms[1].unlock_room()
+        #     rooms[1].set_visible()
+        #     rooms[2].unlock_room()
+        #     rooms[2].set_visible()
+        #     rooms[3].unlock_room()
+        #     rooms[3].set_visible()
+        #     rooms[4].unlock_room()
+        #     rooms[4].set_visible()
+        #     rooms[5].unlock_room()
+        #     rooms[5].set_visible()
+        #     rooms[6].unlock_room()
+        #     rooms[6].set_visible()
+        #     rooms[7].unlock_room()
+        #     rooms[7].set_visible()
+        #     rooms[8].unlock_room()
+        #     rooms[8].set_visible()
+        #     continue
 
         if user_input[0] == 'q':
             break
