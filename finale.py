@@ -99,7 +99,7 @@ def choices():
 
 
 def outro(final_decision):
-    if final_decision == 1:
+    if final_decision == '1':
         print("\n As you stood at the crossroads of time, the infinite "
               "possibilities of the ages stretched out before you. The "
               "weight of history's embrace was palpable, enticing you with "
@@ -167,7 +167,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 2:
+    if final_decision == '2':
         print("\n As you stood at the crossroads of time, the vast array of "
               "epochs shimmered before your eyes. History's embrace "
               "enveloped you, beckoning with its nostalgic charm. After "
@@ -258,7 +258,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 3:
+    if final_decision == '3':
         print("\n As you stood at the crossroads of time, contemplating the "
               "vast tapestry of history, your heart resonated with the "
               "spirit of an era drenched in nostalgia and cultural "
@@ -345,7 +345,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 4:
+    if final_decision == '4':
         print("\n As you stood at the crossroads of time, contemplating the "
               "vast array of historical epochs, your heart resonated with "
               "the revolutionary spirit of a transformative era. The 1960s "
@@ -428,7 +428,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 5:
+    if final_decision == '5':
         print("\n As you stood at the crossroads of time, pondering the vast "
               "expanse of history, a wave of nostalgia washed over you, "
               "drawing you towards a particular era that held a special "
@@ -512,7 +512,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 6:
+    if final_decision == '6':
         print("\n As you stood at the crossroads of time, contemplating the "
               "vast tapestry of history, your gaze shifted towards the turn "
               "of the millennium, a period brimming with anticipation and "
@@ -594,7 +594,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 7:
+    if final_decision == '7':
         print("\nAs you stood at the crossroads of time, your gaze fixed "
               "upon the distant future, a realm of boundless possibilities "
               "and unimaginable advancements. The year 2076 called out to "
@@ -686,7 +686,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 8:
+    if final_decision == '8':
         print("\n As you stood at the crossroads of time, your eyes fixed on "
               "a bygone era that carried a certain charm and nostalgia. The "
               "1950s beckoned to you, its allure of post-war optimism, "
@@ -763,7 +763,7 @@ def outro(final_decision):
         clear_screen()
         final_goodbye()
 
-    if final_decision == 9:
+    if final_decision == '9':
         print("\n As you stood at the crossroads of time, your gaze fixated "
               "on the future, drawn to the uncharted frontiers of human "
               "exploration. The year 2500 called out to you, its promise of "

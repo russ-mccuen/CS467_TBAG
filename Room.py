@@ -36,7 +36,7 @@ class Room:
         else:
             print(self.intro)
             if self.index != 0:
-                time.sleep(7)
+                time.sleep(10)
                 clear_screen()
             return self.longDesc
 

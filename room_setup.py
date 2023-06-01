@@ -8,12 +8,10 @@ def describe_exit():
     General description of leaving the room to navigate back towards the main room.
     :return:
     """
-    #newline()
     print(" You are also aware of the door that will lead you back to the "
           "main room: ")
     print(f"\n Navigation Option (1) :  The door heading back to the main "
           f"room that is located in the center.\n")
-    #newline()
 
 
 def room_setup_objs(room, objects):
@@ -41,7 +39,6 @@ def print_room_details(rooms, available_nav, available_objs, room):
     """
     room_index = room.get_index()
     clear_screen()
-    # newline()
     print('', room.get_desc())
     describe_features(available_objs, room.get_index())
 
@@ -54,7 +51,6 @@ def print_room_details(rooms, available_nav, available_objs, room):
 
 
 def describe_walls(rooms, available_nav):
-    # newline()
     visible_rooms = 0
 
     for index, room in enumerate(rooms):
@@ -110,7 +106,7 @@ def describe_exiting_room(room_index, inventory):
               "heart. Woodstock will forever stand as a symbol of hope, "
               "a testament to the power of music and the unyielding pursuit "
               "of a better world.")
-        time.sleep(10)
+        time.sleep(15)
 
     if room_index == 4:
         print(" As you stroll through the bustling food court of the 1990s, "
@@ -125,7 +121,7 @@ def describe_exiting_room(room_index, inventory):
               "You carry the memories of this vibrant food court, frozen in "
               "time, as you prepare to journey back to the present, eager to "
               "rejoin the world of modern marvels and future possibilities.")
-        time.sleep(10)
+        time.sleep(15)
 
     if room_index == 5:
         print(" As you stand on the threshold of the living room, your gaze "
@@ -143,7 +139,7 @@ def describe_exiting_room(room_index, inventory):
               "turn away, leaving the room behind, the remnants of the 2000s "
               "clinging to your thoughts as you prepare to reemerge into the "
               "present")
-        time.sleep(10)
+        time.sleep(15)
 
     if room_index == 6:
         print(" As you stand on the edge of Washington, D.C. in the "
@@ -161,7 +157,7 @@ def describe_exiting_room(room_index, inventory):
               "mark on your memories. With gratitude and excitement, "
               "you embrace the unknown, ready to carry the lessons and "
               "inspiration of Washington, D.C. in 2076 back to the present.")
-        time.sleep(10)
+        time.sleep(15)
 
     if room_index == 7:
         print(" As you rise from the booth, a sense of bittersweet nostalgia "
@@ -177,7 +173,7 @@ def describe_exiting_room(room_index, inventory):
               "and with a mixture of gratitude and longing, you take one "
               "final breath of the past before venturing back into the "
               "unknown future.")
-        time.sleep(10)
+        time.sleep(15)
 
     if room_index == 8:
         print("As you prepare to leave the base on Mars, a sense of "
@@ -193,7 +189,7 @@ def describe_exiting_room(room_index, inventory):
               "that the time has come to bid farewell to this extraordinary "
               "world and return to your own time, carrying with you the "
               "untold stories and infinite possibilities of Mars.\n\n")
-        time.sleep(10)
+        time.sleep(15)
 
 
 def navigate_from_main(desired_location, rooms, from_room, inventory):
