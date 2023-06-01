@@ -164,15 +164,10 @@ def room_env(room, rooms, objects, inventory, load):
                   "and think about what you should do next. It works! You "
                   "now know what you have to do.\n\n")
             continue
-
-        if user_input[0] == "play" or user_input[0] == "use":
-            if len(user_input) < 2:
-                print("Please enter a valid command. Type 'help' for a list "
-                      "of valid commands.")
-            elif user_input[1] == "vhs":
+        if len(user_input) == 2:
+            if (user_input[0] == "play" or user_input[0] == "use") and user_input[1] == "vhs":
                 play_vhs(room, inventory)
-            continue
-
+                continue
 
         if user_input[0] in DIRECTIONS:
             next_room = navigate_from_main(user_input[0], rooms, room_index,\

@@ -407,7 +407,7 @@ def use_blacklight(room):
 
 def play_vhs(room, inventory):
     inv_names = [obj.get_name().lower() for obj in inventory]
-    if room.get_index() == 0:
+    if room.get_index() == 0 and 'vhs tape' in inv_names:
         print("\n You place the VHS tape into the TV/VCR combo and push play. "
               "After a few seconds of static you see the end of a basketball "
               "game. You remember this game because you watched it so many "

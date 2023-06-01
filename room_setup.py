@@ -138,7 +138,7 @@ def describe_exiting_room(room_index, inventory):
               "With a mix of nostalgia and anticipation, you reluctantly "
               "turn away, leaving the room behind, the remnants of the 2000s "
               "clinging to your thoughts as you prepare to reemerge into the "
-              "present")
+              "present.")
         time.sleep(15)
 
     if room_index == 6:

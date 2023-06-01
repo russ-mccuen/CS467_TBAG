@@ -78,9 +78,9 @@ def time_to_choose():
 
 def choices():
     final_decision = input("\n 1. Present\n 2. 1980s\n 3. 1970s\n 4. "
-                               "1960s\n  5. 1990s\n 6. 2000s\n 7. 2076\n 8. "
-                               "1950s\n 9. 2500s (Mars)\n\n What is your "
-                               "choice? ")
+                           "1960s\n 5. 1990s\n 6. 2000s\n 7. 2076\n 8. "
+                           "1950s\n 9. 2500s (Mars)\n\n What is your "
+                           "choice? ")
     time_choice = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     if not final_decision.isdigit() or int(final_decision) not in time_choice:
