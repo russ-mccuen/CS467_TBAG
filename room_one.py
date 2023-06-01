@@ -183,10 +183,9 @@ def room_env(room, rooms, objects, inventory, load):
             action_type, option = parsed_input
 
             if action_type == "navigate":
-                next_room = navigate_from_main(option, rooms, room_index)
+                next_room = navigate_from_main(option, rooms, room_index, inventory)
 
                 if next_room is not None:
-                    describe_exiting_room(room, inventory)
                     return next_room
 
             else:

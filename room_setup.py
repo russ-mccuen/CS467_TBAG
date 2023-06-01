@@ -1,3 +1,5 @@
+import time
+
 from terminal import *
 
 
@@ -81,12 +83,12 @@ def describe_features(objects, room_num):
                 print(obj.get_short_desc())
 
 
-def describe_exiting_room(room, inventory):
-    room_index = room.get_index()
+def describe_exiting_room(room_index, inventory):
     inv_names = [obj.get_name().lower() for obj in inventory]
     clear_screen()
     if room_index == 0:
         print("\n You blink and suddenly everything around you has changed.")
+        time.sleep(2)
 
     if room_index == 1:
         if "remote" not in inv_names:
@@ -99,6 +101,7 @@ def describe_exiting_room(room, inventory):
     if room_index == 2:
         print(" You'd love to stay and dance, but you know "
               "there is more to do.")
+        time.sleep(3)
 
     if room_index == 3:
         print(" As you leave Woodstock, a part of you remains forever changed."
@@ -107,6 +110,7 @@ def describe_exiting_room(room, inventory):
               "heart. Woodstock will forever stand as a symbol of hope, "
               "a testament to the power of music and the unyielding pursuit "
               "of a better world.")
+        time.sleep(10)
 
     if room_index == 4:
         print(" As you stroll through the bustling food court of the 1990s, "
@@ -121,6 +125,7 @@ def describe_exiting_room(room, inventory):
               "You carry the memories of this vibrant food court, frozen in "
               "time, as you prepare to journey back to the present, eager to "
               "rejoin the world of modern marvels and future possibilities.")
+        time.sleep(10)
 
     if room_index == 5:
         print(" As you stand on the threshold of the living room, your gaze "
@@ -138,6 +143,7 @@ def describe_exiting_room(room, inventory):
               "turn away, leaving the room behind, the remnants of the 2000s "
               "clinging to your thoughts as you prepare to reemerge into the "
               "present")
+        time.sleep(10)
 
     if room_index == 6:
         print(" As you stand on the edge of Washington, D.C. in the "
@@ -155,6 +161,7 @@ def describe_exiting_room(room, inventory):
               "mark on your memories. With gratitude and excitement, "
               "you embrace the unknown, ready to carry the lessons and "
               "inspiration of Washington, D.C. in 2076 back to the present.")
+        time.sleep(10)
 
     if room_index == 7:
         print(" As you rise from the booth, a sense of bittersweet nostalgia "
@@ -170,6 +177,7 @@ def describe_exiting_room(room, inventory):
               "and with a mixture of gratitude and longing, you take one "
               "final breath of the past before venturing back into the "
               "unknown future.")
+        time.sleep(10)
 
     if room_index == 8:
         print("As you prepare to leave the base on Mars, a sense of "
@@ -185,29 +193,28 @@ def describe_exiting_room(room, inventory):
               "that the time has come to bid farewell to this extraordinary "
               "world and return to your own time, carrying with you the "
               "untold stories and infinite possibilities of Mars.\n\n")
+        time.sleep(10)
 
-    time.sleep(1)
 
-
-def navigate_from_main(desired_location, rooms, from_room):
+def navigate_from_main(desired_location, rooms, from_room, inventory):
     if desired_location == 'center' and from_room != 0:
         room = rooms[0]
-        return approach_door(room, from_room)
+        return approach_door(room, from_room, inventory)
     available_rooms = [room.get_index() for room in rooms if room.is_visible()]
     room_dir = [room.get_direction() for room in rooms if room.is_visible()]
     if desired_location.isnumeric():
         if from_room != 0 and desired_location == "1":
-            return approach_door(rooms[0], from_room)
+            return approach_door(rooms[0], from_room, inventory)
         door_index = int(desired_location)
         if door_index in available_rooms:
             room = rooms[door_index]
-            return approach_door(room, from_room)
+            return approach_door(room, from_room, inventory)
     else:
         if desired_location in room_dir:
             room_dir_index = room_dir.index(desired_location)
             room_index = available_rooms[room_dir_index]
             room = rooms[room_index]
-            return approach_door(room, from_room)
+            return approach_door(room, from_room, inventory)
 
 
 def navigate(desired_location, rooms, from_room):
@@ -220,7 +227,7 @@ def navigate(desired_location, rooms, from_room):
             print("That option does not exist.")
 
 
-def approach_door(room, from_room):
+def approach_door(room, from_room, inventory):
     if room.is_locked() and from_room != 3 and from_room != 5:
 
         print("\n You approach the door but as you turn the handle you "
@@ -300,9 +307,14 @@ def approach_door(room, from_room):
 
     else:
         clear_screen()
+        if from_room != 0:
+            describe_exiting_room(from_room, inventory)
+        clear_screen()
         print("\n You approach the door, turn the handle, and step into the "
               "room.")
         time.sleep(1)
+        if from_room == 0:
+            describe_exiting_room(from_room, inventory)
         return room
 
 
