@@ -391,9 +391,7 @@ def sit_booth(room):
           "needs to know.\n\n 'Be right back with that burger, hon.'\n\n A "
           "few minutes later the waitress arrives with a burger that looks "
           "amazing, and a soda for you to drink. You are about the thank her "
-          "when she smiles, winks, and walks away.\n\n As you sit in the "
-          "booth, you notice a small, weathered baseball card peeking out "
-          "from beneath the edge of the seat cushion.\n\n")
+          "when she smiles, winks, and walks away.\n\n")
     eat_burger(room)
 
 

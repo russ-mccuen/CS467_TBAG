@@ -304,8 +304,8 @@
     },
     {
     "object name": "Jukebox",
-      "short desc": "\n A miniature chrome and glass jukebox sits on a table in the diner, waiting to be played.\n",
-      "description": "\n You glance up and see a miniature jukebox sitting on the table next to you. It's a beautiful little thing, made of chrome and glass. The front is covered in buttons, each one labeled with a different song.\n\nYou reach out and touch the jukebox. It's cool to the touch, and it feels sturdy and well-made. You wonder how much it would cost to buy one.\n\nYou turn your attention back to the menu, but you can't help but think about the jukebox. You imagine yourself playing your favorite song on it, and you smile.\n",
+      "short desc": "\n A miniature chrome and glass jukebox sits on a table in the diner, waiting to be played.\n\n Peeking out from underneath the jukebox you you notice a small, weathered baseball card.\n",
+      "description": "\n You glance up and see a miniature jukebox sitting on the table next to you. It's a beautiful little thing, made of chrome and glass. The front is covered in buttons, each one labeled with a different song.\n\nYou reach out and touch the jukebox. It's cool to the touch, and it feels sturdy and well-made. You wonder how much it would cost to buy one.\n\n You turn your attention back to the menu, but you can't help but think about the jukebox. You imagine yourself playing your favorite song on it, and you smile.\n\n Peeking out from underneath the jukebox you you notice a small, weathered baseball card.\n",
     "location": 7,
       "is movable": false,
       "is visible": true
