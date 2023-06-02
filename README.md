@@ -142,3 +142,21 @@ With your remote in hand you can unlock the next level by doing the following:
 5. `q` to quit tablet
 6. `go 6` to enter next room
 ---
+
+## Walk Through: Room Six
+
+1. `go 1` to try to leave
+2. `swim` to swim in reflecting pool
+3. `examine coin` that you find in reflecting pool
+4. Note date/mint stamp, `2076-P`, which you will need to unlock the next room
+5. `go 1` to return to main room
+---
+
+## Walk Through: Back in Main Room
+
+1. `use tablet`
+2. Enter code `2076-P` to unlock next room
+3. `q` to quit tablet
+4. `go 7` to enter next room
+---
+
