@@ -28,35 +28,27 @@ Some of the available verbs and their synonyms are as follows (some will be disc
 
 ---
 ##Complete Walk Through:
-<b>Note: This is a walkthrough of <i>exactly</i> what you need to do to complete the game.
+</br><b>Note: This is a walkthrough of <i>exactly</i> what you need to do to complete the game.
    There are other actions/events in the game that you can trigger/explore.
-   Please do so, but this guide is designed to take you from beginning to end, nothing more.</b>
+   Please do so, but this guide is designed to take you from beginning to end, nothing more.</b></br>
 Once you run the game you will be given the description of the room with feature descriptions, and you will be given a prompt:
 </br>
 `What would you like to do? `
 </br>
 The following commands, executed in order, will unlock the next room:
-1. `use tv`
-   a. You will see a code `UHF-73` being described after you use the tv.
-2. `use tablet`
-   a. To unlock the tablet type in `UHF-73`.
-   b. Type `q` to exit out of tablet mode.
-3. `examine letter`
-   a. On the letter you will see a sentence that ends with `place bar`; you will need this in the next room  
-4. `go 1`
-   a. This will take you out of the main room and into the room that was unlocked by the tablet. 
+1. `use tv` You will see a code `UHF-73` being described after you use the tv.
+2. `use tablet` To unlock the tablet type in `UHF-73`.
+3. Type `q` to exit out of tablet mode.
+4. `examine letter` On the letter you will see a sentence that ends with `place bar`; you will need this in the next room  
+5. `go 1` This will take you out of the main room and into the room that was unlocked by the tablet. 
 ---
 ##Walk Through: Room One
 The following commands, executed in order, will help you unlock the next room:
-1. `examine desk`
-   a. You will notice a remote control object. You will need this.   
-2. `take remote`
-   a. This puts the remote in your inventory. You can look in your inventory at any time by typing `inventory`
-3. `use commodore`
-   a. Type `place bar` to win the game and unlock the door to the main room.
-6. `look room`
-7. `go 1`
-   a. Exits back to the main room we started, if you forgot the remote, the game will tell you. 
+1. `examine desk` You will notice a remote control object. You will need this.   
+2. `take remote` This puts the remote in your inventory. You can look in your inventory at any time by typing `inventory`
+3. `use commodore` Type `place bar` to win the game and unlock the door to the main room.
+4. `look room`
+5. `go 1` Exits back to the main room we started, if you forgot the remote, the game will tell you. 
 ---
 ## Walk Through: Back in Main Room
 Now that you are back in the main room, you should have your remote. Type `inventory` to make sure. If it is not in your inventory do the following:
