@@ -126,3 +126,19 @@ With your remote in hand you can unlock the next level by doing the following:
 4. `go 5` to enter next room
 ---
 
+## Walk Through: Room Five
+
+1. `examine television` You will see a VHS tape on the entertainment center housing the television
+2. `take VHS tape` adds tape to your inventory
+3. `go 1` to return to main room
+---
+
+## Walk Through: Back in Main Room
+
+1. `play vhs` To place tape into TV/VCR combo and see the ending of a basketball game
+2. Note the final score, `54-52`, which is the code to unlock the next room
+3. `use tablet`
+4. Enter code `54-52` to unlock next room
+5. `q` to quit tablet
+6. `go 6` to enter next room
+---
