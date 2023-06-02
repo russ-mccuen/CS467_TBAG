@@ -82,8 +82,30 @@ With your remote in hand you can unlock the next level by doing the following:
    `2`
    `5`
 6. `go 1` Takes you back to the main room
+---
 
 ## Walk Through: Back in Main Room
+
+1. `use tablet`
+2. Enter code `WKRP` (all caps) to unlock next room
+3. `q` to quit tablet
+4. `go 3` to enter next room
+---
+
+## Walk Through: Room Three
+
+1. `examine dancing` When you do this you will see a flier on the ground.
+2. `examine flier` You will see that Woodstock took place in White Lake, which is your next code.
+3. `go 1` to go back to main room
+---
+
+## Walk Through: Back in Main Room
+
+1. `use tablet`
+2. Enter code `White Lake` to unlock next room
+3. `q` to quit tablet
+4. `go 4` to enter next room
+---
 
 
 
