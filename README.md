@@ -1,4 +1,4 @@
-# CS467_TBAG
+# CS467_Text_Based_Adventure_Game
 Capstone: Text-Based Adventure Game
 <br/>
 Python Version: 3.10
@@ -160,3 +160,54 @@ With your remote in hand you can unlock the next level by doing the following:
 4. `go 7` to enter next room
 ---
 
+## Walk Through: Room Seven
+
+1. `examine jukebox` you will notice a basseball card
+2. `examine baseball card` note the batting average, `.353`, which you will need to unlock the next room
+3. `go 1` to try to leave
+4. `sit booth` to sit in a booth
+5. `eat burger` to eat the burger
+6. `go 1` to go back to main room
+---
+
+## Walk Through: Back in Main Room
+
+1. `use tablet`
+2. Enter code `.353` to unlock next room
+3. `q` to quit tablet
+4. `go 8` to enter next room
+---
+
+## Walk Through: Room Eight
+
+1. `go 1` to try to leave
+2. `wear spacesuit` to put on spacesuit
+3. `jump` to jump on surface of Mars
+4. Note the Mars rover you saw was `Curiosity` as this is the code to unlock the next room
+5. `go 1` to return to main room
+---
+
+## Walk Through: Back in Main Room
+
+1. `use tablet`
+2. Enter code `Curiosity` to unlock next room **(note there is NO SECOND 'u' in Curiosity; check spelling if code fails)**
+3. `q` to quit tablet
+4. Note room message: `One way. No return. When in doubt, wait.`
+5. Since travel is one way, this is a good place to type `savegame` to save your progress
+6. Type `SAVE` in all caps to confirm
+7. `go 9` to attempt to enter final room
+8. Type `yes` to confirm
+---
+
+## Walk Through: Final Room
+
+1. Wait for prompt (the game has not crashed)
+2. Type `wait`
+3. Read prompts, then choose your ending
+4. **Enter a number between 1 and 9, inclusive to choose your ending**
+5. **If you do not enter a number between 1 and 9, inclusive, and ending will be chosen for you at random**
+6. Enjoy your ending
+---
+
+
+---
