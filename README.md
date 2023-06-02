@@ -33,7 +33,7 @@ Some of the available verbs and their synonyms are as follows (some will be disc
    Please do so, but this guide is designed to take you from beginning to end, nothing more.</b></br>
 Once you run the game you will be given the description of the room with feature descriptions, and you will be given a prompt:
 </br>
-<p>`What would you like to do? `
+</br>`What would you like to do? `
 </br>
 The following commands, executed in order, will unlock the next room:
 1. `use tv` You will see a code `UHF-73` being described after you use the tv.
