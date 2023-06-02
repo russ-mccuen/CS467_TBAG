@@ -107,5 +107,22 @@ With your remote in hand you can unlock the next level by doing the following:
 4. `go 4` to enter next room
 ---
 
+## Walk Through: Room Four
 
+1. `examine Mall Directory` You will see the pizza place's map location is FC-15, which you will need to exit the room
+2. On the ground next to the directory you will see a pager
+3. `examine pager` On the pager you will see the number `421-6827` which is the code you need to unlock the next room
+4. `go 1` This will prompt you to eat pizza before you leave
+5. `eat pizza` Will bring up another prompt in which you can get a free slice with the map location
+6. `FC-15` Type this to get the free slice and unlock the main room
+7. `go 1` returns you to the main room
+---
+
+## Walk Through: Back in Main Room
+
+1. `use tablet`
+2. Enter code `421-6827` to unlock next room
+3. `q` to quit tablet
+4. `go 5` to enter next room
+---
 
