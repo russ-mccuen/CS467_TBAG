@@ -85,6 +85,7 @@ def choices():
 
     if not final_decision.isdigit() or int(final_decision) not in time_choice:
         final_decision = random.randrange(1, 10)
+        final_decision = str(final_decision)
         print("\n I'm sorry you were unable to make a choice.")
         time.sleep(5)
         print("\n I hope you are happy with what I've chosen for you.")

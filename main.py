@@ -10,7 +10,7 @@ def main():
     clear_screen()
     menu()
     choice = start_screen()
-    if choice == True:
+    if choice:
         start_game()
     elif choice == "2":
         start_game(True)
