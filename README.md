@@ -2,14 +2,23 @@
 Capstone: Text-Based Adventure Game
 <br/>
 Python Version: 3.10
+
+## Repositories
+
+The following links include the GitHub repo with our source code and our minimal flask application:
+
+Source Code -> GitHub Repo (Public): https://github.com/russ-mccuen/CS467_TBAG 
+Capstone Flask App: https://github.com/adamheidrick/osu-capstone-site 
+Capstone Flask App Link: https://osu-sp2023-capstone.uc.r.appspot.com/
+
 ---
 ## How to Run Program
-1. Download files
+1. Download files or clone repository with this link: https://github.com/russ-mccuen/CS467_TBAG.git
 2. Ensure you have python 3.10 installed.
-   1. If not, install python 3.10
+   a. If not, please install python 3.10
 3. From terminal, navigate to downloaded location.
-4. Type `python main.py`
-5. Type `1` to start the game
+4. Type `python main.py` or 'python3 main.py to run program
+5. Type `1` to start the game at the start menu
 ---
 
 ## Final Archive Walk Through
