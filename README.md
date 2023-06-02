@@ -7,9 +7,9 @@ Python Version: 3.10
 
 The following links include the GitHub repo with our source code and our minimal flask application:
 
-Source Code -> GitHub Repo (Public): https://github.com/russ-mccuen/CS467_TBAG 
-Capstone Flask App: https://github.com/adamheidrick/osu-capstone-site 
-Capstone Flask App Link: https://osu-sp2023-capstone.uc.r.appspot.com/
+Source Code -> GitHub Repo (Public): https://github.com/russ-mccuen/CS467_TBAG </br>
+Capstone Flask App: https://github.com/adamheidrick/osu-capstone-site </br>
+Capstone Flask App Link: https://osu-sp2023-capstone.uc.r.appspot.com/ </br>
 
 ---
 ## How to Run Program
